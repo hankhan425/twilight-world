@@ -9,7 +9,8 @@ const SOURCES = [
   // Full card decks (objectives, agendas, action cards, explores, relics).
   // Sparse-checked out: we only need the JSON data directory.
   { name: 'asyncti4', url: 'https://github.com/AsyncTI4/TI4_map_generator_bot.git',
-    sparse: 'src/main/resources/data' },
+    sparse: ['src/main/resources/data', 'src/main/resources/planets',
+             'src/main/resources/systems'] },
 ];
 
 mkdirSync('.cache', { recursive: true });
@@ -25,7 +26,8 @@ for (const s of SOURCES) {
   if (s.sparse) args.push('--filter=blob:none', '--sparse');
   execFileSync('git', [...args, s.url, dest], { stdio: 'inherit' });
   if (s.sparse) {
-    execFileSync('git', ['-C', dest, 'sparse-checkout', 'set', s.sparse], { stdio: 'inherit' });
+    execFileSync('git', ['-C', dest, 'sparse-checkout', 'set', ...[].concat(s.sparse)],
+                 { stdio: 'inherit' });
   }
 }
 console.log('sources ready');

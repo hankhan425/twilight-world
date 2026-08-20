@@ -14,6 +14,8 @@ const agendas     = read('data/agendas.json');
 const actionCards = read('data/actionCards.json');
 const explores    = read('data/explores.json');
 const relics      = read('data/relics.json');
+const planets     = read('data/planets.json');
+const systems     = read('data/systems.json');
 
 const SET_LABEL = { base: 'Base', pok: 'Prophecy of Kings', codex: 'Codex' };
 const esc = s => String(s ?? '').replace(/[&<>"]/g,
@@ -31,7 +33,8 @@ function layout({ title, depth = 0, body, active = '' }) {
   const r = depth ? '../'.repeat(depth) : './';
   const nav = [
     ['', 'Home'], ['factions/', 'Factions'], ['units/', 'Units'],
-    ['techs/', 'Tech'], ['leaders/', 'Leaders'], ['objectives/', 'Objectives'],
+    ['techs/', 'Tech'], ['leaders/', 'Leaders'],
+    ['planets/', 'Planets'], ['systems/', 'Systems'], ['objectives/', 'Objectives'],
     ['agendas/', 'Agendas'], ['cards/', 'Cards'], ['explore/', 'Explore'],
     ['glossary/', 'Rules'],
   ].map(([href, label]) =>
@@ -269,6 +272,7 @@ function pageHome() {
     [techs.length, 'Technologies', 'techs/'], [leaders.length, 'Leaders', 'leaders/'],
     [objectives.length, 'Objectives', 'objectives/'], [agendas.length, 'Agendas', 'agendas/'],
     [actionCards.length, 'Action cards', 'cards/'], [explores.length, 'Explore cards', 'explore/'],
+    [planets.length, 'Planets', 'planets/'], [systems.length, 'Systems', 'systems/'],
   ];
   const body = `<h1 class="hero">Twilight Imperium <span>4th Edition</span></h1>
   <p class="lede">A fast, ad-free reference for the base game, Prophecy of Kings, and the
@@ -295,6 +299,8 @@ function searchIndex() {
     ...actionCards.map(c => ({ t: c.name, u: 'cards/', k: 'Action card' })),
     ...explores.map(e => ({ t: e.name, u: 'explore/', k: `${e.trait} explore` })),
     ...relics.map(r => ({ t: r.name, u: 'explore/', k: 'Relic' })),
+    ...planets.map(p => ({ t: p.name, u: 'planets/',
+        k: p.legendary ? 'Legendary planet' : (p.trait ? p.trait + ' planet' : 'Planet') })),
     ...glossary.keywords.map(g => ({ t: g.name, u: 'glossary/', k: 'Rules' })),
     ...glossary.strategyCards.map(s => ({ t: s.name, u: 'glossary/', k: 'Strategy card' })),
   ];
@@ -399,6 +405,76 @@ if (existsSync('dist')) rmSync('dist', { recursive: true });
 pageHome(); pageFactions(); factions.forEach(pageFaction);
 pageUnits(); pageTechs(); pageLeaders(); pageGlossary();
 pageObjectives(); pageAgendas(); pageActionCards(); pageExplore();
+pagePlanets(); pageSystems();
 const n = searchIndex();
 cpSync('public', 'dist', { recursive: true });
-console.log(`built ${factions.length + 10} pages, ${n} search entries`);
+console.log(`built ${factions.length + 12} pages, ${n} search entries`);
+
+// ------------------------------------------------------------- planets/map
+function pagePlanets() {
+  const real = planets.filter(p => p.kind === 'normal' || p.kind === 'mecatol');
+  const homes = planets.filter(p => p.kind === 'home');
+  const row = p => `<tr data-cat="${esc(p.trait || 'Other')}">
+    <th scope="row">${esc(p.name)}${p.legendary ? ' <span class="pok" title="Legendary">★</span>' : ''}</th>
+    <td class="num">${p.resources}</td><td class="num">${p.influence}</td>
+    <td class="num muted">${p.resources + p.influence}</td>
+    <td>${p.trait ? chip(p.trait, 't-chip t-' + p.trait.toLowerCase()) : '<span class="muted">—</span>'}</td>
+    <td>${p.techSpecialty ? chip(p.techSpecialty, 'c-' + p.techSpecialty.toLowerCase()) : '<span class="muted">—</span>'}</td>
+    <td class="num muted">${p.tile ? esc(p.tile) : '—'}</td>
+  </tr>`;
+  const table = list => `<div class="tablewrap"><table class="units">
+    <thead><tr><th scope="col">Planet</th>
+      <th scope="col" class="num" title="Resources">R</th>
+      <th scope="col" class="num" title="Influence">I</th>
+      <th scope="col" class="num">Σ</th>
+      <th scope="col">Trait</th><th scope="col">Specialty</th>
+      <th scope="col" class="num">Tile</th></tr></thead>
+    <tbody>${list.map(row).join('')}</tbody></table></div>`;
+
+  const legendary = planets.filter(p => p.legendary);
+  const body = `<h1>Planets</h1>
+  <p class="lede">Every planet with its resource and influence values. <b>Σ</b> is the
+  two added together, which is the quick way to compare what a system is worth.
+  ★ marks a legendary planet.</p>
+  ${filterBar('cat', ['Cultural', 'Hazardous', 'Industrial'])}
+  <section class="panel"><h2>Planets <span class="count">${real.length}</span></h2>
+    ${table(real)}</section>
+  <section class="panel"><h2>Legendary <span class="count">${legendary.length}</span></h2>
+    <ul class="techlist">${legendary.map(p => `<li>
+      <b>${esc(p.name)}</b>${chip(p.legendaryName)}${setChip(p.set)}
+      <span class="prereq">${chip(`${p.resources}/${p.influence}`, 'vp')}</span></li>`).join('')}</ul>
+  </section>
+  <section class="panel"><h2>Home systems <span class="count">${homes.length}</span></h2>
+    ${table(homes)}</section>`;
+  write('planets/index.html', layout({ title: 'Planets', depth: 1, body, active: 'Planets' }));
+}
+
+function pageSystems() {
+  const GROUPS = [
+    ['planet', 'Planet systems', 'Ordinary systems holding one or more planets.'],
+    ['anomaly', 'Anomalies', 'Asteroid fields, nebulae, gravity rifts and supernovas — each changes movement or combat.'],
+    ['empty', 'Empty space', 'No planets. Still worth holding for the wormholes some of them carry.'],
+    ['mecatol', 'Mecatol Rex', 'The centre of the galaxy and the reason everyone is fighting.'],
+    ['home', 'Home systems', 'Each faction starts here.'],
+  ];
+  const card = s => `<li>
+    <b>${esc(s.id)}</b>
+    <span class="meta">${s.planetNames.length ? esc(s.planetNames.join(', ')) : 'empty'}</span>
+    <span class="prereq">
+      ${s.resources || s.influence ? chip(`${s.resources}/${s.influence}`, 'vp') : ''}
+      ${s.anomalies.map(a => chip(a, 'anom')).join('')}
+      ${s.wormholes.map(w => chip(w + ' wormhole', 'worm')).join('')}
+    </span></li>`;
+  const body = `<h1>Systems</h1>
+  <p class="lede">All ${systems.length} system tiles. The number is the tile number printed
+  on the back, so you can match a tile in hand to what is on it. Values shown are the
+  system's total resources and influence.</p>
+  ${GROUPS.map(([k, title, note]) => {
+    const list = systems.filter(s => s.kind === k);
+    if (!list.length) return '';
+    return `<section class="panel"><h2>${title} <span class="count">${list.length}</span></h2>
+      <p class="note">${note}</p>
+      <ul class="techlist">${list.map(card).join('')}</ul></section>`;
+  }).join('')}`;
+  write('systems/index.html', layout({ title: 'Systems', depth: 1, body, active: 'Systems' }));
+}

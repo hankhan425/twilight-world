@@ -197,3 +197,16 @@ li[hidden] { display: none !important; }
 .t-hazardous { background: var(--warfare); }
 .t-industrial { background: var(--biotic); }
 .t-frontier { background: var(--unit); }
+
+/* ---- planet & system chips ---- */
+.t-chip { color: #fff; }
+.chip.t-cultural { background: var(--propulsion); color: #fff; }
+.chip.t-hazardous { background: var(--warfare); color: #fff; }
+.chip.t-industrial { background: var(--biotic); color: #fff; }
+.chip.anom {
+  background: color-mix(in srgb, var(--warfare) 18%, transparent); color: var(--warfare);
+}
+.chip.worm {
+  background: color-mix(in srgb, var(--cybernetic) 22%, transparent); color: var(--cybernetic);
+}
+tr[data-cat][hidden] { display: none; }

@@ -43,8 +43,8 @@ Two upstream sources are used for the factual layer:
 - [scottmk/ti4-reference](https://github.com/scottmk/ti4-reference) (CC-BY-4.0) —
   factions, units, technologies, leaders.
 - [AsyncTI4/TI4_map_generator_bot](https://github.com/AsyncTI4/TI4_map_generator_bot) —
-  objectives, agendas, action cards, exploration, relics. Sparse-checked out to the
-  JSON data directory only.
+  objectives, agendas, action cards, exploration, relics, planets and systems.
+  Sparse-checked out to the JSON data directories only.
 
 Fan expansions (Discordant Stars, Absol's Mod, Twilight's Fall, Milty Mod, and the rest)
 are filtered out by `source` — official releases only, meaning base, Prophecy of Kings,
@@ -58,6 +58,20 @@ traits — and reads the effect text only to derive a **category**, which is our
 taxonomy, before discarding it. That is what makes the decks filterable: "show me the
 combat action cards", "which agendas are laws", "how many copies of this are in the
 deck".
+
+### Planets and systems
+
+Planet and system data is almost entirely factual already — resource and influence
+values, traits, tech specialties, wormholes, anomalies, tile numbers — so it needs
+little processing. `scripts/extract-map.mjs` drops flavour text and keeps the legendary
+ability *name* only as a label.
+
+One trap worth recording: **a planet having no tile does not mean it isn't real.**
+Mirage is placed by a frontier exploration card and Custodia Vigilia sits on top of
+Mecatol Rex, so both are genuine planets with `tileId: null`. Filtering on "has a tile"
+would silently delete them. The bot-internal entries are excluded by an explicit list
+instead — `Illusion` and `Phantasm` are stat-identical clones of Mirage used for variant
+setups, `Lost Station` is a space station, and `Locked Mallice` is Mallice face-down.
 
 ### Parsing notes
 
@@ -80,3 +94,5 @@ The source stat markup has two traps, both handled in `normStats()`:
 | Action cards | 93 unique / 123 in deck |
 | Exploration | 36 unique / 80 cards |
 | Relics | 17 |
+| Planets | 107 |
+| Systems | 87 tiles |

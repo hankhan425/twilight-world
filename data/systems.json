@@ -1,0 +1,1351 @@
+[
+  {
+    "id": "01",
+    "set": "base",
+    "planets": [
+      "jord"
+    ],
+    "planetNames": [
+      "Jord"
+    ],
+    "resources": 4,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "02",
+    "set": "base",
+    "planets": [
+      "mollprimus"
+    ],
+    "planetNames": [
+      "Moll Primus"
+    ],
+    "resources": 4,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "03",
+    "set": "base",
+    "planets": [
+      "darien"
+    ],
+    "planetNames": [
+      "Darien"
+    ],
+    "resources": 4,
+    "influence": 4,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "04",
+    "set": "base",
+    "planets": [
+      "muaat"
+    ],
+    "planetNames": [
+      "Muaat"
+    ],
+    "resources": 4,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "05",
+    "set": "base",
+    "planets": [
+      "nestphar"
+    ],
+    "planetNames": [
+      "Nestphar"
+    ],
+    "resources": 3,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "06",
+    "set": "base",
+    "planets": [
+      "0.0.0"
+    ],
+    "planetNames": [
+      "[0.0.0]"
+    ],
+    "resources": 5,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "07",
+    "set": "base",
+    "planets": [
+      "winnu"
+    ],
+    "planetNames": [
+      "Winnu"
+    ],
+    "resources": 3,
+    "influence": 4,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "08",
+    "set": "base",
+    "planets": [
+      "mordaiii"
+    ],
+    "planetNames": [
+      "Mordai II"
+    ],
+    "resources": 4,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "09",
+    "set": "base",
+    "planets": [
+      "maaluuk",
+      "druaa"
+    ],
+    "planetNames": [
+      "Maaluuk",
+      "Druaa"
+    ],
+    "resources": 3,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "10",
+    "set": "base",
+    "planets": [
+      "arcprime",
+      "wrenterra"
+    ],
+    "planetNames": [
+      "Arc Prime",
+      "Wren Terra"
+    ],
+    "resources": 6,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "11",
+    "set": "base",
+    "planets": [
+      "lisisii",
+      "ragh"
+    ],
+    "planetNames": [
+      "Lisis II",
+      "Ragh"
+    ],
+    "resources": 3,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "12",
+    "set": "base",
+    "planets": [
+      "nar",
+      "jol"
+    ],
+    "planetNames": [
+      "Nar",
+      "Jol"
+    ],
+    "resources": 3,
+    "influence": 5,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "13",
+    "set": "base",
+    "planets": [
+      "trenlak",
+      "quinarra"
+    ],
+    "planetNames": [
+      "Tren'lak",
+      "Quinarra"
+    ],
+    "resources": 4,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "14",
+    "set": "base",
+    "planets": [
+      "archonren",
+      "archontau"
+    ],
+    "planetNames": [
+      "Archon Ren",
+      "Archon Tau"
+    ],
+    "resources": 3,
+    "influence": 4,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "15",
+    "set": "base",
+    "planets": [
+      "retillion",
+      "shalloq"
+    ],
+    "planetNames": [
+      "Retillion",
+      "Shalloq"
+    ],
+    "resources": 3,
+    "influence": 5,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "16",
+    "set": "base",
+    "planets": [
+      "hercant",
+      "arretze",
+      "kamdorn"
+    ],
+    "planetNames": [
+      "Hercant",
+      "Arretze",
+      "Kamdorn"
+    ],
+    "resources": 3,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "17",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [
+      "Delta"
+    ],
+    "kind": "empty"
+  },
+  {
+    "id": "18",
+    "set": "base",
+    "planets": [
+      "mr"
+    ],
+    "planetNames": [
+      "Mecatol Rex"
+    ],
+    "resources": 1,
+    "influence": 6,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "mecatol"
+  },
+  {
+    "id": "19",
+    "set": "base",
+    "planets": [
+      "wellon"
+    ],
+    "planetNames": [
+      "Wellon"
+    ],
+    "resources": 1,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "20",
+    "set": "base",
+    "planets": [
+      "vefutii"
+    ],
+    "planetNames": [
+      "Vefut II"
+    ],
+    "resources": 2,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "21",
+    "set": "base",
+    "planets": [
+      "thibah"
+    ],
+    "planetNames": [
+      "Thibah"
+    ],
+    "resources": 1,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "22",
+    "set": "base",
+    "planets": [
+      "tarmann"
+    ],
+    "planetNames": [
+      "Tar'mann"
+    ],
+    "resources": 1,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "23",
+    "set": "base",
+    "planets": [
+      "saudor"
+    ],
+    "planetNames": [
+      "Saudor"
+    ],
+    "resources": 2,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "24",
+    "set": "base",
+    "planets": [
+      "meharxull"
+    ],
+    "planetNames": [
+      "Mehar Xull"
+    ],
+    "resources": 1,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "25",
+    "set": "base",
+    "planets": [
+      "quann"
+    ],
+    "planetNames": [
+      "Quann"
+    ],
+    "resources": 2,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [
+      "Beta"
+    ],
+    "kind": "planet"
+  },
+  {
+    "id": "26",
+    "set": "base",
+    "planets": [
+      "lodor"
+    ],
+    "planetNames": [
+      "Lodor"
+    ],
+    "resources": 3,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [
+      "Alpha"
+    ],
+    "kind": "planet"
+  },
+  {
+    "id": "27",
+    "set": "base",
+    "planets": [
+      "newalbion",
+      "starpoint"
+    ],
+    "planetNames": [
+      "New Albion",
+      "Starpoint"
+    ],
+    "resources": 4,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "28",
+    "set": "base",
+    "planets": [
+      "tequran",
+      "torkan"
+    ],
+    "planetNames": [
+      "Tequ'ran",
+      "Torkan"
+    ],
+    "resources": 2,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "29",
+    "set": "base",
+    "planets": [
+      "qucenn",
+      "rarron"
+    ],
+    "planetNames": [
+      "Qucen'n",
+      "Rarron"
+    ],
+    "resources": 1,
+    "influence": 5,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "30",
+    "set": "base",
+    "planets": [
+      "mellon",
+      "zohbat"
+    ],
+    "planetNames": [
+      "Mellon",
+      "Zohbat"
+    ],
+    "resources": 3,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "31",
+    "set": "base",
+    "planets": [
+      "lazar",
+      "sakulag"
+    ],
+    "planetNames": [
+      "Lazar",
+      "Sakulag"
+    ],
+    "resources": 3,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "32",
+    "set": "base",
+    "planets": [
+      "dalbootha",
+      "xxehan"
+    ],
+    "planetNames": [
+      "Dal Bootha",
+      "Xxehan"
+    ],
+    "resources": 1,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "33",
+    "set": "base",
+    "planets": [
+      "corneeq",
+      "resculon"
+    ],
+    "planetNames": [
+      "Corneeq",
+      "Resculon"
+    ],
+    "resources": 3,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "34",
+    "set": "base",
+    "planets": [
+      "centauri",
+      "gral"
+    ],
+    "planetNames": [
+      "Centauri",
+      "Gral"
+    ],
+    "resources": 2,
+    "influence": 4,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "35",
+    "set": "base",
+    "planets": [
+      "bereg",
+      "lirtaiv"
+    ],
+    "planetNames": [
+      "Bereg",
+      "Lirta IV"
+    ],
+    "resources": 5,
+    "influence": 4,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "36",
+    "set": "base",
+    "planets": [
+      "arnor",
+      "lor"
+    ],
+    "planetNames": [
+      "Arnor",
+      "Lor"
+    ],
+    "resources": 3,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "37",
+    "set": "base",
+    "planets": [
+      "arinam",
+      "meer"
+    ],
+    "planetNames": [
+      "Arinam",
+      "Meer"
+    ],
+    "resources": 1,
+    "influence": 6,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "38",
+    "set": "base",
+    "planets": [
+      "abyz",
+      "fria"
+    ],
+    "planetNames": [
+      "Abyz",
+      "Fria"
+    ],
+    "resources": 5,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "39",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [
+      "Alpha"
+    ],
+    "kind": "empty"
+  },
+  {
+    "id": "40",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [
+      "Beta"
+    ],
+    "kind": "empty"
+  },
+  {
+    "id": "41",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [
+      "Gravity rift"
+    ],
+    "wormholes": [],
+    "kind": "anomaly"
+  },
+  {
+    "id": "42",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [
+      "Nebula"
+    ],
+    "wormholes": [],
+    "kind": "anomaly"
+  },
+  {
+    "id": "43",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [
+      "Supernova"
+    ],
+    "wormholes": [],
+    "kind": "anomaly"
+  },
+  {
+    "id": "44",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [
+      "Asteroid field"
+    ],
+    "wormholes": [],
+    "kind": "anomaly"
+  },
+  {
+    "id": "45",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [
+      "Asteroid field"
+    ],
+    "wormholes": [],
+    "kind": "anomaly"
+  },
+  {
+    "id": "46",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "empty"
+  },
+  {
+    "id": "47",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "empty"
+  },
+  {
+    "id": "48",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "empty"
+  },
+  {
+    "id": "49",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "empty"
+  },
+  {
+    "id": "50",
+    "set": "base",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "empty"
+  },
+  {
+    "id": "51",
+    "set": "base",
+    "planets": [
+      "creuss"
+    ],
+    "planetNames": [
+      "Creuss"
+    ],
+    "resources": 4,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [
+      "Delta"
+    ],
+    "kind": "home"
+  },
+  {
+    "id": "52",
+    "set": "pok",
+    "planets": [
+      "ixth"
+    ],
+    "planetNames": [
+      "Ixth"
+    ],
+    "resources": 3,
+    "influence": 5,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "53",
+    "set": "pok",
+    "planets": [
+      "arcturus"
+    ],
+    "planetNames": [
+      "Arcturus"
+    ],
+    "resources": 4,
+    "influence": 4,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "54",
+    "set": "pok",
+    "planets": [
+      "acheron"
+    ],
+    "planetNames": [
+      "Acheron"
+    ],
+    "resources": 4,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "55",
+    "set": "pok",
+    "planets": [
+      "elysium"
+    ],
+    "planetNames": [
+      "Elysium"
+    ],
+    "resources": 4,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "56",
+    "set": "pok",
+    "planets": [
+      "thedark"
+    ],
+    "planetNames": [
+      "The Dark"
+    ],
+    "resources": 3,
+    "influence": 4,
+    "anomalies": [
+      "Nebula"
+    ],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "57",
+    "set": "pok",
+    "planets": [
+      "naazir",
+      "rokha"
+    ],
+    "planetNames": [
+      "Naazir",
+      "Rokha"
+    ],
+    "resources": 3,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "58",
+    "set": "pok",
+    "planets": [
+      "valk",
+      "ylir",
+      "avar"
+    ],
+    "planetNames": [
+      "Valk",
+      "Ylir",
+      "Avar"
+    ],
+    "resources": 3,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "59",
+    "set": "pok",
+    "planets": [
+      "archonvail"
+    ],
+    "planetNames": [
+      "Archon Vail"
+    ],
+    "resources": 1,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "60",
+    "set": "pok",
+    "planets": [
+      "perimeter"
+    ],
+    "planetNames": [
+      "Perimeter"
+    ],
+    "resources": 2,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "61",
+    "set": "pok",
+    "planets": [
+      "ang"
+    ],
+    "planetNames": [
+      "Ang"
+    ],
+    "resources": 2,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "62",
+    "set": "pok",
+    "planets": [
+      "semlore"
+    ],
+    "planetNames": [
+      "Sem-Lore"
+    ],
+    "resources": 3,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "63",
+    "set": "pok",
+    "planets": [
+      "vorhal"
+    ],
+    "planetNames": [
+      "Vorhal"
+    ],
+    "resources": 0,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "64",
+    "set": "pok",
+    "planets": [
+      "atlas"
+    ],
+    "planetNames": [
+      "Atlas"
+    ],
+    "resources": 3,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [
+      "Beta"
+    ],
+    "kind": "planet"
+  },
+  {
+    "id": "65",
+    "set": "pok",
+    "planets": [
+      "primor"
+    ],
+    "planetNames": [
+      "Primor"
+    ],
+    "resources": 2,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "66",
+    "set": "pok",
+    "planets": [
+      "hopesend"
+    ],
+    "planetNames": [
+      "Hope's End"
+    ],
+    "resources": 3,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "67",
+    "set": "pok",
+    "planets": [
+      "cormund"
+    ],
+    "planetNames": [
+      "Cormund"
+    ],
+    "resources": 2,
+    "influence": 0,
+    "anomalies": [
+      "Gravity rift"
+    ],
+    "wormholes": [],
+    "kind": "anomaly"
+  },
+  {
+    "id": "68",
+    "set": "pok",
+    "planets": [
+      "everra"
+    ],
+    "planetNames": [
+      "Everra"
+    ],
+    "resources": 3,
+    "influence": 1,
+    "anomalies": [
+      "Nebula"
+    ],
+    "wormholes": [],
+    "kind": "anomaly"
+  },
+  {
+    "id": "69",
+    "set": "pok",
+    "planets": [
+      "accoen",
+      "jeolir"
+    ],
+    "planetNames": [
+      "Accoen",
+      "Jeol Ir"
+    ],
+    "resources": 4,
+    "influence": 6,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "70",
+    "set": "pok",
+    "planets": [
+      "kraag",
+      "siig"
+    ],
+    "planetNames": [
+      "Kraag",
+      "Siig"
+    ],
+    "resources": 2,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "71",
+    "set": "pok",
+    "planets": [
+      "bakal",
+      "alioprima"
+    ],
+    "planetNames": [
+      "Bakal",
+      "Alio Prima"
+    ],
+    "resources": 4,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "72",
+    "set": "pok",
+    "planets": [
+      "lisis",
+      "velnor"
+    ],
+    "planetNames": [
+      "Lisis",
+      "Velnor"
+    ],
+    "resources": 4,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "73",
+    "set": "pok",
+    "planets": [
+      "cealdri",
+      "xanhact"
+    ],
+    "planetNames": [
+      "Cealdri",
+      "Xanhact"
+    ],
+    "resources": 0,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "74",
+    "set": "pok",
+    "planets": [
+      "vegamajor",
+      "vegaminor"
+    ],
+    "planetNames": [
+      "Vega Major",
+      "Vega Minor"
+    ],
+    "resources": 3,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "75",
+    "set": "pok",
+    "planets": [
+      "loki",
+      "abaddon",
+      "ashtroth"
+    ],
+    "planetNames": [
+      "Loki",
+      "Abaddon",
+      "Ashtroth"
+    ],
+    "resources": 4,
+    "influence": 2,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "76",
+    "set": "pok",
+    "planets": [
+      "rigeliii",
+      "rigelii",
+      "rigeli"
+    ],
+    "planetNames": [
+      "Rigel III",
+      "Rigel II",
+      "Rigel I"
+    ],
+    "resources": 2,
+    "influence": 4,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "planet"
+  },
+  {
+    "id": "77",
+    "set": "pok",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "empty"
+  },
+  {
+    "id": "78",
+    "set": "pok",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "empty"
+  },
+  {
+    "id": "79",
+    "set": "pok",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [
+      "Asteroid field"
+    ],
+    "wormholes": [
+      "Alpha"
+    ],
+    "kind": "anomaly"
+  },
+  {
+    "id": "80",
+    "set": "pok",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [
+      "Supernova"
+    ],
+    "wormholes": [],
+    "kind": "anomaly"
+  },
+  {
+    "id": "81",
+    "set": "pok",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [
+      "Supernova"
+    ],
+    "wormholes": [],
+    "kind": "anomaly"
+  },
+  {
+    "id": "82a",
+    "set": "pok",
+    "planets": [],
+    "planetNames": [],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [],
+    "wormholes": [
+      "Gamma"
+    ],
+    "kind": "empty"
+  },
+  {
+    "id": "82b",
+    "set": "pok",
+    "planets": [
+      "mallice"
+    ],
+    "planetNames": [
+      "Mallice"
+    ],
+    "resources": 0,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [
+      "Beta",
+      "Alpha",
+      "Gamma"
+    ],
+    "kind": "planet"
+  },
+  {
+    "id": "92new",
+    "set": "codex",
+    "planets": [
+      "archonrenk",
+      "archontauk"
+    ],
+    "planetNames": [
+      "Archon Ren Keleres",
+      "Archon Tau Keleres"
+    ],
+    "resources": 3,
+    "influence": 4,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "93new",
+    "set": "codex",
+    "planets": [
+      "valkk",
+      "ylirk",
+      "avark"
+    ],
+    "planetNames": [
+      "Valk Keleres",
+      "Ylir Keleres",
+      "Avar Keleres"
+    ],
+    "resources": 3,
+    "influence": 3,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "94new",
+    "set": "codex",
+    "planets": [
+      "mollprimusk"
+    ],
+    "planetNames": [
+      "Moll Primus Keleres"
+    ],
+    "resources": 4,
+    "influence": 1,
+    "anomalies": [],
+    "wormholes": [],
+    "kind": "home"
+  },
+  {
+    "id": "c41",
+    "set": "base",
+    "planets": [
+      "ordinianc4"
+    ],
+    "planetNames": [
+      "Ordinian Rex"
+    ],
+    "resources": 0,
+    "influence": 0,
+    "anomalies": [
+      "Nebula"
+    ],
+    "wormholes": [],
+    "kind": "mecatol"
+  }
+]

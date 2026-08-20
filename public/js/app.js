@@ -90,12 +90,12 @@
       bar.querySelectorAll('.f').forEach(function (b) { b.classList.remove('on'); });
       btn.classList.add('on');
       var want = btn.getAttribute('data-v');
-      document.querySelectorAll('li[data-cat]').forEach(function (li) {
+      document.querySelectorAll('li[data-cat],tr[data-cat]').forEach(function (li) {
         li.hidden = Boolean(want) && li.getAttribute('data-cat') !== want;
       });
       // hide a section whose rows are now all filtered out
       document.querySelectorAll('.panel').forEach(function (p) {
-        var rows = p.querySelectorAll('li[data-cat]');
+        var rows = p.querySelectorAll('li[data-cat],tr[data-cat]');
         if (!rows.length) return;
         var any = [].some.call(rows, function (li) { return !li.hidden; });
         p.hidden = !any;
