@@ -1,0 +1,87 @@
+[
+  {
+    "id": "bookoflatvinia",
+    "name": "Book of Latvinia",
+    "set": "codex"
+  },
+  {
+    "id": "circletofthevoid",
+    "name": "Circlet of the Void",
+    "set": "codex"
+  },
+  {
+    "id": "dominusorb",
+    "name": "Dominus Orb",
+    "set": "pok"
+  },
+  {
+    "id": "dynamiscore",
+    "name": "Dynamis Core",
+    "set": "codex"
+  },
+  {
+    "id": "enigmaticdevice",
+    "name": "Enigmatic Device",
+    "set": "pok"
+  },
+  {
+    "id": "titanprototype",
+    "name": "JR-XS455-O",
+    "set": "codex"
+  },
+  {
+    "id": "mawofworlds",
+    "name": "Maw of Worlds",
+    "set": "pok"
+  },
+  {
+    "id": "nanoforge",
+    "name": "Nano-Forge",
+    "set": "codex"
+  },
+  {
+    "id": "neuraloop",
+    "name": "Neuraloop",
+    "set": "codex"
+  },
+  {
+    "id": "emelpar",
+    "name": "Scepter of Emelpar",
+    "set": "pok"
+  },
+  {
+    "id": "shard",
+    "name": "Shard of the Throne",
+    "set": "pok"
+  },
+  {
+    "id": "stellarconverter",
+    "name": "Stellar Converter",
+    "set": "pok"
+  },
+  {
+    "id": "codex",
+    "name": "The Codex",
+    "set": "pok"
+  },
+  {
+    "id": "emphidia",
+    "name": "The Crown of Emphidia",
+    "set": "pok"
+  },
+  {
+    "id": "thalnos",
+    "name": "The Crown of Thalnos",
+    "set": "pok"
+  },
+  {
+    "id": "obsidian",
+    "name": "The Obsidian",
+    "set": "pok"
+  },
+  {
+    "id": "prophetstears",
+    "name": "The Prophet's Tears",
+    "set": "pok"
+  }
+]

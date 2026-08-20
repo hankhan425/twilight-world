@@ -1,0 +1,443 @@
+[
+  {
+    "id": "revolution",
+    "name": "Anti-Intellectual Revolution",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "secret",
+    "name": "Archived Secret",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "arms-reduction",
+    "name": "Arms Reduction",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "classified",
+    "name": "Classified Document Leaks",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Scored Secret Objective"
+  },
+  {
+    "id": "redistribution",
+    "name": "Colonial Redistribution",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "Elect Non-Home Planet Other Than Mecatol Rex"
+  },
+  {
+    "id": "committee",
+    "name": "Committee Formation",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "disarmament",
+    "name": "Compensated Disarmament",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "conventions",
+    "name": "Conventions of War",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "economic-equality",
+    "name": "Economic Equality",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "travel-ban",
+    "name": "Enforced Travel Ban",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "sanctions",
+    "name": "Executive Sanctions",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "regulations",
+    "name": "Fleet Regulations",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "defense-act",
+    "name": "Homeland Defense Act",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "arbiter",
+    "name": "Imperial Arbiter",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "incentive",
+    "name": "Incentive Program",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "artifact",
+    "name": "Ixthian Artifact",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "abolishment",
+    "name": "Judicial Abolishment",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "Elect Law"
+  },
+  {
+    "id": "minister-commerce",
+    "name": "Minister of Commerce",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "minister-exploration",
+    "name": "Minister of Exploration",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "minister-industry",
+    "name": "Minister of Industry",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "minister-peace",
+    "name": "Minister of Peace",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "minister-policy",
+    "name": "Minister of Policy",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "minister-sciences",
+    "name": "Minister of Sciences",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "minister-war",
+    "name": "Minister of War",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "miscount",
+    "name": "Miscount Disclosed",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "Elect Law"
+  },
+  {
+    "id": "mutiny",
+    "name": "Mutiny",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "constitution",
+    "name": "New Constitution",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "prophecy",
+    "name": "Prophecy of Ixth",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "execution",
+    "name": "Public Execution",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "schematics",
+    "name": "Publicize Weapon Schematics",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "conscription",
+    "name": "Regulated Conscription",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "seed-empire",
+    "name": "Seed of an Empire",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "shared-research",
+    "name": "Shared Research",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "plowshares",
+    "name": "Swords to Plowshares",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "unconventional",
+    "name": "Unconventional Measures",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "wormhole-recon",
+    "name": "Wormhole Reconstruction",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "wormhole-research",
+    "name": "Wormhole Research",
+    "set": "base",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "core-mining",
+    "name": "Core Mining",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "demilitarized-zone",
+    "name": "Demilitarized Zone",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "holy-planet-of-ixth",
+    "name": "Holy Planet of Ixth",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "representative-government",
+    "name": "Representative Government (Base Game)",
+    "set": "base",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "rt-biotic",
+    "name": "Research Team: Biotic",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "rt-cybernetic",
+    "name": "Research Team: Cybernetic",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "rt-propulsion",
+    "name": "Research Team: Propulsion",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "rt-warfare",
+    "name": "Research Team: Warfare",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "senate-sanctuary",
+    "name": "Senate Sanctuary",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "shard-of-the-throne",
+    "name": "Shard of the Throne",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "terraforming-initiative",
+    "name": "Terraforming Initiative",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Planet"
+  },
+  {
+    "id": "crown-of-emphidia",
+    "name": "The Crown of Emphidia",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "crown-of-thalnos",
+    "name": "The Crown of Thalnos",
+    "set": "base",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "standardization",
+    "name": "Armed Forces Standardization",
+    "set": "pok",
+    "type": "Directive",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "articles-war",
+    "name": "Articles of War",
+    "set": "pok",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "checks",
+    "name": "Checks and Balances",
+    "set": "pok",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "cladenstine",
+    "name": "Clandestine Operations",
+    "set": "pok",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "covert",
+    "name": "Covert Legislation",
+    "set": "pok",
+    "type": "Directive",
+    "outcome": null
+  },
+  {
+    "id": "crisis",
+    "name": "Galactic Crisis Pact",
+    "set": "pok",
+    "type": "Directive",
+    "outcome": "Elect Strategy Card"
+  },
+  {
+    "id": "minister-antiquities",
+    "name": "Minister of Antiquities",
+    "set": "pok",
+    "type": "Directive",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "nexus",
+    "name": "Nexus Sovereignty",
+    "set": "pok",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "censure",
+    "name": "Political Censure",
+    "set": "pok",
+    "type": "Law",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "rearmament",
+    "name": "Rearmament Agreement",
+    "set": "pok",
+    "type": "Directive",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "rep-govt",
+    "name": "Representative Government",
+    "set": "pok",
+    "type": "Law",
+    "outcome": "For/Against"
+  },
+  {
+    "id": "grant-reallocation",
+    "name": "Research Grant Reallocation",
+    "set": "pok",
+    "type": "Directive",
+    "outcome": "Elect Player"
+  },
+  {
+    "id": "warrant",
+    "name": "Search Warrant",
+    "set": "pok",
+    "type": "Law",
+    "outcome": "Elect Player"
+  }
+]

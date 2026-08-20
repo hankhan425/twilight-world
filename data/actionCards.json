@@ -1,0 +1,746 @@
+[
+  {
+    "id": "abs",
+    "name": "Ancient Burial Sites",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "arch-expedition",
+    "name": "Archaeological Expedition",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "assassin",
+    "name": "Assassinate Representative",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "blitz",
+    "name": "Blitz",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "bribery",
+    "name": "Bribery",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "bunker",
+    "name": "Bunker",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "confounding",
+    "name": "Confounding Legal Text",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "confusing",
+    "name": "Confusing Legal Text",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "const-rider",
+    "name": "Construction Rider",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "counterstroke",
+    "name": "Counterstroke",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "coup",
+    "name": "Coup d'Etat",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Strategy"
+  },
+  {
+    "id": "courageous",
+    "name": "Courageous to the End",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "cripple",
+    "name": "Cripple Defenses",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "deadly-plot",
+    "name": "Deadly Plot",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "decoy",
+    "name": "Decoy Operation",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "diplo-rider",
+    "name": "Diplomacy Rider",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "dp1",
+    "name": "Diplomatic Pressure",
+    "set": "pok",
+    "copies": 4,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "dh1",
+    "name": "Direct Hit",
+    "set": "base",
+    "copies": 4,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "disable",
+    "name": "Disable",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "distinguished",
+    "name": "Distinguished Councilor",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "divert-funding",
+    "name": "Divert Funding",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "economic-initiative",
+    "name": "Economic Initiative",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "emergency",
+    "name": "Emergency Repairs",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "experimental",
+    "name": "Experimental Battlestation",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "probe",
+    "name": "Exploration Probe",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "f-conscription",
+    "name": "Fighter Conscription",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "f-prototype",
+    "name": "Fighter Prototype",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "fire-team",
+    "name": "Fire Team",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "fs1",
+    "name": "Flank Speed",
+    "set": "base",
+    "copies": 4,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "f-researched",
+    "name": "Focused Research",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "fsb",
+    "name": "Forward Supply Base",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "f-deployment",
+    "name": "Frontline Deployment",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "ghost-ship",
+    "name": "Ghost Ship",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "ghost-squad",
+    "name": "Ghost Squad",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "hack",
+    "name": "Hack Election",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "harness",
+    "name": "Harness Energy",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "imp-rider",
+    "name": "Imperial Rider",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "impersonation",
+    "name": "Impersonation",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Status"
+  },
+  {
+    "id": "silence-space",
+    "name": "In The Silence Of Space",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "industrial-initiative",
+    "name": "Industrial Initiative",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "infiltrate",
+    "name": "Infiltrate",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Other"
+  },
+  {
+    "id": "insider",
+    "name": "Insider Information",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "insub",
+    "name": "Insubordination",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Movement"
+  },
+  {
+    "id": "intercept",
+    "name": "Intercept",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "lead-rider",
+    "name": "Leadership Rider",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "lost-star",
+    "name": "Lost Star Chart",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "lucky",
+    "name": "Lucky Shot",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "mjets1",
+    "name": "Maneuvering Jets",
+    "set": "base",
+    "copies": 4,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "investments",
+    "name": "Manipulate Investments",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Strategy"
+  },
+  {
+    "id": "master-plan",
+    "name": "Master Plan",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Other"
+  },
+  {
+    "id": "mining-initiative",
+    "name": "Mining Initiative",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "mb1",
+    "name": "Morale Boost",
+    "set": "base",
+    "copies": 4,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "nav-suite",
+    "name": "Nav Suite",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "parley",
+    "name": "Parley",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Other"
+  },
+  {
+    "id": "plagiarize",
+    "name": "Plagiarize",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "plague",
+    "name": "Plague",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "stability",
+    "name": "Political Stability",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Strategy"
+  },
+  {
+    "id": "politic-rider",
+    "name": "Politics Rider",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "disgrace",
+    "name": "Public Disgrace",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Strategy"
+  },
+  {
+    "id": "rally",
+    "name": "Rally",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "meltdown",
+    "name": "Reactor Meltdown",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "refit",
+    "name": "Refit Troops",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "reflective",
+    "name": "Reflective Shielding",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "reparations",
+    "name": "Reparations",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Other"
+  },
+  {
+    "id": "repeal",
+    "name": "Repeal Law",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "reveal-prototype",
+    "name": "Reveal Prototype",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "reverse-engineer",
+    "name": "Reverse Engineer",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Reaction"
+  },
+  {
+    "id": "messiah",
+    "name": "Rise of a Messiah",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "rout",
+    "name": "Rout",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "sabo1",
+    "name": "Sabotage",
+    "set": "base",
+    "copies": 4,
+    "timing": "Triggered",
+    "category": "Reaction"
+  },
+  {
+    "id": "salvage",
+    "name": "Salvage",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "sanction",
+    "name": "Sanction",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "scramble",
+    "name": "Scramble Frequency",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "scuttle",
+    "name": "Scuttle",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "seize",
+    "name": "Seize Artifact",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "sh1",
+    "name": "Shields Holding",
+    "set": "base",
+    "copies": 4,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "jamming",
+    "name": "Signal Jamming",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "s-retreat1",
+    "name": "Skilled Retreat",
+    "set": "base",
+    "copies": 4,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "solar-flare",
+    "name": "Solar Flare",
+    "set": "codex",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  },
+  {
+    "id": "spy",
+    "name": "Spy",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Reaction"
+  },
+  {
+    "id": "summit",
+    "name": "Summit",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Other"
+  },
+  {
+    "id": "tactical",
+    "name": "Tactical Bombardment",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Combat"
+  },
+  {
+    "id": "tech-rider",
+    "name": "Technology Rider",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "trade-rider",
+    "name": "Trade Rider",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "unexpected",
+    "name": "Unexpected Action",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Movement"
+  },
+  {
+    "id": "unstable",
+    "name": "Unstable Planet",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "upgrade",
+    "name": "Upgrade",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Movement"
+  },
+  {
+    "id": "uprising",
+    "name": "Uprising",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "veto",
+    "name": "Veto",
+    "set": "base",
+    "copies": 3,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "war-effort",
+    "name": "War Effort",
+    "set": "base",
+    "copies": 1,
+    "timing": "Component action",
+    "category": "Other"
+  },
+  {
+    "id": "war-machine1",
+    "name": "War Machine",
+    "set": "codex",
+    "copies": 5,
+    "timing": "Triggered",
+    "category": "Production"
+  },
+  {
+    "id": "war-rider",
+    "name": "Warfare Rider",
+    "set": "base",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Agenda"
+  },
+  {
+    "id": "waylay",
+    "name": "Waylay",
+    "set": "pok",
+    "copies": 1,
+    "timing": "Triggered",
+    "category": "Combat"
+  }
+]

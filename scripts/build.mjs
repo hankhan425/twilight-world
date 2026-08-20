@@ -9,6 +9,11 @@ const units    = read('data/units.json');
 const techs    = read('data/techs.json');
 const leaders  = read('data/leaders.json');
 const glossary = read('src/data/glossary.json');
+const objectives  = read('data/objectives.json');
+const agendas     = read('data/agendas.json');
+const actionCards = read('data/actionCards.json');
+const explores    = read('data/explores.json');
+const relics      = read('data/relics.json');
 
 const SET_LABEL = { base: 'Base', pok: 'Prophecy of Kings', codex: 'Codex' };
 const esc = s => String(s ?? '').replace(/[&<>"]/g,
@@ -26,7 +31,9 @@ function layout({ title, depth = 0, body, active = '' }) {
   const r = depth ? '../'.repeat(depth) : './';
   const nav = [
     ['', 'Home'], ['factions/', 'Factions'], ['units/', 'Units'],
-    ['techs/', 'Tech'], ['leaders/', 'Leaders'], ['glossary/', 'Rules'],
+    ['techs/', 'Tech'], ['leaders/', 'Leaders'], ['objectives/', 'Objectives'],
+    ['agendas/', 'Agendas'], ['cards/', 'Cards'], ['explore/', 'Explore'],
+    ['glossary/', 'Rules'],
   ].map(([href, label]) =>
     `<a href="${r}${href}"${active === label ? ' aria-current="page"' : ''}>${label}</a>`
   ).join('');
@@ -260,6 +267,8 @@ function pageHome() {
   const counts = [
     [factions.length, 'Factions', 'factions/'], [units.length, 'Units', 'units/'],
     [techs.length, 'Technologies', 'techs/'], [leaders.length, 'Leaders', 'leaders/'],
+    [objectives.length, 'Objectives', 'objectives/'], [agendas.length, 'Agendas', 'agendas/'],
+    [actionCards.length, 'Action cards', 'cards/'], [explores.length, 'Explore cards', 'explore/'],
   ];
   const body = `<h1 class="hero">Twilight Imperium <span>4th Edition</span></h1>
   <p class="lede">A fast, ad-free reference for the base game, Prophecy of Kings, and the
@@ -280,6 +289,12 @@ function searchIndex() {
     ...units.map(u => ({ t: u.name, u: 'units/', k: u.faction ? titleCase(u.faction) : 'Unit' })),
     ...techs.map(t => ({ t: t.name, u: 'techs/', k: t.colour ? titleCase(t.colour) : 'Unit upgrade' })),
     ...leaders.map(l => ({ t: l.name, u: 'leaders/', k: titleCase(l.kind || 'Leader') })),
+    ...objectives.map(o => ({ t: o.name, u: 'objectives/',
+        k: o.kind === 'secret' ? 'Secret objective' : `Stage ${o.stage} objective` })),
+    ...agendas.map(a => ({ t: a.name, u: 'agendas/', k: a.type || 'Agenda' })),
+    ...actionCards.map(c => ({ t: c.name, u: 'cards/', k: 'Action card' })),
+    ...explores.map(e => ({ t: e.name, u: 'explore/', k: `${e.trait} explore` })),
+    ...relics.map(r => ({ t: r.name, u: 'explore/', k: 'Relic' })),
     ...glossary.keywords.map(g => ({ t: g.name, u: 'glossary/', k: 'Rules' })),
     ...glossary.strategyCards.map(s => ({ t: s.name, u: 'glossary/', k: 'Strategy card' })),
   ];
@@ -287,10 +302,103 @@ function searchIndex() {
   return docs.length;
 }
 
+
+// ------------------------------------------------------- objectives / cards
+/** filter bar: pure CSS via :has() + a tiny data attribute on each row */
+function filterBar(name, values) {
+  return `<div class="filters" data-filter="${name}">
+    <button class="f on" data-v="">All</button>
+    ${values.map(v => `<button class="f" data-v="${esc(v)}">${esc(v)}</button>`).join('')}
+  </div>`;
+}
+
+function pageObjectives() {
+  const cats = [...new Set(objectives.map(o => o.category))].sort();
+  const group = (kind, stage) => objectives
+    .filter(o => o.kind === kind && (stage == null || o.stage === stage))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const list = (rows) => `<ul class="techlist">${rows.map(o => `<li data-cat="${esc(o.category)}">
+    <b>${esc(o.name)}</b>${chip(o.category)}${setChip(o.set)}
+    <span class="prereq">${chip(`${o.points} VP`, 'vp')}${o.phase ? chip(o.phase) : ''}</span>
+  </li>`).join('')}</ul>`;
+
+  const body = `<h1>Objectives</h1>
+  <p class="lede">Stage I objectives are worth 1 point and Stage II are worth 2. Secret
+  objectives are worth 1 and can only be scored by the player holding them. Categories
+  below are our own grouping, to make the deck easier to scan.</p>
+  ${filterBar('cat', cats)}
+  <section class="panel"><h2>Public · Stage I <span class="count">${group('public', 'I').length}</span></h2>
+    ${list(group('public', 'I'))}</section>
+  <section class="panel"><h2>Public · Stage II <span class="count">${group('public', 'II').length}</span></h2>
+    ${list(group('public', 'II'))}</section>
+  <section class="panel"><h2>Secret <span class="count">${group('secret').length}</span></h2>
+    ${list(group('secret'))}</section>`;
+  write('objectives/index.html', layout({ title: 'Objectives', depth: 1, body, active: 'Objectives' }));
+}
+
+function pageAgendas() {
+  const body = `<h1>Agendas</h1>
+  <p class="lede">Laws stay in play once resolved; directives resolve once and are
+  discarded. The outcome column shows what the table actually votes on.</p>
+  ${filterBar('cat', ['Law', 'Directive'])}
+  ${['Law', 'Directive'].map(t => {
+    const list = agendas.filter(a => a.type === t).sort((a, b) => a.name.localeCompare(b.name));
+    return `<section class="panel"><h2>${t}s <span class="count">${list.length}</span></h2>
+    <ul class="techlist">${list.map(a => `<li data-cat="${t}">
+      <b>${esc(a.name)}</b>${setChip(a.set)}
+      <span class="prereq">${a.outcome ? chip(a.outcome, 'outcome') : ''}</span>
+    </li>`).join('')}</ul></section>`;
+  }).join('')}`;
+  write('agendas/index.html', layout({ title: 'Agendas', depth: 1, body, active: 'Agendas' }));
+}
+
+function pageActionCards() {
+  const cats = [...new Set(actionCards.map(c => c.category))].sort();
+  const total = actionCards.reduce((n, c) => n + c.copies, 0);
+  const body = `<h1>Action cards</h1>
+  <p class="lede">${actionCards.length} unique cards, ${total} in the deck across all
+  official sets. <b>Copies</b> is how many of that card the deck holds — the reason
+  Sabotage keeps appearing. Categories are our own grouping.</p>
+  ${filterBar('cat', cats)}
+  <section class="panel"><ul class="techlist">${actionCards.map(c => `<li data-cat="${esc(c.category)}">
+    <b>${esc(c.name)}</b>${chip(c.category)}${setChip(c.set)}
+    <span class="prereq">${c.copies > 1 ? chip(`×${c.copies}`, 'vp') : ''}
+      ${chip(c.timing)}</span>
+  </li>`).join('')}</ul></section>`;
+  write('cards/index.html', layout({ title: 'Action cards', depth: 1, body, active: 'Cards' }));
+}
+
+function pageExplore() {
+  const traits = ['Cultural', 'Hazardous', 'Industrial', 'Frontier'];
+  const body = `<h1>Exploration</h1>
+  <p class="lede">Explore a planet and you draw from the deck matching its trait; empty
+  space uses the frontier deck. <b>Attach</b> cards stay on the planet, <b>fragment</b>
+  cards are relic fragments, and <b>instant</b> cards resolve immediately.</p>
+  ${traits.map(t => {
+    const list = explores.filter(e => e.trait === t);
+    if (!list.length) return '';
+    const n = list.reduce((a, e) => a + e.copies, 0);
+    return `<section class="panel">
+      <h2><span class="dot t-${t.toLowerCase()}"></span>${t}
+        <span class="count">${list.length} unique · ${n} cards</span></h2>
+      <ul class="techlist">${list.map(e => `<li>
+        <b>${esc(e.name)}</b>${e.resolution ? chip(e.resolution) : ''}${setChip(e.set)}
+        <span class="prereq">${e.copies > 1 ? chip(`×${e.copies}`, 'vp') : ''}</span>
+      </li>`).join('')}</ul></section>`;
+  }).join('')}
+  <section class="panel"><h2>Relics <span class="count">${relics.length}</span></h2>
+    <p class="note">Drawn by trading in three relic fragments.</p>
+    <ul class="techlist">${relics.map(r => `<li>
+      <b>${esc(r.name)}</b>${setChip(r.set)}</li>`).join('')}</ul>
+  </section>`;
+  write('explore/index.html', layout({ title: 'Exploration', depth: 1, body, active: 'Explore' }));
+}
+
 // ------------------------------------------------------------------ run
 if (existsSync('dist')) rmSync('dist', { recursive: true });
 pageHome(); pageFactions(); factions.forEach(pageFaction);
 pageUnits(); pageTechs(); pageLeaders(); pageGlossary();
+pageObjectives(); pageAgendas(); pageActionCards(); pageExplore();
 const n = searchIndex();
 cpSync('public', 'dist', { recursive: true });
-console.log(`built ${factions.length + 6} pages, ${n} search entries`);
+console.log(`built ${factions.length + 10} pages, ${n} search entries`);

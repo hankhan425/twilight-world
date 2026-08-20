@@ -1,0 +1,802 @@
+[
+  {
+    "id": "corner",
+    "name": "Corner the Market",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "develop",
+    "name": "Develop Weaponry",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Technology"
+  },
+  {
+    "id": "diversify",
+    "name": "Diversify Research",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Technology"
+  },
+  {
+    "id": "monument",
+    "name": "Erect a Monument",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "expand-borders",
+    "name": "Expand Borders",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "research-outposts",
+    "name": "Found Research Outposts",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Technology"
+  },
+  {
+    "id": "intimidate",
+    "name": "Intimidate Council",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "lead",
+    "name": "Lead From the Front",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "trade-routes",
+    "name": "Negotiate Trade Routes",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "sway-council",
+    "name": "Sway the Council",
+    "set": "base",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "amass-wealth",
+    "name": "Amass Wealth",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "build-defenses",
+    "name": "Build Defenses",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "lost-outposts",
+    "name": "Discover Lost Outposts",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "engineer-marvel",
+    "name": "Engineer a Marvel",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "deep-space",
+    "name": "Explore Deep Space",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "infrastructure",
+    "name": "Improve Infrastructure",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "make-history",
+    "name": "Make History",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "outer-rim",
+    "name": "Populate the Outer Rim",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "push-boundaries",
+    "name": "Push Boundaries",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "raise-fleet",
+    "name": "Raise a Fleet",
+    "set": "pok",
+    "kind": "public",
+    "stage": "I",
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "centralize-trade",
+    "name": "Centralize Galactic Trade",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "conquer",
+    "name": "Conquer the Weak",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "brain-trust",
+    "name": "Form Galactic Brain Trust",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Technology"
+  },
+  {
+    "id": "golden-age",
+    "name": "Found a Golden Age",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "galvanize",
+    "name": "Galvanize the People",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "manipulate-law",
+    "name": "Manipulate Galactic Law",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "master-science",
+    "name": "Master the Sciences",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Technology"
+  },
+  {
+    "id": "revolutionize",
+    "name": "Revolutionize Warfare",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Technology"
+  },
+  {
+    "id": "subdue",
+    "name": "Subdue the Galaxy",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "unify-colonies",
+    "name": "Unify the Colonies",
+    "set": "base",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "supremacy",
+    "name": "Achieve Supremacy",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "become-legend",
+    "name": "Become a Legend",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "command-armada",
+    "name": "Command an Armada",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "massive-cities",
+    "name": "Construct Massive Cities",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "control-borderlands",
+    "name": "Control the Borderlands",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "vast-reserves",
+    "name": "Hold Vast Reserves",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Economy"
+  },
+  {
+    "id": "vast-territories",
+    "name": "Patrol Vast Territories",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "protect-border",
+    "name": "Protect the Border",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "ancient-monuments",
+    "name": "Reclaim Ancient Monuments",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "distant-lands",
+    "name": "Rule Distant Lands",
+    "set": "pok",
+    "kind": "public",
+    "stage": "II",
+    "points": 2,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "ans",
+    "name": "Adapt New Strategies",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Technology"
+  },
+  {
+    "id": "btgk",
+    "name": "Become the Gatekeeper",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "ctr",
+    "name": "Control the Region",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "csl",
+    "name": "Cut Supply Lines",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "dtgs",
+    "name": "Destroy Their Greatest Ship",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Military"
+  },
+  {
+    "id": "eap",
+    "name": "Establish a Perimeter",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "faa",
+    "name": "Forge an Alliance",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "fsn",
+    "name": "Form a Spy Network",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Other"
+  },
+  {
+    "id": "fwm",
+    "name": "Fuel the War Machine",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "gamf",
+    "name": "Gather a Mighty Fleet",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Other"
+  },
+  {
+    "id": "lsc",
+    "name": "Learn the Secrets of the Cosmos",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "mew",
+    "name": "Make an Example of Their World",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Planets"
+  },
+  {
+    "id": "mlp",
+    "name": "Master the Laws of Physics",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Technology"
+  },
+  {
+    "id": "mrm",
+    "name": "Mine Rare Metals",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "mp",
+    "name": "Monopolize Production",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "ose",
+    "name": "Occupy the Seat of the Empire",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "sar",
+    "name": "Spark a Rebellion",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Military"
+  },
+  {
+    "id": "te",
+    "name": "Threaten Enemies",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "ttfd",
+    "name": "Turn Their Fleets to Dust",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Military"
+  },
+  {
+    "id": "uf",
+    "name": "Unveil Flagship",
+    "set": "base",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Military"
+  },
+  {
+    "id": "bam",
+    "name": "Become a Martyr",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Planets"
+  },
+  {
+    "id": "baf",
+    "name": "Betray a Friend",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Military"
+  },
+  {
+    "id": "btv",
+    "name": "Brave the Void",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Military"
+  },
+  {
+    "id": "dts",
+    "name": "Darken the Skies",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Military"
+  },
+  {
+    "id": "dfat",
+    "name": "Defy Space and Time",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "dyp",
+    "name": "Demonstrate Your Power",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Military"
+  },
+  {
+    "id": "dhw",
+    "name": "Destroy Heretical Works",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Other"
+  },
+  {
+    "id": "dp",
+    "name": "Dictate Policy",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Agenda",
+    "category": "Other"
+  },
+  {
+    "id": "dtd",
+    "name": "Drive the Debate",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Agenda",
+    "category": "Planets"
+  },
+  {
+    "id": "eh",
+    "name": "Establish Hegemony",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "fwp",
+    "name": "Fight with Precision",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Military"
+  },
+  {
+    "id": "fc",
+    "name": "Foster Cohesion",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Other"
+  },
+  {
+    "id": "hrm",
+    "name": "Hoard Raw Materials",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "mtm",
+    "name": "Mechanize the Military",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "otf",
+    "name": "Occupy the Fringe",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "pem",
+    "name": "Produce en Masse",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Military"
+  },
+  {
+    "id": "pe",
+    "name": "Prove Endurance",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Action",
+    "category": "Other"
+  },
+  {
+    "id": "sai",
+    "name": "Seize an Icon",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "syc",
+    "name": "Stake Your Claim",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Planets"
+  },
+  {
+    "id": "sb",
+    "name": "Strengthen Bonds",
+    "set": "pok",
+    "kind": "secret",
+    "stage": null,
+    "points": 1,
+    "phase": "Status",
+    "category": "Other"
+  }
+]

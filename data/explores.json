@@ -1,0 +1,326 @@
+[
+  {
+    "id": "crf1",
+    "name": "Cultural Relic Fragment",
+    "set": "pok",
+    "trait": "Cultural",
+    "resolution": "Fragment",
+    "attaches": false,
+    "copies": 9
+  },
+  {
+    "id": "dmz",
+    "name": "Demilitarized Zone",
+    "set": "pok",
+    "trait": "Cultural",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "ds",
+    "name": "Dyson Sphere",
+    "set": "pok",
+    "trait": "Cultural",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "frln1",
+    "name": "Freelancers",
+    "set": "pok",
+    "trait": "Cultural",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 3
+  },
+  {
+    "id": "gw",
+    "name": "Gamma Wormhole",
+    "set": "pok",
+    "trait": "Cultural",
+    "resolution": "Token",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "mo1",
+    "name": "Mercenary Outfit",
+    "set": "pok",
+    "trait": "Cultural",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 3
+  },
+  {
+    "id": "pw",
+    "name": "Paradise World",
+    "set": "pok",
+    "trait": "Cultural",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "toe",
+    "name": "Tomb of Emphidia",
+    "set": "pok",
+    "trait": "Cultural",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "dw",
+    "name": "Dead World",
+    "set": "codex",
+    "trait": "Frontier",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 1
+  },
+  {
+    "id": "dv1",
+    "name": "Derelict Vessel",
+    "set": "pok",
+    "trait": "Frontier",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 2
+  },
+  {
+    "id": "ed1",
+    "name": "Enigmatic Device",
+    "set": "pok",
+    "trait": "Frontier",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 2
+  },
+  {
+    "id": "ent",
+    "name": "Entropic Field",
+    "set": "codex",
+    "trait": "Frontier",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 1
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma Relay",
+    "set": "pok",
+    "trait": "Frontier",
+    "resolution": "Token",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "ion",
+    "name": "Ion Storm",
+    "set": "pok",
+    "trait": "Frontier",
+    "resolution": "Token",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "kel1",
+    "name": "Keleres Ship",
+    "set": "codex",
+    "trait": "Frontier",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 2
+  },
+  {
+    "id": "lc1",
+    "name": "Lost Crew",
+    "set": "pok",
+    "trait": "Frontier",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 2
+  },
+  {
+    "id": "majent",
+    "name": "Major Entropic Field",
+    "set": "codex",
+    "trait": "Frontier",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 1
+  },
+  {
+    "id": "ms1",
+    "name": "Merchant Station",
+    "set": "pok",
+    "trait": "Frontier",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 2
+  },
+  {
+    "id": "minent",
+    "name": "Minor Entropic Field",
+    "set": "codex",
+    "trait": "Frontier",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 1
+  },
+  {
+    "id": "mirage",
+    "name": "Mirage",
+    "set": "pok",
+    "trait": "Frontier",
+    "resolution": "Token",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "urf1",
+    "name": "Unknown Relic Fragment",
+    "set": "pok",
+    "trait": "Frontier",
+    "resolution": "Fragment",
+    "attaches": false,
+    "copies": 3
+  },
+  {
+    "id": "cm1",
+    "name": "Core Mine",
+    "set": "pok",
+    "trait": "Hazardous",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 3
+  },
+  {
+    "id": "exp1",
+    "name": "Expedition",
+    "set": "pok",
+    "trait": "Hazardous",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 3
+  },
+  {
+    "id": "hrf1",
+    "name": "Hazardous Relic Fragment",
+    "set": "pok",
+    "trait": "Hazardous",
+    "resolution": "Fragment",
+    "attaches": false,
+    "copies": 7
+  },
+  {
+    "id": "ls",
+    "name": "Lazax Survivors",
+    "set": "pok",
+    "trait": "Hazardous",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "mw",
+    "name": "Mining World",
+    "set": "pok",
+    "trait": "Hazardous",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "rw",
+    "name": "Rich World",
+    "set": "pok",
+    "trait": "Hazardous",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "vfs1",
+    "name": "Volatile Fuel Source",
+    "set": "pok",
+    "trait": "Hazardous",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 3
+  },
+  {
+    "id": "warfare",
+    "name": "Warfare Research Facility",
+    "set": "pok",
+    "trait": "Hazardous",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "aw1",
+    "name": "Abandoned Warehouses",
+    "set": "pok",
+    "trait": "Industrial",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 4
+  },
+  {
+    "id": "biotic",
+    "name": "Biotic Research Facility",
+    "set": "pok",
+    "trait": "Industrial",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "cybernetic",
+    "name": "Cybernetic Research Facility",
+    "set": "pok",
+    "trait": "Industrial",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  },
+  {
+    "id": "fb1",
+    "name": "Functioning Base",
+    "set": "pok",
+    "trait": "Industrial",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 4
+  },
+  {
+    "id": "irf1",
+    "name": "Industrial Relic Fragment",
+    "set": "pok",
+    "trait": "Industrial",
+    "resolution": "Fragment",
+    "attaches": false,
+    "copies": 5
+  },
+  {
+    "id": "lf1",
+    "name": "Local Fabricators",
+    "set": "pok",
+    "trait": "Industrial",
+    "resolution": "Instant",
+    "attaches": false,
+    "copies": 4
+  },
+  {
+    "id": "propulsion",
+    "name": "Propulsion Research Facility",
+    "set": "pok",
+    "trait": "Industrial",
+    "resolution": "Attach",
+    "attaches": true,
+    "copies": 1
+  }
+]

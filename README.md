@@ -38,9 +38,26 @@ unofficial and not affiliated with or endorsed by Fantasy Flight Games.
 | Extract | `scripts/extract.mjs` | `data/*.json` — facts only |
 | Build | `scripts/build.mjs` | `dist/` — static site |
 
-Upstream source is [scottmk/ti4-reference](https://github.com/scottmk/ti4-reference)
-(CC-BY-4.0), used as a data source for the factual layer. Fan expansions
-(Discordant Stars, Absol's Mod, Twilight's Fall) are filtered out — official content only.
+Two upstream sources are used for the factual layer:
+
+- [scottmk/ti4-reference](https://github.com/scottmk/ti4-reference) (CC-BY-4.0) —
+  factions, units, technologies, leaders.
+- [AsyncTI4/TI4_map_generator_bot](https://github.com/AsyncTI4/TI4_map_generator_bot) —
+  objectives, agendas, action cards, exploration, relics. Sparse-checked out to the
+  JSON data directory only.
+
+Fan expansions (Discordant Stars, Absol's Mod, Twilight's Fall, Milty Mod, and the rest)
+are filtered out by `source` — official releases only, meaning base, Prophecy of Kings,
+and Codices I–IV.
+
+### Card decks
+
+Card effect text is never stored. For the five decks, `scripts/extract-cards.mjs` keeps
+the factual metadata — point values, phases, deck copy counts, elect targets, planet
+traits — and reads the effect text only to derive a **category**, which is our own
+taxonomy, before discarding it. That is what makes the decks filterable: "show me the
+combat action cards", "which agendas are laws", "how many copies of this are in the
+deck".
 
 ### Parsing notes
 
@@ -52,4 +69,14 @@ The source stat markup has two traps, both handled in `normStats()`:
 
 ## Coverage
 
-28 factions · 76 units · 85 technologies · 87 leaders
+| | |
+|---|---|
+| Factions | 28 |
+| Units | 76 |
+| Technologies | 85 |
+| Leaders | 87 |
+| Objectives | 80 (20 public + 20 secret per set) |
+| Agendas | 63 (40 laws, 23 directives) |
+| Action cards | 93 unique / 123 in deck |
+| Exploration | 36 unique / 80 cards |
+| Relics | 17 |

@@ -168,3 +168,32 @@ footer {
   color: var(--muted); font-size: 13px;
 }
 footer p { max-width: 70ch; margin: 0 auto 8px; }
+
+/* ---- filter bar: horizontal scroll on phones, same as the nav tabs ---- */
+.filters {
+  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+  padding: 4px 0 10px; position: sticky; top: 104px; z-index: 8;
+  background: var(--bg);
+}
+.filters::-webkit-scrollbar { display: none; }
+.filters .f {
+  flex: none; padding: 6px 13px; border-radius: 999px; cursor: pointer;
+  font-size: 13px; font-weight: 600; white-space: nowrap;
+  background: var(--panel); color: var(--muted); border: 1px solid var(--line);
+}
+.filters .f.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+li[hidden] { display: none !important; }
+
+/* ---- deck-specific chips ---- */
+.chip.vp {
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+  color: var(--accent); font-weight: 700;
+}
+.chip.outcome {
+  background: color-mix(in srgb, var(--propulsion) 18%, transparent);
+  color: var(--propulsion);
+}
+.t-cultural { background: var(--propulsion); }
+.t-hazardous { background: var(--warfare); }
+.t-industrial { background: var(--biotic); }
+.t-frontier { background: var(--unit); }
