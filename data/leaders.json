@@ -1,0 +1,611 @@
+[
+  {
+    "id": "arborec-agent",
+    "name": "Agent: Letani Ospha – _Unity Through Peace_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "arborec"
+  },
+  {
+    "id": "arborec-commander",
+    "name": "Commander: Dirzuga Rophal – _Peace Through Strength_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "arborec"
+  },
+  {
+    "id": "arborec-hero",
+    "name": "Hero: Letani Miasmiala – _Strength Through Unity_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "arborec"
+  },
+  {
+    "id": "creuss-agent",
+    "name": "Agent: Emissary Taivra – _The Azure Whisper_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "creuss"
+  },
+  {
+    "id": "creuss-commander",
+    "name": "Commander: Sai Seravus – _Gatewarden_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "creuss"
+  },
+  {
+    "id": "creuss-hero",
+    "name": "Hero: Riftwalker Meian – _Shaleri Guardian_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "creuss"
+  },
+  {
+    "id": "hacan-agent",
+    "name": "Agent: Carth of Golden Sands – _Tripartite Governor_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "hacan"
+  },
+  {
+    "id": "hacan-commander",
+    "name": "Commander: Gila the Silvertongue – _Kenaran Ambassador_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "hacan"
+  },
+  {
+    "id": "hacan-hero",
+    "name": "Hero: Harrugh Gefhara – _The Nascent Twilight_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "hacan"
+  },
+  {
+    "id": "jolnar-agent",
+    "name": "Agent: Doctor Sucaban - _Head of Medical \"R&D\"_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "jolnar"
+  },
+  {
+    "id": "jolnar-commander-te",
+    "name": "Commander: Agnlan Oln – _Advisor Adjunct_",
+    "set": "base",
+    "kind": null,
+    "faction": "jolnar-commander"
+  },
+  {
+    "id": "jolnar-commander",
+    "name": "Commander: Ta Zern – _Deepwrought Visionary_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "jolnar"
+  },
+  {
+    "id": "jolnar-hero",
+    "name": "Hero: Rin, the Master's Legacy – _Perfected Being_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "jolnar"
+  },
+  {
+    "id": "l1z1x-agent",
+    "name": "Agent: I48S – _Enhancer Prodigy_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "l1z1x"
+  },
+  {
+    "id": "l1z1x-commander",
+    "name": "Commander: 2RAM – _Integrated Systems Engineer_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "l1z1x"
+  },
+  {
+    "id": "l1z1x-hero",
+    "name": "Hero: The Helmsman – _The Last Record_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "l1z1x"
+  },
+  {
+    "id": "letnev-agent",
+    "name": "Agent: Viscount Unlenn – _The Dunlain Scourge_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "letnev"
+  },
+  {
+    "id": "letnev-commander",
+    "name": "Commander: Rear Admiral Farran – _Sector XVIII Viceroy_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "letnev"
+  },
+  {
+    "id": "letnev-hero",
+    "name": "Hero: Darktalon Treilla – _Void Revenant_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "letnev"
+  },
+  {
+    "id": "mentak-agent",
+    "name": "Agent: Suffi An - _90% Smuggler, 110% Energy_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "mentak"
+  },
+  {
+    "id": "mentak-commander",
+    "name": "Commander: S'ula Mentarion - _Everyone's \"Best Friend\"_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "mentak"
+  },
+  {
+    "id": "mentak-hero",
+    "name": "Hero: Ipswitch, Loose Cannon – _Mercenary Raider_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "mentak"
+  },
+  {
+    "id": "muaat-agent",
+    "name": "Agent: Umbat – _Forgemaster_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "muaat"
+  },
+  {
+    "id": "muaat-commander",
+    "name": "Commander: Magmus – _Gashlai Tribune_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "muaat"
+  },
+  {
+    "id": "muaat-hero",
+    "name": "Hero: Adjudicator Ba'al – _Starscourge_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "muaat"
+  },
+  {
+    "id": "naalu-agent-te",
+    "name": "Agent: Z'eu ΩΩ – _Agent of the Nefishh_",
+    "set": "base",
+    "kind": null,
+    "faction": "naalu-agent"
+  },
+  {
+    "id": "naalu-agent",
+    "name": "Agent: Z'eu Ω – _Agent of the Nefishh_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "naalu"
+  },
+  {
+    "id": "naalu-commander",
+    "name": "Commander: M'aban Ω – _Crystalline Sorceress_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "naalu"
+  },
+  {
+    "id": "naalu-hero",
+    "name": "Hero: The Oracle – _Corrupted Mind_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "naalu"
+  },
+  {
+    "id": "nekro-agent",
+    "name": "Agent: Nekro Malleon – _The Shifting Host_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "nekro"
+  },
+  {
+    "id": "nekro-commander",
+    "name": "Commander: Nekro Acidos – _Obsidian Reaper_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "nekro"
+  },
+  {
+    "id": "nekro-hero",
+    "name": "Hero: UNIT.DSGN.FLAYESH – _Recursive Tyrant_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "nekro"
+  },
+  {
+    "id": "norr-agent",
+    "name": "Agent: T'ro – _Tekklar Legionnaire_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "norr"
+  },
+  {
+    "id": "norr-commander",
+    "name": "Commander: G'hom Sek'kus – _Valkyrie Elite_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "norr"
+  },
+  {
+    "id": "norr-hero",
+    "name": "Hero: Sh'val, Harbinger – _Master of the First_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "norr"
+  },
+  {
+    "id": "saar-agent",
+    "name": "Agent: Captain Mendosa – _Captain of the Fifth Fleet_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "saar"
+  },
+  {
+    "id": "saar-commander",
+    "name": "Commander: Rowl Sarring – _Relay Engineer_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "saar"
+  },
+  {
+    "id": "saar-hero",
+    "name": "Hero: Gurno Aggero – _Captain of the First Fleet_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "saar"
+  },
+  {
+    "id": "sol-agent",
+    "name": "Agent: Evelyn DeLouis – _Master Tactician_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "sol"
+  },
+  {
+    "id": "sol-commander",
+    "name": "Commander: Claire Gibson – _Voice of the People_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "sol"
+  },
+  {
+    "id": "sol-hero",
+    "name": "Hero: Jace X, 4th Air Legion – _Federation Hero_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "sol"
+  },
+  {
+    "id": "winnu-agent",
+    "name": "Agent: Berekar Berekon – _Arbiter of Divine Right_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "winnu"
+  },
+  {
+    "id": "winnu-commander",
+    "name": "Commander: Rickar Rickani – _The Hand of the Emperor_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "winnu"
+  },
+  {
+    "id": "winnu-hero",
+    "name": "Hero: Mathis Mathinus – _Reclamation Executor_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "winnu"
+  },
+  {
+    "id": "xxcha-agent",
+    "name": "Agent: Ggrocuto Rinn - _The King's Shield_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "xxcha"
+  },
+  {
+    "id": "xxcha-commander",
+    "name": "Commander: Elder Qanoj – _The Doom from Kklaj_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "xxcha"
+  },
+  {
+    "id": "xxcha-hero-te",
+    "name": "Hero: Xxekir Grom ΩΩ - _The Council's Heart_",
+    "set": "base",
+    "kind": null,
+    "faction": "xxcha-hero"
+  },
+  {
+    "id": "xxcha-hero",
+    "name": "Hero: Xxekir Grom Ω - _The Council's Heart_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "xxcha"
+  },
+  {
+    "id": "yin-agent-te",
+    "name": "Agent: Brother Milor Ω – _Purifed by Fire_",
+    "set": "base",
+    "kind": null,
+    "faction": "yin-agent"
+  },
+  {
+    "id": "yin-agent",
+    "name": "Agent: Brother Milor Ω – _Purifed by Fire_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "yin"
+  },
+  {
+    "id": "yin-commander",
+    "name": "Commander: Brother Omar Ω – _Spinner Devotee_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "yin"
+  },
+  {
+    "id": "yin-hero",
+    "name": "Hero: Dannel of the Tenth – _High Priest of Yin_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "yin"
+  },
+  {
+    "id": "yssaril-agent",
+    "name": "Agent: Ssruu – _Clever, Clever Ssruu_",
+    "set": "base",
+    "kind": "agent",
+    "faction": "yssaril"
+  },
+  {
+    "id": "yssaril-commander",
+    "name": "Commander: So Ata – _Loyal Only to a Point_",
+    "set": "base",
+    "kind": "commander",
+    "faction": "yssaril"
+  },
+  {
+    "id": "yssaril-hero",
+    "name": "Hero: Kyver, Blade and Key – _Guild Assassin_",
+    "set": "base",
+    "kind": "hero",
+    "faction": "yssaril"
+  },
+  {
+    "id": "argent-agent",
+    "name": "Agent: Trilossa Aun Mirik – _Scorn of Ylir_",
+    "set": "pok",
+    "kind": "agent",
+    "faction": "argent"
+  },
+  {
+    "id": "argent-commander",
+    "name": "Commander: Trrakan Aun Zulok – _Strike Wing Commander_",
+    "set": "pok",
+    "kind": "commander",
+    "faction": "argent"
+  },
+  {
+    "id": "argent-hero",
+    "name": "Hero: Mirik Aun Sissiri – _Flightmaster_",
+    "set": "pok",
+    "kind": "hero",
+    "faction": "argent"
+  },
+  {
+    "id": "cabal-agent",
+    "name": "Agent: The Stillness of Stars – _Oppressive Silence_",
+    "set": "pok",
+    "kind": "agent",
+    "faction": "cabal"
+  },
+  {
+    "id": "cabal-commander",
+    "name": "Commander: That Which Molds Flesh – _Grisly Abomination_",
+    "set": "pok",
+    "kind": "commander",
+    "faction": "cabal"
+  },
+  {
+    "id": "cabal-hero",
+    "name": "Hero: It Feeds on Carrion – _Twisted Horror_",
+    "set": "pok",
+    "kind": "hero",
+    "faction": "cabal"
+  },
+  {
+    "id": "empyrean-agent",
+    "name": "Agent: Acamar – _The Gift of Night_",
+    "set": "pok",
+    "kind": "agent",
+    "faction": "empyrean"
+  },
+  {
+    "id": "empyrean-commander",
+    "name": "Commander: Xuange – _The Archivist_",
+    "set": "pok",
+    "kind": "commander",
+    "faction": "empyrean"
+  },
+  {
+    "id": "empyrean-hero",
+    "name": "Hero: Conservator Procyon – _One with the Void_",
+    "set": "pok",
+    "kind": "hero",
+    "faction": "empyrean"
+  },
+  {
+    "id": "mahact-agent",
+    "name": "Agent: Jae Mir Kan – _Archon of Prosperity_",
+    "set": "pok",
+    "kind": "agent",
+    "faction": "mahact"
+  },
+  {
+    "id": "mahact-commander",
+    "name": "Commander: Il Na Viroset – _Archon of Virtue_",
+    "set": "pok",
+    "kind": "commander",
+    "faction": "mahact"
+  },
+  {
+    "id": "mahact-hero",
+    "name": "Hero: Airo Shir Aur – _Archon of Command_",
+    "set": "pok",
+    "kind": "hero",
+    "faction": "mahact"
+  },
+  {
+    "id": "naaz-agent",
+    "name": "Agent: Garv and Gunn – _Plucky Archaeologists_",
+    "set": "pok",
+    "kind": "agent",
+    "faction": "naaz"
+  },
+  {
+    "id": "naaz-commander",
+    "name": "Commander: Dart and Tai – _Adrenaline Junkies_",
+    "set": "pok",
+    "kind": "commander",
+    "faction": "naaz"
+  },
+  {
+    "id": "naaz-hero",
+    "name": "Hero: Hesh and Prit – _Architect Savants_",
+    "set": "pok",
+    "kind": "hero",
+    "faction": "naaz"
+  },
+  {
+    "id": "nomad-agent-artuno",
+    "name": "Agent: Artuno the Betrayer – _Sumerian Overseer_",
+    "set": "pok",
+    "kind": null,
+    "faction": "nomad-agent"
+  },
+  {
+    "id": "nomad-agent-mercer",
+    "name": "Agent: Field Marshal Mercer – _Shikrai General_",
+    "set": "pok",
+    "kind": null,
+    "faction": "nomad-agent"
+  },
+  {
+    "id": "nomad-agent-thundarian",
+    "name": "Agent: The Thundarian – _Temporal Engima_",
+    "set": "pok",
+    "kind": null,
+    "faction": "nomad-agent"
+  },
+  {
+    "id": "nomad-commander",
+    "name": "Commander: Navarch Feng – _Company Shipmaster_",
+    "set": "pok",
+    "kind": "commander",
+    "faction": "nomad"
+  },
+  {
+    "id": "nomad-hero",
+    "name": "Hero: Ahk-Syl Siven - _Sole Survivor_",
+    "set": "pok",
+    "kind": "hero",
+    "faction": "nomad"
+  },
+  {
+    "id": "titans-agent",
+    "name": "Agent: Tellurian – _The Protector_",
+    "set": "pok",
+    "kind": "agent",
+    "faction": "titans"
+  },
+  {
+    "id": "titans-commander",
+    "name": "Commander: Tungstantus – _The Gardener_",
+    "set": "pok",
+    "kind": "commander",
+    "faction": "titans"
+  },
+  {
+    "id": "titans-hero",
+    "name": "Hero: Ul the Progenitor - _Elysium's Core_",
+    "set": "pok",
+    "kind": "hero",
+    "faction": "titans"
+  },
+  {
+    "id": "keleres-agent",
+    "name": "Agent: Xander Alexin Victori III – _Miracle Worker_",
+    "set": "codex",
+    "kind": "agent",
+    "faction": "keleres"
+  },
+  {
+    "id": "keleres-commander",
+    "name": "Commander: Suffi An – _Working Multiple Angles_",
+    "set": "codex",
+    "kind": "commander",
+    "faction": "keleres"
+  },
+  {
+    "id": "keleres-hero-argent",
+    "name": "Hero: Kuuasi Aun Jalatai – _Keleres Tribunii_",
+    "set": "codex",
+    "kind": null,
+    "faction": "keleres-hero"
+  },
+  {
+    "id": "keleres-hero-mentak",
+    "name": "Hero: Harka Leeds – _Keleres Tribunii_",
+    "set": "codex",
+    "kind": null,
+    "faction": "keleres-hero"
+  },
+  {
+    "id": "keleres-hero-xxcha",
+    "name": "Hero: Odlynn Myrr – _Keleres Tribunii_",
+    "set": "codex",
+    "kind": null,
+    "faction": "keleres-hero"
+  },
+  {
+    "id": "redcreuss-agent",
+    "name": "Agent: Unknown – _Forlorn Shadow_",
+    "set": "codex",
+    "kind": "agent",
+    "faction": "redcreuss"
+  },
+  {
+    "id": "redcreuss-commander",
+    "name": "Commander: Unknown – _Wistful Soul_",
+    "set": "codex",
+    "kind": "commander",
+    "faction": "redcreuss"
+  },
+  {
+    "id": "redcreuss-hero",
+    "name": "Hero: Unknown – _Wayward Riftwalker_",
+    "set": "codex",
+    "kind": "hero",
+    "faction": "redcreuss"
+  },
+  {
+    "id": "salientsun-hero",
+    "name": "Hero: F.S.S. Orlando – _Apollo Protocol_",
+    "set": "codex",
+    "kind": "hero",
+    "faction": "salientsun"
+  }
+]

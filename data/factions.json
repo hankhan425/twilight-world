@@ -1,0 +1,1138 @@
+[
+  {
+    "id": "arborec",
+    "name": "Arborec",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Nestphar",
+        "resources": 3,
+        "influence": 2
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "carrier": 1,
+        "cruiser": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [
+      "magen-defense-grid"
+    ],
+    "factionTechs": [
+      "arborec-letani-warrior-ii",
+      "arborec-bioplasmosis"
+    ],
+    "abilities": [
+      "Mitosis"
+    ],
+    "flagship": "arborec-flagship",
+    "mech": "arborec-mech"
+  },
+  {
+    "id": "creuss",
+    "name": "Ghosts of Creuss",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Creuss",
+        "resources": 4,
+        "influence": 2
+      }
+    ],
+    "commodities": 4,
+    "startingUnits": {
+      "space": {
+        "carrier": 1,
+        "destroyer": 2,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "gravity-drive"
+    ],
+    "factionTechs": [
+      "creuss-wormhole-generator",
+      "creuss-dimensional-splicer"
+    ],
+    "abilities": [
+      "Quantum Entaglement",
+      "Slipstream",
+      "Creuss Gate"
+    ],
+    "flagship": "creuss-flagship",
+    "mech": "creuss-mech"
+  },
+  {
+    "id": "hacan",
+    "name": "Emirates of Hacan",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Arretze",
+        "resources": 2,
+        "influence": 0
+      },
+      {
+        "name": "Hercant",
+        "resources": 1,
+        "influence": 1
+      },
+      {
+        "name": "Kamdorn",
+        "resources": 0,
+        "influence": 1
+      }
+    ],
+    "commodities": 6,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "cruiser": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "antimass-deflectors",
+      "sarween-tools"
+    ],
+    "factionTechs": [
+      "hacan-production-biomes",
+      "hacan-quantum-datahub-node"
+    ],
+    "abilities": [
+      "Masters of Trade",
+      "Guild Ships",
+      "Arbiters"
+    ],
+    "flagship": "hacan-flagship",
+    "mech": "hacan-mech"
+  },
+  {
+    "id": "jolnar",
+    "name": "Universities of Jol-Nar",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Jol",
+        "resources": 1,
+        "influence": 2
+      },
+      {
+        "name": "Nar",
+        "resources": 2,
+        "influence": 3
+      }
+    ],
+    "commodities": 4,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "carrier": 2,
+        "fighter": 1
+      },
+      "ground": {
+        "infantry": 2,
+        "spacedock": 1,
+        "pds": 2
+      }
+    },
+    "startingTechs": [
+      "neural-motivator",
+      "antimass-deflectors",
+      "sarween-tools",
+      "plasma-scoring"
+    ],
+    "factionTechs": [
+      "jolnar-spatial-conduit-cylinder",
+      "jolnar-e-res-siphons"
+    ],
+    "abilities": [
+      "Fragile",
+      "Brilliant",
+      "Analytical"
+    ],
+    "flagship": "jolnar-flagship",
+    "mech": "jolnar-mech"
+  },
+  {
+    "id": "l1z1x",
+    "name": "L1Z1X Mindnet",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "0.0.0",
+        "resources": 5,
+        "influence": 0
+      }
+    ],
+    "commodities": 2,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "carrier": 1,
+        "fighter": 3
+      },
+      "ground": {
+        "infantry": 5,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [
+      "neural-motivator",
+      "plasma-scoring"
+    ],
+    "factionTechs": [
+      "l1z1x-super-dreadnought-ii",
+      "l1z1x-inheritance-systems"
+    ],
+    "abilities": [
+      "Assimilate",
+      "Harrow"
+    ],
+    "flagship": "l1z1x-flagship",
+    "mech": "l1z1x-mech"
+  },
+  {
+    "id": "letnev",
+    "name": "Barony of Letnev",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Arc Prime",
+        "resources": 4,
+        "influence": 0
+      },
+      {
+        "name": "Wren Terra",
+        "resources": 2,
+        "influence": 1
+      }
+    ],
+    "commodities": 2,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "carrier": 1,
+        "destroyer": 1,
+        "fighter": 1
+      },
+      "ground": {
+        "infantry": 3,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "antimass-deflectors",
+      "plasma-scoring"
+    ],
+    "factionTechs": [
+      "letnev-l4-disruptors",
+      "letnev-non-euclidean-shielding"
+    ],
+    "abilities": [
+      "Munitions Reserves",
+      "Armada"
+    ],
+    "flagship": "letnev-flagship",
+    "mech": "letnev-mech"
+  },
+  {
+    "id": "mentak",
+    "name": "Mentak Coalition",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Moll Primus",
+        "resources": 4,
+        "influence": 1
+      }
+    ],
+    "commodities": 2,
+    "startingUnits": {
+      "space": {
+        "carrier": 1,
+        "cruiser": 2,
+        "fighter": 3
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [
+      "sarween-tools",
+      "plasma-scoring"
+    ],
+    "factionTechs": [
+      "mentak-salvage-operations",
+      "mentak-mirror-computing"
+    ],
+    "abilities": [
+      "Ambush",
+      "Pillage"
+    ],
+    "flagship": "mentak-flagship",
+    "mech": "mentak-mech"
+  },
+  {
+    "id": "muaat",
+    "name": "Embers of Muaat",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Muaat",
+        "resources": 4,
+        "influence": 1
+      }
+    ],
+    "commodities": 4,
+    "startingUnits": {
+      "space": {
+        "warsun": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "plasma-scoring"
+    ],
+    "factionTechs": [
+      "muaat-prototype-war-sun-ii",
+      "muaat-magmus-reactor"
+    ],
+    "abilities": [
+      "Star Forge",
+      "Gashlai Physiology"
+    ],
+    "flagship": "muaat-flagship",
+    "mech": "muaat-mech"
+  },
+  {
+    "id": "naalu",
+    "name": "Naalu Collective",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Maaluuk",
+        "resources": 0,
+        "influence": 2
+      },
+      {
+        "name": "Druua",
+        "resources": 3,
+        "influence": 1
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "carrier": 1,
+        "cruiser": 1,
+        "destroyer": 1,
+        "fighter": 3
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [
+      "neural-motivator",
+      "sarween-tools"
+    ],
+    "factionTechs": [
+      "naalu-hybrid-crystal-fighter-ii",
+      "naalu-neuroglaive"
+    ],
+    "abilities": [
+      "Telepathic",
+      "Foresight"
+    ],
+    "flagship": "naalu-flagship",
+    "mech": "naalu-mech"
+  },
+  {
+    "id": "nekro",
+    "name": "Nekro Virus",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Mordai II",
+        "resources": 4,
+        "influence": 0
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "carrier": 1,
+        "cruiser": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 2,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "daxcive-animators"
+    ],
+    "factionTechs": [
+      "nekro-valefar-assimilator-x",
+      "nekro-valefar-assimilator-y"
+    ],
+    "abilities": [
+      "Galactic Threat",
+      "Technological Singularity",
+      "Propagation"
+    ],
+    "flagship": "nekro-flagship",
+    "mech": "nekro-mech"
+  },
+  {
+    "id": "norr",
+    "name": "Sardakk N'orr",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Tren'lak",
+        "resources": 1,
+        "influence": 0
+      },
+      {
+        "name": "Quinarra",
+        "resources": 3,
+        "influence": 1
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "cruiser": 1
+      },
+      "ground": {
+        "infantry": 5,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [],
+    "factionTechs": [
+      "norr-exotrireme-ii",
+      "norr-valkyrie-particle-weave"
+    ],
+    "abilities": [
+      "Unrelenting"
+    ],
+    "flagship": "norr-flagship",
+    "mech": "norr-mech"
+  },
+  {
+    "id": "saar",
+    "name": "Clan of Saar",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Ragh",
+        "resources": 2,
+        "influence": 1
+      },
+      {
+        "name": "Lisis II",
+        "resources": 0,
+        "influence": 1
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "cruiser": 1,
+        "fighter": 2,
+        "spacedock": 1
+      },
+      "ground": {
+        "infantry": 4
+      }
+    },
+    "startingTechs": [
+      "antimass-deflectors"
+    ],
+    "factionTechs": [
+      "saar-floating-factory-ii",
+      "saar-chaos-mapping"
+    ],
+    "abilities": [
+      "Scavenge",
+      "Nomadic"
+    ],
+    "flagship": "saar-flagship",
+    "mech": "saar-mech"
+  },
+  {
+    "id": "sol",
+    "name": "Federation of Sol",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Jord",
+        "resources": 4,
+        "influence": 2
+      }
+    ],
+    "commodities": 4,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "destroyer": 1,
+        "fighter": 3
+      },
+      "ground": {
+        "infantry": 5,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "neural-motivator",
+      "antimass-deflectors"
+    ],
+    "factionTechs": [
+      "sol-spec-ops-ii",
+      "sol-advanced-carrier-ii"
+    ],
+    "abilities": [
+      "Orbital Drop",
+      "Versatile"
+    ],
+    "flagship": "sol-flagship",
+    "mech": "sol-mech"
+  },
+  {
+    "id": "winnu",
+    "name": "Winnu",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Winnu",
+        "resources": 3,
+        "influence": 4
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "carrier": 1,
+        "cruiser": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 2,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [],
+    "factionTechs": [
+      "winnu-lazax-gate-folding",
+      "winnu-hegemonic-trade-policy"
+    ],
+    "abilities": [
+      "Blood Ties",
+      "Reclamation"
+    ],
+    "flagship": "winnu-flagship",
+    "mech": "winnu-mech"
+  },
+  {
+    "id": "xxcha",
+    "name": "Xxcha Kingdom",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Archon Ren",
+        "resources": 2,
+        "influence": 3
+      },
+      {
+        "name": "Archon Tau",
+        "resources": 1,
+        "influence": 1
+      }
+    ],
+    "commodities": 4,
+    "startingUnits": {
+      "space": {
+        "carrier": 1,
+        "cruiser": 2,
+        "fighter": 3
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [
+      "graviton-laser-system"
+    ],
+    "factionTechs": [
+      "xxcha-instinct-training",
+      "xxcha-nullification-field"
+    ],
+    "abilities": [
+      "Peace Accords",
+      "Quash"
+    ],
+    "flagship": "xxcha-flagship",
+    "mech": "xxcha-mech"
+  },
+  {
+    "id": "yin",
+    "name": "Yin Brotherhood",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Darien",
+        "resources": 4,
+        "influence": 4
+      }
+    ],
+    "commodities": 2,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "destroyer": 1,
+        "fighter": 4
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "sarween-tools"
+    ],
+    "factionTechs": [
+      "yin-impulse-core",
+      "yin-yin-spinner"
+    ],
+    "abilities": [
+      "Indoctrination",
+      "Devotion"
+    ],
+    "flagship": "yin-flagship",
+    "mech": "yin-mech"
+  },
+  {
+    "id": "yssaril",
+    "name": "Yssaril Tribes",
+    "set": "base",
+    "homeSystem": [
+      {
+        "name": "Retillion",
+        "resources": 2,
+        "influence": 3
+      },
+      {
+        "name": "Shalloq",
+        "resources": 1,
+        "influence": 2
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "cruiser": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 5,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [
+      "neural-motivator"
+    ],
+    "factionTechs": [
+      "yssaril-transparasteel-plating",
+      "yssaril-mageon-implants"
+    ],
+    "abilities": [
+      "Stall Tactics",
+      "Scheming",
+      "Crafty"
+    ],
+    "flagship": "yssaril-flagship",
+    "mech": "yssaril-mech"
+  },
+  {
+    "id": "argent",
+    "name": "Argent Flight",
+    "set": "pok",
+    "homeSystem": [
+      {
+        "name": "Valk",
+        "resources": 2,
+        "influence": 0
+      },
+      {
+        "name": "Avar",
+        "resources": 1,
+        "influence": 1
+      },
+      {
+        "name": "Ylir",
+        "resources": 0,
+        "influence": 2
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "carrier": 1,
+        "destroyer": 2,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 5,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [
+      "sarween-tools",
+      "plasma-scoring",
+      "neural-motivator"
+    ],
+    "factionTechs": [
+      "argent-strike-wing-alpha-ii",
+      "argent-aerie-hololattice"
+    ],
+    "abilities": [
+      "Zeal",
+      "Raid Formation"
+    ],
+    "flagship": "argent-flagship",
+    "mech": "argent-mech"
+  },
+  {
+    "id": "cabal",
+    "name": "Vuil'raith Cabal",
+    "set": "pok",
+    "homeSystem": [
+      {
+        "name": "Acheron",
+        "resources": 4,
+        "influence": 0
+      }
+    ],
+    "commodities": 2,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "carrier": 1,
+        "cruiser": 1,
+        "fighter": 3
+      },
+      "ground": {
+        "infantry": 3,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "self-assembly-routines"
+    ],
+    "factionTechs": [
+      "cabal-dimensional-tear-ii",
+      "cabal-vortex"
+    ],
+    "abilities": [
+      "Devour",
+      "Amalgamation",
+      "Riftmeld"
+    ],
+    "flagship": "cabal-flagship",
+    "mech": "cabal-mech"
+  },
+  {
+    "id": "empyrean",
+    "name": "Empyrean",
+    "set": "pok",
+    "homeSystem": [
+      {
+        "name": "The Dark",
+        "resources": 3,
+        "influence": 4
+      }
+    ],
+    "commodities": 4,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "destroyer": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "dark-energy-tap"
+    ],
+    "factionTechs": [
+      "empyrean-aetherstream",
+      "empyrean-voidwatch"
+    ],
+    "abilities": [
+      "Voidborn",
+      "Aetherpassage",
+      "Dark Whispers"
+    ],
+    "flagship": "empyrean-flagship",
+    "mech": "empyrean-mech"
+  },
+  {
+    "id": "mahact",
+    "name": "Mahact Gene-Sorcerers",
+    "set": "pok",
+    "homeSystem": [
+      {
+        "name": "Ixth",
+        "resources": 3,
+        "influence": 5
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "carrier": 1,
+        "cruiser": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 3,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "bio-stims",
+      "predictive-intelligence"
+    ],
+    "factionTechs": [
+      "mahact-crimson-legionnaire-ii",
+      "mahact-genetic-recombination"
+    ],
+    "abilities": [
+      "Edict",
+      "Imperia",
+      "Hubris"
+    ],
+    "flagship": "mahact-flagship",
+    "mech": "mahact-mech"
+  },
+  {
+    "id": "naaz",
+    "name": "Naaz-Rokha Alliance",
+    "set": "pok",
+    "homeSystem": [
+      {
+        "name": "Naazir",
+        "resources": 2,
+        "influence": 1
+      },
+      {
+        "name": "Rokha",
+        "resources": 1,
+        "influence": 2
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "destroyer": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "mech": 1,
+        "infantry": 3,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "psychoarchaeology",
+      "ai-development-algorithm"
+    ],
+    "factionTechs": [
+      "naaz-supercharge",
+      "naaz-pre-fab-arcologies"
+    ],
+    "abilities": [
+      "Distant Suns",
+      "Fabrication"
+    ],
+    "flagship": "naaz-flagship",
+    "mech": "naaz-mech"
+  },
+  {
+    "id": "nomad",
+    "name": "Nomad",
+    "set": "pok",
+    "homeSystem": [
+      {
+        "name": "Arcturus",
+        "resources": 4,
+        "influence": 4
+      }
+    ],
+    "commodities": 4,
+    "startingUnits": {
+      "space": {
+        "flagship": 1,
+        "carrier": 1,
+        "destroyer": 1,
+        "fighter": 3
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "sling-relay"
+    ],
+    "factionTechs": [
+      "nomad-memoria-ii",
+      "nomad-temporal-command-suite"
+    ],
+    "abilities": [
+      "The Company",
+      "Future Sight"
+    ],
+    "flagship": "nomad-flagship",
+    "mech": "nomad-mech"
+  },
+  {
+    "id": "titans",
+    "name": "Titans of Ul",
+    "set": "pok",
+    "homeSystem": [
+      {
+        "name": "Elysium",
+        "resources": 4,
+        "influence": 1
+      }
+    ],
+    "commodities": 2,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "cruiser": 2,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 3,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "antimass-deflectors",
+      "scanlink-drone-network"
+    ],
+    "factionTechs": [
+      "titans-saturn-engine-ii",
+      "titans-hel-titan-ii"
+    ],
+    "abilities": [
+      "Terragenesis",
+      "Awaken",
+      "Coalesce"
+    ],
+    "flagship": "titans-flagship",
+    "mech": "titans-mech"
+  },
+  {
+    "id": "keleres",
+    "name": "Council Keleres",
+    "set": "codex",
+    "homeSystem": [
+      {
+        "name": "Moll Primus",
+        "resources": 4,
+        "influence": 1
+      },
+      {
+        "name": "Archon Ren",
+        "resources": 2,
+        "influence": 3
+      },
+      {
+        "name": "Archon Tau",
+        "resources": 1,
+        "influence": 1
+      },
+      {
+        "name": "Valk",
+        "resources": 2,
+        "influence": 0
+      },
+      {
+        "name": "Avar",
+        "resources": 1,
+        "influence": 1
+      },
+      {
+        "name": "Ylir",
+        "resources": 0,
+        "influence": 2
+      }
+    ],
+    "commodities": 2,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "cruiser": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 2,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [],
+    "factionTechs": [
+      "keleres-iihq-modernization",
+      "keleres-agency-supply-network"
+    ],
+    "abilities": [
+      "The Tribunii",
+      "Council Patronage",
+      "Law's Order"
+    ],
+    "flagship": "keleres-flagship",
+    "mech": "keleres-mech"
+  },
+  {
+    "id": "ordiniannekro",
+    "name": "Nekro Virus (Liberation of Ordinian)",
+    "set": "codex",
+    "homeSystem": [
+      {
+        "name": "Mordai II",
+        "resources": 4,
+        "influence": 0
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 3,
+        "carrier": 3,
+        "cruiser": 1,
+        "fighter": 6
+      },
+      "ground": {
+        "infantry": 6,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "daxcive-animators"
+    ],
+    "factionTechs": [
+      "nekro-null-reference",
+      "nekro-error-error"
+    ],
+    "abilities": [
+      "Galactic Threat",
+      "Technological Singularity",
+      "Propagation"
+    ],
+    "flagship": "nekro-flagship",
+    "mech": "nekro-mech"
+  },
+  {
+    "id": "redcreuss",
+    "name": "Crimson Rebellion (Liberation of Ordinian)",
+    "set": "codex",
+    "homeSystem": [
+      {
+        "name": "Creuss",
+        "resources": 4,
+        "influence": 2
+      }
+    ],
+    "commodities": 4,
+    "startingUnits": {
+      "space": {
+        "carrier": 2,
+        "destroyer": 2,
+        "fighter": 2,
+        "cruiser": 1,
+        "infantry": 2
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [
+      "gravity-drive"
+    ],
+    "factionTechs": [
+      "creuss-wormhole-generator",
+      "creuss-dimensional-splicer"
+    ],
+    "abilities": [
+      "Quantum Entaglement",
+      "Slipstream",
+      "Creuss Gate"
+    ],
+    "flagship": "creuss-flagship",
+    "mech": "creuss-mech"
+  },
+  {
+    "id": "salientsun",
+    "name": "Salient Sun - Alliance (Liberation of Ordinian)",
+    "set": "codex",
+    "homeSystem": [],
+    "commodities": null,
+    "startingUnits": {
+      "space": {},
+      "ground": {}
+    },
+    "startingTechs": [],
+    "factionTechs": [],
+    "abilities": [],
+    "flagship": null,
+    "mech": null
+  }
+]

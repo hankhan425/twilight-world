@@ -1,0 +1,1742 @@
+[
+  {
+    "id": "carrier-i",
+    "name": "Carrier I",
+    "set": "base",
+    "faction": null,
+    "type": "carrier",
+    "cost": {
+      "value": 3
+    },
+    "combat": {
+      "value": 9
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 4
+    },
+    "abilities": [],
+    "upgradePrereqs": [
+      "propulsion",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "cruiser-i",
+    "name": "Cruiser I",
+    "set": "base",
+    "faction": null,
+    "type": "cruiser",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 7
+    },
+    "move": {
+      "value": 2
+    },
+    "capacity": null,
+    "abilities": [],
+    "upgradePrereqs": [
+      "biotic",
+      "cybernetic",
+      "warfare"
+    ]
+  },
+  {
+    "id": "destroyer-i",
+    "name": "Destroyer I",
+    "set": "base",
+    "faction": null,
+    "type": "destroyer",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 9
+    },
+    "move": {
+      "value": 2
+    },
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Anti-Fighter Barrage",
+        "value": 9,
+        "dice": 2
+      }
+    ],
+    "upgradePrereqs": [
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "dreadnought-i",
+    "name": "Dreadnought I",
+    "set": "base",
+    "faction": null,
+    "type": "dreadnought",
+    "cost": {
+      "value": 4
+    },
+    "combat": {
+      "value": 5
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 1
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Bombardment",
+        "value": 5
+      }
+    ],
+    "upgradePrereqs": [
+      "propulsion",
+      "propulsion",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "fighter-i",
+    "name": "Fighter I",
+    "set": "base",
+    "faction": null,
+    "type": "fighter",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 9
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [],
+    "upgradePrereqs": [
+      "biotic",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "infantry-i",
+    "name": "Infantry I",
+    "set": "base",
+    "faction": null,
+    "type": "infantry",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 8
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [],
+    "upgradePrereqs": [
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "null-war-sun",
+    "name": "War Sun",
+    "set": "base",
+    "faction": null,
+    "type": "null-war-sun",
+    "cost": null,
+    "combat": null,
+    "move": null,
+    "capacity": null,
+    "abilities": [],
+    "upgradePrereqs": [
+      "cybernetic",
+      "warfare",
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "pds-i",
+    "name": "PDS I",
+    "set": "base",
+    "faction": null,
+    "type": "pds",
+    "cost": null,
+    "combat": null,
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Planetary Shield"
+      },
+      {
+        "name": "Space Cannon",
+        "value": 6
+      }
+    ],
+    "upgradePrereqs": [
+      "cybernetic",
+      "warfare"
+    ]
+  },
+  {
+    "id": "space-dock-i",
+    "name": "Space Dock I",
+    "set": "base",
+    "faction": null,
+    "type": "space-dock",
+    "cost": null,
+    "combat": null,
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Production X+2"
+      }
+    ],
+    "upgradePrereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "arborec-arborec-flagship",
+    "name": "Duha Menaimon",
+    "set": "base",
+    "faction": "arborec",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 5
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "arborec-arborec-infantry",
+    "name": "Letani Warrior I",
+    "set": "base",
+    "faction": "arborec",
+    "type": "infantry",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 8
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Production",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "arborec-arborec-mech",
+    "name": "Letani Behemoth",
+    "set": "pok",
+    "faction": "arborec",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Planetary Shield"
+      },
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Production",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "creuss-creuss-flagship",
+    "name": "Hil Colish",
+    "set": "base",
+    "faction": "creuss",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "creuss-creuss-mech",
+    "name": "Icarus Drive",
+    "set": "pok",
+    "faction": "creuss",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "hacan-hacan-flagship",
+    "name": "Wrath of Kenara",
+    "set": "base",
+    "faction": "hacan",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "hacan-hacan-mech",
+    "name": "Pride of Kenara",
+    "set": "pok",
+    "faction": "hacan",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "jolnar-jolnar-flagship",
+    "name": "J.N.S. Hylarim",
+    "set": "base",
+    "faction": "jolnar",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 6,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "jolnar-jolnar-mech",
+    "name": "Shield Paling",
+    "set": "pok",
+    "faction": "jolnar",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "l1z1x-l1z1x-dreadnought",
+    "name": "Super Dreadnought I",
+    "set": "base",
+    "faction": "l1z1x",
+    "type": "dreadnought",
+    "cost": {
+      "value": 4
+    },
+    "combat": {
+      "value": 5
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 2
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Bombardment",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "l1z1x-l1z1x-flagship",
+    "name": "[0.0.1]",
+    "set": "base",
+    "faction": "l1z1x",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 5
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "l1z1x-l1z1x-mech",
+    "name": "Anihilator",
+    "set": "pok",
+    "faction": "l1z1x",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Bombardment",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": "letnev-letnev-flagship",
+    "name": "Arc Secundus",
+    "set": "base",
+    "faction": "letnev",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Bombardment",
+        "value": 5,
+        "dice": 3
+      }
+    ]
+  },
+  {
+    "id": "letnev-letnev-mech",
+    "name": "Dunlain Reaper",
+    "set": "pok",
+    "faction": "letnev",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "mentak-mentak-corsair",
+    "name": "Corsair",
+    "set": "pok",
+    "faction": "mentak",
+    "type": "cruiser",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": {
+      "value": 3
+    },
+    "capacity": {
+      "value": 2
+    },
+    "abilities": []
+  },
+  {
+    "id": "mentak-mentak-flagship",
+    "name": "Fourth Moon",
+    "set": "base",
+    "faction": "mentak",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "mentak-mentak-mech",
+    "name": "Moll Terminus",
+    "set": "pok",
+    "faction": "mentak",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "muaat-muaat-flagship",
+    "name": "The Inferno",
+    "set": "base",
+    "faction": "muaat",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "muaat-muaat-mech",
+    "name": "Ember Colossus",
+    "set": "pok",
+    "faction": "muaat",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "muaat-muaat-war-sun",
+    "name": "Prototype War Sun I",
+    "set": "base",
+    "faction": "muaat",
+    "type": "war",
+    "cost": {
+      "value": 12
+    },
+    "combat": {
+      "value": 3,
+      "dice": 3
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 6
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Bombardment",
+        "value": 3,
+        "dice": 3
+      }
+    ]
+  },
+  {
+    "id": "naalu-naalu-fighter",
+    "name": "Hybrid Crystal Fighter I",
+    "set": "base",
+    "faction": "naalu",
+    "type": "fighter",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 8
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": []
+  },
+  {
+    "id": "naalu-naalu-flagship",
+    "name": "Matriarch",
+    "set": "base",
+    "faction": "naalu",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 9,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 6
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "naalu-naalu-mech-te",
+    "name": "Iconoclast ΩΩ",
+    "set": "base",
+    "faction": "naalu",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "naalu-naalu-mech",
+    "name": "Iconoclast Ω",
+    "set": "base",
+    "faction": "naalu",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "nekro-nekro-flagship",
+    "name": "The Alastor",
+    "set": "base",
+    "faction": "nekro",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 9,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "nekro-nekro-mech",
+    "name": "Mordred",
+    "set": "pok",
+    "faction": "nekro",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "norr-norr-dreadnought",
+    "name": "Exotrireme I",
+    "set": "base",
+    "faction": "norr",
+    "type": "dreadnought",
+    "cost": {
+      "value": 4
+    },
+    "combat": {
+      "value": 5
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 1
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Bombardment",
+        "value": 4,
+        "dice": 2
+      }
+    ]
+  },
+  {
+    "id": "norr-norr-flagship",
+    "name": "C'morran N'orr",
+    "set": "base",
+    "faction": "norr",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 6,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "norr-norr-mech",
+    "name": "Valkyrie Exoskeleton",
+    "set": "pok",
+    "faction": "norr",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "saar-saar-flagship",
+    "name": "Son of Ragh",
+    "set": "base",
+    "faction": "saar",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Anti-Fighter Barrage",
+        "value": 6,
+        "dice": 4
+      }
+    ]
+  },
+  {
+    "id": "saar-saar-mech",
+    "name": "Scavenger Zeta",
+    "set": "pok",
+    "faction": "saar",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "saar-saar-spacedock",
+    "name": "Floating Factory I",
+    "set": "base",
+    "faction": "saar",
+    "type": "space",
+    "cost": null,
+    "combat": null,
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 4
+    },
+    "abilities": [
+      {
+        "name": "Production",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "sol-sol-carrier",
+    "name": "Advanced Carrier I",
+    "set": "base",
+    "faction": "sol",
+    "type": "carrier",
+    "cost": {
+      "value": 3
+    },
+    "combat": {
+      "value": 9
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 6
+    },
+    "abilities": []
+  },
+  {
+    "id": "sol-sol-flagship",
+    "name": "Genesis",
+    "set": "base",
+    "faction": "sol",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 12
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "sol-sol-infantry",
+    "name": "Spec Ops I",
+    "set": "base",
+    "faction": "sol",
+    "type": "infantry",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 7
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": []
+  },
+  {
+    "id": "sol-sol-mech",
+    "name": "ZS Thunderbolt M2",
+    "set": "pok",
+    "faction": "sol",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "winnu-winnu-flagship",
+    "name": "Salai Sai Corian",
+    "set": "base",
+    "faction": "winnu",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "winnu-winnu-mech",
+    "name": "Reclaimer",
+    "set": "pok",
+    "faction": "winnu",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "xxcha-xxcha-flagship",
+    "name": "Loncara Ssodu",
+    "set": "base",
+    "faction": "xxcha",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Space Cannon",
+        "value": 5,
+        "dice": 3
+      }
+    ]
+  },
+  {
+    "id": "xxcha-xxcha-mech",
+    "name": "Indomitus",
+    "set": "pok",
+    "faction": "xxcha",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Space Cannon",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": "yin-yin-flagship",
+    "name": "Van Hauge",
+    "set": "base",
+    "faction": "yin",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 9,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "yin-yin-mech",
+    "name": "Moyin's Ashes",
+    "set": "pok",
+    "faction": "yin",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "yssaril-yssaril-flagship",
+    "name": "Y'sia Y'ssrila",
+    "set": "base",
+    "faction": "yssaril",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 2
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "yssaril-yssaril-mech",
+    "name": "Blackshade Infiltrator",
+    "set": "pok",
+    "faction": "yssaril",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "argent-argent-destroyer",
+    "name": "Strike Wing Alpha I",
+    "set": "pok",
+    "faction": "argent",
+    "type": "destroyer",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 8
+    },
+    "move": {
+      "value": 2
+    },
+    "capacity": {
+      "value": 1
+    },
+    "abilities": [
+      {
+        "name": "Anti-Fighter Barrage",
+        "value": 9,
+        "dice": 2
+      }
+    ]
+  },
+  {
+    "id": "argent-argent-flagship",
+    "name": "Quetzecoatl",
+    "set": "pok",
+    "faction": "argent",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "argent-argent-mech",
+    "name": "Aerie Sentinel",
+    "set": "pok",
+    "faction": "argent",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "cabal-cabal-flagship",
+    "name": "The Terror Between",
+    "set": "pok",
+    "faction": "cabal",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Bombardment",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "cabal-cabal-mech",
+    "name": "Reanimator",
+    "set": "pok",
+    "faction": "cabal",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "cabal-cabal-spacedock",
+    "name": "Dimensional Tear I",
+    "set": "pok",
+    "faction": "cabal",
+    "type": "space",
+    "cost": null,
+    "combat": null,
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Production",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "empyrean-empyrean-flagship",
+    "name": "Dynamo",
+    "set": "pok",
+    "faction": "empyrean",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "empyrean-empyrean-mech",
+    "name": "Watcher",
+    "set": "pok",
+    "faction": "empyrean",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "mahact-mahact-flagship",
+    "name": "Arvicon Rex",
+    "set": "pok",
+    "faction": "mahact",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "mahact-mahact-infantry",
+    "name": "Crimson Legionnaire I",
+    "set": "pok",
+    "faction": "mahact",
+    "type": "infantry",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 8
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": []
+  },
+  {
+    "id": "mahact-mahact-mech",
+    "name": "Starlancer",
+    "set": "pok",
+    "faction": "mahact",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "naaz-naaz-flagship",
+    "name": "Visz El Vir",
+    "set": "pok",
+    "faction": "naaz",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 9,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 4
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "naaz-naaz-mech-space",
+    "name": "Z-Grav Eidolon",
+    "set": "pok",
+    "faction": "naaz",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 8,
+      "dice": 2
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": []
+  },
+  {
+    "id": "naaz-naaz-mech-super",
+    "name": "Eidolon Maximum",
+    "set": "pok",
+    "faction": "naaz",
+    "type": "mech",
+    "cost": null,
+    "combat": {
+      "value": 4,
+      "dice": 4
+    },
+    "move": {
+      "value": 3
+    },
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "naaz-naaz-mech",
+    "name": "Eidolon",
+    "set": "pok",
+    "faction": "naaz",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6,
+      "dice": 2
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "nomad-nomad-flagship",
+    "name": "Memoria I",
+    "set": "pok",
+    "faction": "nomad",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Anti-Fighter Barrage",
+        "value": 8,
+        "dice": 3
+      }
+    ]
+  },
+  {
+    "id": "nomad-nomad-mech",
+    "name": "Quantum Manipulator",
+    "set": "pok",
+    "faction": "nomad",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "titans-titans-cruiser",
+    "name": "Saturn Engine I",
+    "set": "pok",
+    "faction": "titans",
+    "type": "cruiser",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 7
+    },
+    "move": {
+      "value": 2
+    },
+    "capacity": {
+      "value": 1
+    },
+    "abilities": []
+  },
+  {
+    "id": "titans-titans-flagship",
+    "name": "Ouranos",
+    "set": "pok",
+    "faction": "titans",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "titans-titans-mech",
+    "name": "Hecatoncheires",
+    "set": "pok",
+    "faction": "titans",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "titans-titans-pds",
+    "name": "Hel-Titan I",
+    "set": "pok",
+    "faction": "titans",
+    "type": "pds",
+    "cost": null,
+    "combat": {
+      "value": 7
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Planetary Shield"
+      },
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Space Cannon",
+        "value": 6
+      },
+      {
+        "name": "Production",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "keleres-keleres-flagship",
+    "name": "Artemiris",
+    "set": "codex",
+    "faction": "keleres",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 6
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "keleres-keleres-mech",
+    "name": "Omniopiares",
+    "set": "codex",
+    "faction": "keleres",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  }
+]

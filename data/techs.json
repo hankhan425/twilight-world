@@ -1,0 +1,989 @@
+[
+  {
+    "id": "antimass-deflectors",
+    "name": "Antimass Deflectors",
+    "set": "base",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": null,
+    "prereqs": []
+  },
+  {
+    "id": "creuss-wormhole-generator",
+    "name": "Wormhole Generator Ω",
+    "set": "base",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": "creuss",
+    "prereqs": [
+      "propulsion",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "fleet-logistics",
+    "name": "Fleet Logistics",
+    "set": "base",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "propulsion",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "gravity-drive",
+    "name": "Gravity Drive",
+    "set": "base",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "propulsion"
+    ]
+  },
+  {
+    "id": "jolnar-spatial-conduit-cylinder",
+    "name": "Spatial Conduit Cylinder",
+    "set": "base",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": "jolnar",
+    "prereqs": [
+      "propulsion",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "light-wave-deflector",
+    "name": "Light/Wave Deflector",
+    "set": "base",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "propulsion",
+      "propulsion",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "saar-chaos-mapping",
+    "name": "Chaos Mapping",
+    "set": "base",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": "saar",
+    "prereqs": [
+      "propulsion"
+    ]
+  },
+  {
+    "id": "winnu-lazax-gate-folding",
+    "name": "Lazax Gate Folding",
+    "set": "base",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": "winnu",
+    "prereqs": [
+      "propulsion",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "arborec-bioplasmosis",
+    "name": "Bioplasmosis",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "arborec",
+    "prereqs": [
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "daxcive-animators",
+    "name": "Daxcive Animators",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "biotic"
+    ]
+  },
+  {
+    "id": "hacan-production-biomes",
+    "name": "Production Biomes",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "hacan",
+    "prereqs": [
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "hyper-metabolism",
+    "name": "Hyper Metabolism",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "naalu-neuroglaive",
+    "name": "Neuroglaive",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "naalu",
+    "prereqs": [
+      "biotic",
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "neural-motivator",
+    "name": "Neural Motivator",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": []
+  },
+  {
+    "id": "x-89-bacterial-weapon",
+    "name": "X-89 Bacterial Weapon ΩΩ",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "biotic",
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "xxcha-instinct-training",
+    "name": "Instinct Training",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "xxcha",
+    "prereqs": [
+      "biotic"
+    ]
+  },
+  {
+    "id": "yin-yin-spinner",
+    "name": "Yin Spinner Ω",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "yin",
+    "prereqs": [
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "yssaril-mageon-implants",
+    "name": "Mageon Implants",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "yssaril",
+    "prereqs": [
+      "biotic",
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "yssaril-transparasteel-plating",
+    "name": "Transparasteel Plating",
+    "set": "base",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "yssaril",
+    "prereqs": [
+      "biotic"
+    ]
+  },
+  {
+    "id": "nekro-valefar-assimilator-x",
+    "name": "Valefar Assimilator X",
+    "set": "base",
+    "colour": null,
+    "category": "other",
+    "faction": "nekro",
+    "prereqs": []
+  },
+  {
+    "id": "nekro-valefar-assimilator-y",
+    "name": "Valefar Assimilator Y",
+    "set": "base",
+    "colour": null,
+    "category": "other",
+    "faction": "nekro",
+    "prereqs": []
+  },
+  {
+    "id": "assault-cannon",
+    "name": "Assault Cannon",
+    "set": "base",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "warfare",
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "creuss-dimensional-splicer",
+    "name": "Dimensional Splicer",
+    "set": "base",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": "creuss",
+    "prereqs": [
+      "warfare"
+    ]
+  },
+  {
+    "id": "duranium-armor",
+    "name": "Duranium Armor",
+    "set": "base",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "letnev-non-euclidean-shielding",
+    "name": "Non-Euclidean Shielding",
+    "set": "base",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": "letnev",
+    "prereqs": [
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "magen-defense-grid",
+    "name": "Magen Defense Grid ΩΩ",
+    "set": "base",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "warfare"
+    ]
+  },
+  {
+    "id": "muaat-magmus-reactor",
+    "name": "Magmus Reactor Ω",
+    "set": "base",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": "muaat",
+    "prereqs": [
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "norr-valkyrie-particle-weave",
+    "name": "Valkyrie Particle Weave",
+    "set": "base",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": "norr",
+    "prereqs": [
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "plasma-scoring",
+    "name": "Plasma Scoring",
+    "set": "base",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": null,
+    "prereqs": []
+  },
+  {
+    "id": "arborec-letani-warrior-ii",
+    "name": "Letani Warrior II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "arborec",
+    "prereqs": [
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "carrier-ii",
+    "name": "Carrier II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": null,
+    "prereqs": [
+      "propulsion",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "cruiser-ii",
+    "name": "Cruiser II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": null,
+    "prereqs": [
+      "biotic",
+      "cybernetic",
+      "warfare"
+    ]
+  },
+  {
+    "id": "destroyer-ii",
+    "name": "Destroyer II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": null,
+    "prereqs": [
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "dreadnought-ii",
+    "name": "Dreadnought II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": null,
+    "prereqs": [
+      "propulsion",
+      "propulsion",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "fighter-ii",
+    "name": "Fighter II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": null,
+    "prereqs": [
+      "biotic",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "infantry-ii",
+    "name": "Infantry II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": null,
+    "prereqs": [
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "l1z1x-super-dreadnought-ii",
+    "name": "Super Dreadnought II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "l1z1x",
+    "prereqs": [
+      "propulsion",
+      "propulsion",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "muaat-prototype-war-sun-ii",
+    "name": "Prototype War Sun II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "muaat",
+    "prereqs": [
+      "cybernetic",
+      "warfare",
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "naalu-hybrid-crystal-fighter-ii",
+    "name": "Hybrid Crystal Fighter II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "naalu",
+    "prereqs": [
+      "biotic",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "norr-exotrireme-ii",
+    "name": "Exotrireme II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "norr",
+    "prereqs": [
+      "propulsion",
+      "propulsion",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "pds-ii",
+    "name": "PDS II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": null,
+    "prereqs": [
+      "cybernetic",
+      "warfare"
+    ]
+  },
+  {
+    "id": "saar-floating-factory-ii",
+    "name": "Floating Factory II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "saar",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "sol-advanced-carrier-ii",
+    "name": "Advanced Carrier II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "sol",
+    "prereqs": [
+      "propulsion",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "sol-spec-ops-ii",
+    "name": "Spec Ops II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "sol",
+    "prereqs": [
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "space-dock-ii",
+    "name": "Space Dock II",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": null,
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "war-sun",
+    "name": "War Sun",
+    "set": "base",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": null,
+    "prereqs": [
+      "cybernetic",
+      "warfare",
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "graviton-laser-system",
+    "name": "Graviton Laser System",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "hacan-quantum-datahub-node",
+    "name": "Quantum Datahub Node",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "hacan",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "integrated-economy",
+    "name": "Integrated Economy",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "cybernetic",
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "jolnar-e-res-siphons",
+    "name": "E-Res Siphons",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "jolnar",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "l1z1x-inheritance-systems",
+    "name": "Inheritance Systems",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "l1z1x",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "letnev-l4-disruptors",
+    "name": "L4 Disruptors",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "letnev",
+    "prereqs": [
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "mentak-mirror-computing",
+    "name": "Mirror Computing",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "mentak",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "mentak-salvage-operations",
+    "name": "Salvage Operations",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "mentak",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "sarween-tools",
+    "name": "Sarween Tools",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": []
+  },
+  {
+    "id": "transit-diodes",
+    "name": "Transit Diodes",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "winnu-hegemonic-trade-policy",
+    "name": "Hegemonic Trade Policy",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "winnu",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "xxcha-nullification-field",
+    "name": "Nullification Field",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "xxcha",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "yin-impulse-core",
+    "name": "Impulse Core",
+    "set": "base",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "yin",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "dark-energy-tap",
+    "name": "Dark Energy Tap",
+    "set": "pok",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": null,
+    "prereqs": []
+  },
+  {
+    "id": "empyrean-aetherstream",
+    "name": "Aetherstream",
+    "set": "pok",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": "empyrean",
+    "prereqs": [
+      "propulsion",
+      "propulsion"
+    ]
+  },
+  {
+    "id": "sling-relay",
+    "name": "Sling Relay",
+    "set": "pok",
+    "colour": "propulsion",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "propulsion"
+    ]
+  },
+  {
+    "id": "bio-stims",
+    "name": "Bio-Stims",
+    "set": "pok",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "biotic"
+    ]
+  },
+  {
+    "id": "empyrean-voidwatch",
+    "name": "Voidwatch",
+    "set": "pok",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "empyrean",
+    "prereqs": [
+      "biotic"
+    ]
+  },
+  {
+    "id": "mahact-genetic-recombination",
+    "name": "Genetic Recombination",
+    "set": "pok",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "mahact",
+    "prereqs": [
+      "biotic"
+    ]
+  },
+  {
+    "id": "naaz-pre-fab-arcologies",
+    "name": "Pre-Fab Arcologies",
+    "set": "pok",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": "naaz",
+    "prereqs": [
+      "biotic",
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "psychoarchaeology",
+    "name": "Psychoarchaeology",
+    "set": "pok",
+    "colour": "biotic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": []
+  },
+  {
+    "id": "ai-development-algorithm",
+    "name": "AI Development Algorithm",
+    "set": "pok",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": null,
+    "prereqs": []
+  },
+  {
+    "id": "cabal-vortex",
+    "name": "Vortex",
+    "set": "pok",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": "cabal",
+    "prereqs": [
+      "warfare"
+    ]
+  },
+  {
+    "id": "naaz-supercharge",
+    "name": "Supercharge",
+    "set": "pok",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": "naaz",
+    "prereqs": [
+      "warfare"
+    ]
+  },
+  {
+    "id": "self-assembly-routines",
+    "name": "Self-Assembly Routines",
+    "set": "pok",
+    "colour": "warfare",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "warfare"
+    ]
+  },
+  {
+    "id": "argent-strike-wing-alpha-ii",
+    "name": "Strike Wing Alpha II",
+    "set": "pok",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "argent",
+    "prereqs": [
+      "warfare",
+      "warfare"
+    ]
+  },
+  {
+    "id": "cabal-dimensional-tear-ii",
+    "name": "Dimensional Tear II",
+    "set": "pok",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "cabal",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "mahact-crimson-legionnaire-ii",
+    "name": "Crimson Legionnaire II",
+    "set": "pok",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "mahact",
+    "prereqs": [
+      "biotic",
+      "biotic"
+    ]
+  },
+  {
+    "id": "nomad-memoria-ii",
+    "name": "Memoria II",
+    "set": "pok",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "nomad",
+    "prereqs": [
+      "propulsion",
+      "biotic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "titans-hel-titan-ii",
+    "name": "Hel-Titan II",
+    "set": "pok",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "titans",
+    "prereqs": [
+      "cybernetic",
+      "warfare"
+    ]
+  },
+  {
+    "id": "titans-saturn-engine-ii",
+    "name": "Saturn Engine II",
+    "set": "pok",
+    "colour": null,
+    "category": "unit-upgrade",
+    "faction": "titans",
+    "prereqs": [
+      "biotic",
+      "cybernetic",
+      "warfare"
+    ]
+  },
+  {
+    "id": "argent-aerie-hololattice",
+    "name": "Aerie Hololattice",
+    "set": "pok",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "argent",
+    "prereqs": [
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "nomad-temporal-command-suite",
+    "name": "Temporal Command Suite",
+    "set": "pok",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "nomad",
+    "prereqs": [
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "predictive-intelligence",
+    "name": "Predictive Intelligence",
+    "set": "pok",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": [
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "scanlink-drone-network",
+    "name": "Scanlink Drone Network",
+    "set": "pok",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": null,
+    "prereqs": []
+  },
+  {
+    "id": "nekro-error-error",
+    "name": "???\\_ERROR\\_ERROR\\_???",
+    "set": "codex",
+    "colour": null,
+    "category": "standard",
+    "faction": "nekro",
+    "prereqs": [
+      "warfare"
+    ]
+  },
+  {
+    "id": "nekro-null-reference",
+    "name": "???\\_NULL\\_REFERENCE\\_???",
+    "set": "codex",
+    "colour": null,
+    "category": "standard",
+    "faction": "nekro",
+    "prereqs": [
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "keleres-agency-supply-network",
+    "name": "Agency Supply Network",
+    "set": "codex",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "keleres",
+    "prereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "keleres-iihq-modernization",
+    "name": "I.I.H.Q. Modernization",
+    "set": "codex",
+    "colour": "cybernetic",
+    "category": "standard",
+    "faction": "keleres",
+    "prereqs": [
+      "cybernetic"
+    ]
+  }
+]

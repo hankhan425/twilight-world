@@ -1,0 +1,40 @@
+{
+  "keywords": [
+    { "id": "sustain-damage", "name": "Sustain Damage", "tag": "unit ability",
+      "text": "Before hits are assigned, this unit can absorb one of them instead of being destroyed. Flip it face-down to show it is damaged; a damaged unit cannot sustain again until repaired, which happens automatically in the Status Phase." },
+    { "id": "anti-fighter-barrage", "name": "Anti-Fighter Barrage", "tag": "unit ability",
+      "text": "Rolled once at the start of space combat, before the first round. Hits from it can only destroy fighters, and they are not part of normal combat rounds — a ship with barrage still fires normally afterwards." },
+    { "id": "bombardment", "name": "Bombardment", "tag": "unit ability",
+      "text": "Fired from ships during invasion, before ground forces land. Each hit destroys one ground force on the planet. A planet with Planetary Shield cannot be bombarded at all." },
+    { "id": "space-cannon", "name": "Space Cannon", "tag": "unit ability",
+      "text": "Fires in two places: Space Cannon Offense, when an enemy moves into the system, and Space Cannon Defense, against ground forces committed to the planet. Hits are assigned by the owner of the targeted units." },
+    { "id": "planetary-shield", "name": "Planetary Shield", "tag": "unit ability",
+      "text": "The planet cannot be targeted by Bombardment. It does not stop Space Cannon, and it does not prevent invasion — it only blocks orbital bombardment." },
+    { "id": "production", "name": "Production", "tag": "unit ability",
+      "text": "Sets how many units the system can build during the Production step of a tactical action. Multiple producing units in one system add their values together." },
+    { "id": "capacity", "name": "Capacity", "tag": "stat",
+      "text": "How many fighters and ground forces a ship can carry. Capacity across all ships in a system is pooled; exceeding it at the end of a move means the excess units are removed." },
+    { "id": "combat", "name": "Combat", "tag": "stat",
+      "text": "The number a die must meet or beat to score a hit. Lower is better. A notation like 7(x2) means the unit rolls two dice, each hitting on 7 or higher." },
+    { "id": "move", "name": "Move", "tag": "stat",
+      "text": "How many systems the ship can travel through in one tactical action. Movement is blocked by systems containing enemy ships unless you have the relevant technology." },
+    { "id": "cost", "name": "Cost", "tag": "stat",
+      "text": "Resources needed to produce the unit. A notation like 1(x2) means the cost produces two of that unit at once — you cannot buy just one for half price." }
+  ],
+  "strategyCards": [
+    { "initiative": 1, "name": "Leadership",   "primary": "Gain command tokens, and spend influence to gain more.", "secondary": "Spend influence to gain command tokens." },
+    { "initiative": 2, "name": "Diplomacy",    "primary": "Choose a system and make it safe from other players' activation this round, then ready planets.", "secondary": "Spend a command token to ready planets." },
+    { "initiative": 3, "name": "Politics",     "primary": "Choose a new speaker, draw action cards, and reorder the top of the agenda deck.", "secondary": "Spend a command token to draw action cards." },
+    { "initiative": 4, "name": "Construction", "primary": "Place structures on planets you control.", "secondary": "Spend a command token to place a structure." },
+    { "initiative": 5, "name": "Trade",        "primary": "Gain trade goods, replenish commodities, and let chosen players replenish theirs.", "secondary": "Spend a command token to replenish commodities." },
+    { "initiative": 6, "name": "Warfare",      "primary": "Remove a command token from the board, then redistribute tokens between your pools.", "secondary": "Spend a command token to produce units in a system with your ships." },
+    { "initiative": 7, "name": "Technology",   "primary": "Research a technology, then research a second by paying resources.", "secondary": "Spend a command token and resources to research one technology." },
+    { "initiative": 8, "name": "Imperial",     "primary": "Score a public objective if you qualify, and gain a victory point for holding Mecatol Rex — otherwise draw a secret objective.", "secondary": "Spend a command token to draw a secret objective." }
+  ],
+  "techColours": [
+    { "id": "propulsion", "name": "Propulsion", "colour": "blue",   "text": "Movement, carrying capacity, and getting where others cannot." },
+    { "id": "biotic",     "name": "Biotic",     "colour": "green",  "text": "Ground forces, population, and card economy." },
+    { "id": "cybernetic", "name": "Cybernetic", "colour": "yellow", "text": "Economy, production efficiency, and planet output." },
+    { "id": "warfare",    "name": "Warfare",    "colour": "red",    "text": "Combat strength, bombardment, and space cannon." }
+  ]
+}
