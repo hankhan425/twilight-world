@@ -71,6 +71,48 @@
   });
 })();
 
+// ---- Ω help: float above scrolling tables without being clipped ----
+(function () {
+  var activeMark = null;
+
+  function positionTooltip(mark) {
+    var tip = mark.querySelector('.omega-tooltip');
+    if (!tip) return;
+    var markRect = mark.getBoundingClientRect();
+    var tipRect = tip.getBoundingClientRect();
+    var margin = 16;
+    var center = markRect.left + markRect.width / 2;
+    center = Math.max(margin + tipRect.width / 2,
+      Math.min(window.innerWidth - margin - tipRect.width / 2, center));
+    var top = markRect.bottom + 8;
+    if (top + tipRect.height > window.innerHeight - 12) {
+      top = Math.max(12, markRect.top - tipRect.height - 8);
+    }
+    tip.style.left = center + 'px';
+    tip.style.top = top + 'px';
+  }
+
+  document.querySelectorAll('.omega-mark').forEach(function (mark) {
+    mark.addEventListener('pointerenter', function () {
+      activeMark = mark;
+      positionTooltip(mark);
+    });
+    mark.addEventListener('pointerleave', function () { activeMark = null; });
+    mark.addEventListener('focus', function () {
+      activeMark = mark;
+      positionTooltip(mark);
+    });
+    mark.addEventListener('blur', function () { activeMark = null; });
+  });
+
+  window.addEventListener('resize', function () {
+    if (activeMark) positionTooltip(activeMark);
+  }, { passive: true });
+  window.addEventListener('scroll', function () {
+    if (activeMark) positionTooltip(activeMark);
+  }, { passive: true, capture: true });
+})();
+
 // ---- strategy cards: compare the original faces with Thunder's Edge updates ----
 (function () {
   var buttons = [].slice.call(document.querySelectorAll('[data-strategy-version]'));
