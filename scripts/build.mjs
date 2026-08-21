@@ -107,7 +107,7 @@ function write(path, html) {
 function layout({ title, depth = 0, body, active = '' }) {
   const r = depth ? '../'.repeat(depth) : './';
   const nav = [
-    ['', 'Stats'], ['factions/', 'Factions'], ['units/', 'Units'],
+    ['', 'Home'], ['factions/', 'Factions'], ['units/', 'Units'],
     ['techs/', 'Tech'], ['leaders/', 'Leaders'],
     ['promissory/', 'Promissory'], ['cards/', 'Cards'], ['explore/', 'Explore'],
     ['objectives/', 'Objectives'], ['agendas/', 'Agendas'],
@@ -122,29 +122,24 @@ function layout({ title, depth = 0, body, active = '' }) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<title>${esc(title)} · TI4 Reference</title>
-<meta name="description" content="Fast, ad-free Twilight Imperium 4th Edition reference. Faction stats, unit comparison, and the full tech tree.">
+<title>${esc(title)} · Twilight World</title>
+<meta name="description" content="Twilight World is a fast, ad-free Twilight Imperium 4th Edition reference covering factions, units, technology, and rules.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="${esc(title)} · TI4 Reference">
+<meta property="og:title" content="${esc(title)} · Twilight World">
 <meta property="og:description" content="Current PoK and Thunder's Edge faction win rates from standard six-player AsyncTI4 games.">
 <meta property="og:image" content="${r}og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${esc(title)} · TI4 Reference">
+<meta name="twitter:title" content="${esc(title)} · Twilight World">
 <meta name="twitter:description" content="Current PoK and Thunder's Edge faction win rates from standard six-player AsyncTI4 games.">
 <meta name="twitter:image" content="${r}og.png">
 <link rel="stylesheet" href="${r}css/style.css">
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top">
-  <a class="brand" href="${r}">TI<span>4</span></a>
-  <form class="search" role="search" onsubmit="return false">
-    <input id="q" type="search" placeholder="Search factions, units, tech…"
-           autocomplete="off" aria-label="Search">
-  </form>
+  <a class="brand" href="${r}">Twilight <span>World</span></a>
+  <nav class="tabs" aria-label="Primary">${nav}</nav>
   <button id="theme" type="button" aria-label="Toggle theme">◐</button>
 </header>
-<nav class="tabs">${nav}</nav>
-<div id="results" hidden></div>
 <main id="main">${body}</main>
 <footer>
   <p>An unofficial reference for <b>Twilight Imperium: Fourth Edition</b>, covering the
@@ -556,36 +551,8 @@ function pageHome() {
         influence faction performance.</p>
     </article>
   </section>`;
-  write('index.html', layout({ title: 'Faction win rates', depth: 0, body, active: 'Stats' }));
+  write('index.html', layout({ title: 'Faction win rates', depth: 0, body, active: 'Home' }));
 }
-
-// ------------------------------------------------------------------ search
-function searchIndex() {
-  const docs = [
-    ...factions.map(f => ({ t: f.name, u: `factions/${f.id}.html`, k: 'Faction' })),
-    ...units.map(u => ({ t: u.name, u: 'units/', k: u.faction ? titleCase(u.faction) : 'Unit' })),
-    ...techs.map(t => ({ t: t.name, u: 'techs/', k: t.colour ? titleCase(t.colour) : 'Unit upgrade' })),
-    ...leaders.filter(isDisplayedLeader).map(l => ({ t: cleanLeaderName(l.name), u: 'leaders/', k: titleCase(leaderKind(l)) })),
-    ...objectives.map(o => ({ t: o.name, u: 'objectives/',
-        k: o.kind === 'secret' ? 'Secret objective' : `Stage ${o.stage} objective` })),
-    ...agendas.map(a => ({ t: a.name, u: 'agendas/', k: a.type || 'Agenda' })),
-    ...actionCards.map(c => ({ t: c.name, u: 'cards/', k: 'Action card' })),
-    ...galacticEvents.map(e => ({ t: e.name, u: 'cards/', k: 'Galactic event' })),
-    ...breakthroughs.map(b => ({ t: b.name, u: `factions/${b.faction}.html`,
-      k: `${factionById[b.faction]?.name || titleCase(b.faction)} breakthrough` })),
-    ...promissoryNotes.map(n => ({ t: n.name, u: 'promissory/',
-      k: n.faction ? `${factionById[n.faction]?.name || titleCase(n.faction)} promissory` : 'Common promissory' })),
-    ...explores.map(e => ({ t: e.name, u: 'explore/', k: `${e.trait} explore` })),
-    ...relics.map(r => ({ t: r.name, u: 'explore/', k: 'Relic' })),
-    ...planets.map(p => ({ t: p.name, u: 'planets/',
-        k: p.legendary ? 'Legendary planet' : (p.trait ? p.trait + ' planet' : 'Planet') })),
-    ...glossary.keywords.map(g => ({ t: g.name, u: 'glossary/', k: 'Rules' })),
-    ...glossary.strategyCards.map(s => ({ t: s.name, u: 'glossary/', k: 'Strategy card' })),
-  ];
-  write('js/search-index.json', JSON.stringify(docs));
-  return docs.length;
-}
-
 
 // ------------------------------------------------------- objectives / cards
 /** filter bar: pure CSS via :has() + a tiny data attribute on each row */
@@ -779,7 +746,6 @@ pageHome(); pageFactions(); factions.forEach(pageFaction);
 pageUnits(); pageTechs(); pageLeaders(); pageGlossary();
 pageObjectives(); pageAgendas(); pageActionCards(); pagePromissoryNotes(); pageExplore();
 pagePlanets(); pageSystems();
-const n = searchIndex();
 cpSync('public', 'dist', { recursive: true });
 copyIcons();
 write('server/index.js', `export default {
@@ -787,7 +753,7 @@ write('server/index.js', `export default {
     return env.ASSETS.fetch(request);
   },
 };\n`);
-console.log(`built ${factions.length + 13} pages, ${n} search entries`);
+console.log(`built ${factions.length + 13} pages`);
 
 // ------------------------------------------------------------- planets/map
 function pagePlanets() {

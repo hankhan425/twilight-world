@@ -1,8 +1,8 @@
 {
-  "name": "ti4info",
+  "name": "twilight-world",
   "version": "0.1.0",
   "private": true,
-  "description": "Fast, ad-free, mobile-first Twilight Imperium 4E reference",
+  "description": "Twilight World, a fast, ad-free, mobile-first Twilight Imperium 4E reference",
   "type": "module",
   "scripts": {
     "fetch": "node scripts/fetch-source.mjs",

@@ -1,4 +1,4 @@
-# TI4 Reference
+# Twilight World
 
 A fast, ad-free, mobile-first reference for **Twilight Imperium: Fourth Edition** —
 base game, Prophecy of Kings, Thunder's Edge, and the Codices.
@@ -40,7 +40,7 @@ month, rebuilds and validates the site, and commits `data/stats.json` when it ch
 - **Game data is factual and complete.** Costs, combat values, dice counts, move,
   capacity, tech colours and prerequisites, home-system resource/influence values,
   starting units, faction rosters. Facts like these aren't copyrightable, and they're
-  the part that actually benefits from being structured, sortable, and searchable.
+  the part that actually benefits from being structured and sortable.
 - **Guide prose is written for this site.** The glossary in `src/data/glossary.json`
   explains mechanics in its own words. `src/data/faction-guides.json` and
   `src/data/leader-guides.json` add original plain-language strategy, ability,
