@@ -4,7 +4,7 @@ A fast, ad-free, mobile-first reference for **Twilight Imperium: Fourth Edition*
 base game, Prophecy of Kings, Thunder's Edge, and the Codices.
 
 Static HTML. No frameworks, no trackers, no external requests, no ads.
-The whole units page is about 67 KB.
+The generated Units page is about 83 KiB uncompressed.
 
 ```bash
 npm run all      # fetch source, extract facts, build to dist/
