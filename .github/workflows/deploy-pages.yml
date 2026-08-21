@@ -36,6 +36,9 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Fetch icon sources
+        run: npm run fetch
+
       - name: Test and build
         run: npm test && npm run build
 
