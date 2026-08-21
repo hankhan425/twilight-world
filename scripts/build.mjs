@@ -106,14 +106,15 @@ function write(path, html) {
 /** depth = how many ../ to reach site root */
 function layout({ title, depth = 0, body, active = '' }) {
   const r = depth ? '../'.repeat(depth) : './';
-  const nav = [
+  const navItems = [
     ['', 'Home'], ['factions/', 'Factions'], ['units/', 'Units'],
     ['techs/', 'Tech'], ['leaders/', 'Leaders'],
     ['promissory/', 'Promissory'], ['cards/', 'Cards'], ['explore/', 'Explore'],
     ['objectives/', 'Objectives'], ['agendas/', 'Agendas'],
     ['planets/', 'Planets'], ['systems/', 'Systems'],
     ['glossary/', 'Rules'],
-  ].map(([href, label]) =>
+  ];
+  const nav = navItems.map(([href, label]) =>
     `<a href="${r}${href}"${active === label ? ' aria-current="page"' : ''}>${label}</a>`
   ).join('');
 
@@ -138,6 +139,10 @@ function layout({ title, depth = 0, body, active = '' }) {
 <header class="top">
   <a class="brand" href="${r}">Twilight <span>World</span></a>
   <nav class="tabs" aria-label="Primary">${nav}</nav>
+  <details class="mobile-menu">
+    <summary>Menu <span class="menu-count">${navItems.length}</span></summary>
+    <nav class="mobile-links" aria-label="Primary navigation">${nav}</nav>
+  </details>
   <button id="theme" type="button" aria-label="Toggle theme">◐</button>
 </header>
 <main id="main">${body}</main>

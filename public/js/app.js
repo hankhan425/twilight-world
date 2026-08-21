@@ -23,6 +23,20 @@
     try { localStorage.setItem('ti4-theme', next); } catch (e) {}
   });
 
+  // ---- mobile navigation: native details with familiar outside/Escape dismissal ----
+  var mobileMenu = document.querySelector('.mobile-menu');
+  if (mobileMenu) {
+    document.addEventListener('click', function (event) {
+      if (mobileMenu.open && !mobileMenu.contains(event.target)) mobileMenu.open = false;
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && mobileMenu.open) {
+        mobileMenu.open = false;
+        mobileMenu.querySelector('summary').focus();
+      }
+    });
+  }
+
 })();
 
 // ---- homepage stats report switcher ----
