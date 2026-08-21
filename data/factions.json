@@ -26,12 +26,19 @@
     "startingTechs": [
       "magen-defense-grid"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "arborec-letani-warrior-ii",
       "arborec-bioplasmosis"
     ],
     "abilities": [
       "Mitosis"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Mitosis",
+        "text": "Your space docks cannot produce infantry. At the start of the status phase, place 1 infantry from your reinforcements on any planet you control."
+      }
     ],
     "flagship": "arborec-flagship",
     "mech": "arborec-mech"
@@ -62,6 +69,7 @@
     "startingTechs": [
       "gravity-drive"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "creuss-wormhole-generator",
       "creuss-dimensional-splicer"
@@ -70,6 +78,20 @@
       "Quantum Entaglement",
       "Slipstream",
       "Creuss Gate"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Quantum Entaglement",
+        "text": "You treat all systems that contain either an alpha or beta wormhole as adjacent to each other. Game effects cannot prevent you from using this ability."
+      },
+      {
+        "name": "Slipstream",
+        "text": "During your tactical actions, apply +1 to the move value of each of your ships that starts its movement in your home system or in a system that contains either an alpha or beta wormhole."
+      },
+      {
+        "name": "Creuss Gate",
+        "text": "When you create the game board, place the Creuss Gate (tile 17) where your home system would normally be placed. The Creuss Gate system is not a home system. Then, place your home system (tile 51) in your play area."
+      }
     ],
     "flagship": "creuss-flagship",
     "mech": "creuss-mech"
@@ -111,6 +133,7 @@
       "antimass-deflectors",
       "sarween-tools"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "hacan-production-biomes",
       "hacan-quantum-datahub-node"
@@ -119,6 +142,20 @@
       "Masters of Trade",
       "Guild Ships",
       "Arbiters"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Masters of Trade",
+        "text": "You do not have to spend a command token to resolve the secondary ability of the \"Trade\" strategy card."
+      },
+      {
+        "name": "Guild Ships",
+        "text": "You can negotiate transactions with players who are not your neighbor."
+      },
+      {
+        "name": "Arbiters",
+        "text": "When you are negotiating a transaction, action cards can be exchanged as part of that transaction."
+      }
     ],
     "flagship": "hacan-flagship",
     "mech": "hacan-mech"
@@ -158,6 +195,7 @@
       "sarween-tools",
       "plasma-scoring"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "jolnar-spatial-conduit-cylinder",
       "jolnar-e-res-siphons"
@@ -166,6 +204,20 @@
       "Fragile",
       "Brilliant",
       "Analytical"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Fragile",
+        "text": "Apply -1 to the result of each of your unit's combat rolls."
+      },
+      {
+        "name": "Brilliant",
+        "text": "When you spend a command token to resolve the secondary ability of the \"Technology\" strategy card, you may resolve the primary ability instead."
+      },
+      {
+        "name": "Analytical",
+        "text": "When you research a technology that is not a unit upgrade technology, you may ignore 1 prerequisite."
+      }
     ],
     "flagship": "jolnar-flagship",
     "mech": "jolnar-mech"
@@ -198,6 +250,7 @@
       "neural-motivator",
       "plasma-scoring"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "l1z1x-super-dreadnought-ii",
       "l1z1x-inheritance-systems"
@@ -205,6 +258,16 @@
     "abilities": [
       "Assimilate",
       "Harrow"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Assimilate",
+        "text": "When you gain control of a planet, replace each PDS and space dock that is on that planet with a matching unit from your reinforcements."
+      },
+      {
+        "name": "Harrow",
+        "text": "At the end of each round of ground combat, your ships in the active system may use their Bombardment abilities against your opponent's ground forces on the planet."
+      }
     ],
     "flagship": "l1z1x-flagship",
     "mech": "l1z1x-mech"
@@ -242,6 +305,7 @@
       "antimass-deflectors",
       "plasma-scoring"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "letnev-l4-disruptors",
       "letnev-non-euclidean-shielding"
@@ -249,6 +313,16 @@
     "abilities": [
       "Munitions Reserves",
       "Armada"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Munitions Reserves",
+        "text": "At the start of each round of space combat, you may spend 2 trade goods; you may re-roll any number of your dice during that combat round."
+      },
+      {
+        "name": "Armada",
+        "text": "The maximum number of non-fighter ships you can have in each system is equal to 2 more than the number of tokens in your fleet pool."
+      }
     ],
     "flagship": "letnev-flagship",
     "mech": "letnev-mech"
@@ -281,6 +355,7 @@
       "sarween-tools",
       "plasma-scoring"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "mentak-salvage-operations",
       "mentak-mirror-computing"
@@ -288,6 +363,16 @@
     "abilities": [
       "Ambush",
       "Pillage"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Ambush",
+        "text": "At the start of a space combat, you may roll 1 die for each of up to 2 of your cruisers or destroyers in the system. For each result equal to or greater than that ship's combat value, produce 1 hit; your opponent must assign it to 1 of their ships."
+      },
+      {
+        "name": "Pillage",
+        "text": "After 1 of your neighbors gains trade goods or resolves a transaction, if they have 3 or more trade goods, you may take 1 of their trade goods or commodities."
+      }
     ],
     "flagship": "mentak-flagship",
     "mech": "mentak-mech"
@@ -317,6 +402,7 @@
     "startingTechs": [
       "plasma-scoring"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "muaat-prototype-war-sun-ii",
       "muaat-magmus-reactor"
@@ -324,6 +410,16 @@
     "abilities": [
       "Star Forge",
       "Gashlai Physiology"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Star Forge",
+        "text": "Action: Spend 1 token from your strategy pool to place either 2 fighters or 1 destroyer from your reinforcements in a system that contains 1 or more of your war suns."
+      },
+      {
+        "name": "Gashlai Physiology",
+        "text": "Your ships can move through supernovas."
+      }
     ],
     "flagship": "muaat-flagship",
     "mech": "muaat-mech"
@@ -362,6 +458,7 @@
       "neural-motivator",
       "sarween-tools"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "naalu-hybrid-crystal-fighter-ii",
       "naalu-neuroglaive"
@@ -369,6 +466,16 @@
     "abilities": [
       "Telepathic",
       "Foresight"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Telepathic",
+        "text": "At the end of the strategy phase, place the Naalu \"0\" token on your strategy card; you are first in initiative order."
+      },
+      {
+        "name": "Foresight",
+        "text": "After another player moves ships into a system that contains 1 or more of your ships, you may place 1 token from your strategy pool in an adjacent system that does not contain another player's ships; move your ships from the active system into that system."
+      }
     ],
     "flagship": "naalu-flagship",
     "mech": "naalu-mech"
@@ -400,6 +507,7 @@
     "startingTechs": [
       "daxcive-animators"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "nekro-valefar-assimilator-x",
       "nekro-valefar-assimilator-y"
@@ -408,6 +516,20 @@
       "Galactic Threat",
       "Technological Singularity",
       "Propagation"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Galactic Threat",
+        "text": "You cannot vote on agendas. Once per agenda phase, after an agenda is revealed, you may predict aloud the outcome of that agenda. If your prediction is correct, gain 1 technology that is owned by a player who voted how you predicted."
+      },
+      {
+        "name": "Technological Singularity",
+        "text": "Once per combat, after 1 of your opponent's units is destroyed, you may gain 1 technology that is owned by that player."
+      },
+      {
+        "name": "Propagation",
+        "text": "You cannot research technology. When you would research a technology, gain 3 command tokens instead."
+      }
     ],
     "flagship": "nekro-flagship",
     "mech": "nekro-mech"
@@ -441,12 +563,19 @@
       }
     },
     "startingTechs": [],
+    "startingTechText": null,
     "factionTechs": [
       "norr-exotrireme-ii",
       "norr-valkyrie-particle-weave"
     ],
     "abilities": [
       "Unrelenting"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Unrelenting",
+        "text": "Apply +1 to the result of each of your unit's combat rolls."
+      }
     ],
     "flagship": "norr-flagship",
     "mech": "norr-mech"
@@ -482,6 +611,7 @@
     "startingTechs": [
       "antimass-deflectors"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "saar-floating-factory-ii",
       "saar-chaos-mapping"
@@ -489,6 +619,16 @@
     "abilities": [
       "Scavenge",
       "Nomadic"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Scavenge",
+        "text": "After you gain control of a planet, gain 1 trade good."
+      },
+      {
+        "name": "Nomadic",
+        "text": "You can score objectives even if you do not control the planets in your home system."
+      }
     ],
     "flagship": "saar-flagship",
     "mech": "saar-mech"
@@ -520,6 +660,7 @@
       "neural-motivator",
       "antimass-deflectors"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "sol-spec-ops-ii",
       "sol-advanced-carrier-ii"
@@ -527,6 +668,16 @@
     "abilities": [
       "Orbital Drop",
       "Versatile"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Orbtial Drop",
+        "text": "Action: Spend 1 token from your strategy pool to place 2 infantry from your reinforcements on 1 planet you control."
+      },
+      {
+        "name": "Versatile",
+        "text": "When you gain command tokens during the status phase, gain 1 additional command token."
+      }
     ],
     "flagship": "sol-flagship",
     "mech": "sol-mech"
@@ -556,6 +707,7 @@
       }
     },
     "startingTechs": [],
+    "startingTechText": null,
     "factionTechs": [
       "winnu-lazax-gate-folding",
       "winnu-hegemonic-trade-policy"
@@ -563,6 +715,16 @@
     "abilities": [
       "Blood Ties",
       "Reclamation"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Blood Ties",
+        "text": "You do not have to spend influence to remove the custodians token from Mecatol Rex."
+      },
+      {
+        "name": "Reclamation",
+        "text": "After you resolve a tactical action during which you gained control of Mecatol Rex, you may place 1 PDS and 1 space dock from your reinforcements on Mecatol Rex."
+      }
     ],
     "flagship": "winnu-flagship",
     "mech": "winnu-mech"
@@ -599,6 +761,7 @@
     "startingTechs": [
       "graviton-laser-system"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "xxcha-instinct-training",
       "xxcha-nullification-field"
@@ -606,6 +769,16 @@
     "abilities": [
       "Peace Accords",
       "Quash"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Peace Accords",
+        "text": "After you resolve the primary or secondary ability of the \"Diplomacy\" strategy card, you may gain control of 1 planet other than Mecatol Rex that does not contain any units and is in a system that is adjacent to a planet you control."
+      },
+      {
+        "name": "Quash",
+        "text": "When an agenda is revealed, you may spend 1 token from your strategy pool to discard that agenda and reveal 1 agenda from the top of the deck. Players vote on this agenda instead."
+      }
     ],
     "flagship": "xxcha-flagship",
     "mech": "xxcha-mech"
@@ -636,6 +809,7 @@
     "startingTechs": [
       "sarween-tools"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "yin-impulse-core",
       "yin-yin-spinner"
@@ -643,6 +817,16 @@
     "abilities": [
       "Indoctrination",
       "Devotion"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Indoctrination",
+        "text": "At the start of a ground combat, you may spend 2 influence to replace 1 of your opponent's participating infantry with 1 infantry from your reinforcements."
+      },
+      {
+        "name": "Devotion",
+        "text": "After each space battle round, you may destroy 1 of your cruisers or destroyers in the active system to produce 1 hit and assign it to 1 of your opponent's ships in that system."
+      }
     ],
     "flagship": "yin-flagship",
     "mech": "yin-mech"
@@ -679,6 +863,7 @@
     "startingTechs": [
       "neural-motivator"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "yssaril-transparasteel-plating",
       "yssaril-mageon-implants"
@@ -687,6 +872,20 @@
       "Stall Tactics",
       "Scheming",
       "Crafty"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Stall Tactics",
+        "text": "Action: Discard 1 action card from your hand."
+      },
+      {
+        "name": "Scheming",
+        "text": "When you draw 1 or more action cards, draw 1 additional action card. Then, choose and discard 1 action card from your hand."
+      },
+      {
+        "name": "Crafty",
+        "text": "You can have any number of action cards in your hand. Game effects cannot prevent you from using this ability."
+      }
     ],
     "flagship": "yssaril-flagship",
     "mech": "yssaril-mech"
@@ -730,6 +929,7 @@
       "plasma-scoring",
       "neural-motivator"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "argent-strike-wing-alpha-ii",
       "argent-aerie-hololattice"
@@ -737,6 +937,16 @@
     "abilities": [
       "Zeal",
       "Raid Formation"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Zeal",
+        "text": "You always vote first during the agenda phase. When you cast at least 1 vote, cast 1 additional vote for each player in the game including you."
+      },
+      {
+        "name": "Raid Formation",
+        "text": "When your units use Anti-Fighter Barrage: For each hit produced in excess of your opponent's Fighters, choose 1 of your opponent's ships that has Sustain Damage to become damaged."
+      }
     ],
     "flagship": "argent-flagship",
     "mech": "argent-mech"
@@ -768,6 +978,7 @@
     "startingTechs": [
       "self-assembly-routines"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "cabal-dimensional-tear-ii",
       "cabal-vortex"
@@ -776,6 +987,20 @@
       "Devour",
       "Amalgamation",
       "Riftmeld"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Devour",
+        "text": "Capture your opponent's non-structure units that are destroyed during combat."
+      },
+      {
+        "name": "Amalgamation",
+        "text": "When you produce a unit, you may return 1 captured unit of that type to produce that unit without spending resources."
+      },
+      {
+        "name": "Riftmeld",
+        "text": "When you research a unit upgrade technology, you may return 1 captured unit of that type to ignore all of the technology's prerequisites."
+      }
     ],
     "flagship": "cabal-flagship",
     "mech": "cabal-mech"
@@ -806,6 +1031,7 @@
     "startingTechs": [
       "dark-energy-tap"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "empyrean-aetherstream",
       "empyrean-voidwatch"
@@ -814,6 +1040,20 @@
       "Voidborn",
       "Aetherpassage",
       "Dark Whispers"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Voidborn",
+        "text": "Nebulae do not affect your ships' movement."
+      },
+      {
+        "name": "Aetherpassage",
+        "text": "After a player activates a system, you may allow that player to move their ships through systems that contain your ships."
+      },
+      {
+        "name": "Dark Whispers",
+        "text": "During setup, take the additional Empyrean faction promissory note; you have 2 faction promissory notes."
+      }
     ],
     "flagship": "empyrean-flagship",
     "mech": "empyrean-mech"
@@ -846,6 +1086,7 @@
       "bio-stims",
       "predictive-intelligence"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "mahact-crimson-legionnaire-ii",
       "mahact-genetic-recombination"
@@ -854,6 +1095,20 @@
       "Edict",
       "Imperia",
       "Hubris"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Edict",
+        "text": "When you win a combat, place 1 command token from your opponent's reinforcements in your fleet pool if it does not already contain 1 of that player's tokens; other player's tokens in your fleet pool increase your fleet limit but cannot be redistributed."
+      },
+      {
+        "name": "Imperia",
+        "text": "While another player's command token is in your fleet pool, you can use the ability of that player's commander, if it is unlocked."
+      },
+      {
+        "name": "Hubris",
+        "text": "During setup, purge your \"Alliance\" promissory note. Other players cannot give you their \"Alliance\" promissory note."
+      }
     ],
     "flagship": "mahact-flagship",
     "mech": "mahact-mech"
@@ -891,6 +1146,7 @@
       "psychoarchaeology",
       "ai-development-algorithm"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "naaz-supercharge",
       "naaz-pre-fab-arcologies"
@@ -898,6 +1154,16 @@
     "abilities": [
       "Distant Suns",
       "Fabrication"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Distant Suns",
+        "text": "When you explore a planet that contains 1 of your mechs, you may draw 1 additional card; choose 1 to resolve and discard the rest."
+      },
+      {
+        "name": "Fabrication",
+        "text": "Action: Either purge 2 of your relic fragments of the same type to gain 1 relic; or purge 1 of your relic fragments to gain 1 command token."
+      }
     ],
     "flagship": "naaz-flagship",
     "mech": "naaz-mech"
@@ -929,6 +1195,7 @@
     "startingTechs": [
       "sling-relay"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "nomad-memoria-ii",
       "nomad-temporal-command-suite"
@@ -936,6 +1203,16 @@
     "abilities": [
       "The Company",
       "Future Sight"
+    ],
+    "abilityDetails": [
+      {
+        "name": "The Company",
+        "text": "During setup, take the 2 additional Nomad faction agents and place them next to your faction sheet; you have 3 agents."
+      },
+      {
+        "name": "Future Sight",
+        "text": "During the Agenda phase, after an outcome that you voted for or predicted is resolved, gain 1 trade good."
+      }
     ],
     "flagship": "nomad-flagship",
     "mech": "nomad-mech"
@@ -967,6 +1244,7 @@
       "antimass-deflectors",
       "scanlink-drone-network"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "titans-saturn-engine-ii",
       "titans-hel-titan-ii"
@@ -975,6 +1253,20 @@
       "Terragenesis",
       "Awaken",
       "Coalesce"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Terragenesis",
+        "text": "After you explore a planet that does not have a sleeper token, you may place or move 1 sleeper token onto that planet."
+      },
+      {
+        "name": "Awaken",
+        "text": "After you activate a system that contains 1 or more of your sleeper tokens, you may replace each of those tokens with 1 PDS from your reinforcements."
+      },
+      {
+        "name": "Coalesce",
+        "text": "If your flagship or your Awaken faction ability places your units into the same space area or onto the same planet as another player's units, your units must participate in combat during \"Space Combat\" or \"Ground Combat\" steps."
+      }
     ],
     "flagship": "titans-flagship",
     "mech": "titans-mech"
@@ -1028,6 +1320,7 @@
       }
     },
     "startingTechs": [],
+    "startingTechText": null,
     "factionTechs": [
       "keleres-iihq-modernization",
       "keleres-agency-supply-network"
@@ -1036,6 +1329,20 @@
       "The Tribunii",
       "Council Patronage",
       "Law's Order"
+    ],
+    "abilityDetails": [
+      {
+        "name": "The Tribunii",
+        "text": "During setup, choose an unplayed faction from among the Mentak, the Xxcha and The Argent Flight; take that faction's home system, command tokens and control markers. Additionally, take the Keleres Hero that corresponds to that faction."
+      },
+      {
+        "name": "Council Patronage",
+        "text": "Replenish your commodities at the start of the strategy phase, then gain 1 trade good."
+      },
+      {
+        "name": "Law's Order",
+        "text": "You may spend 1 influence at the start of your turn to treat all laws as blank until the end of your turn."
+      }
     ],
     "flagship": "keleres-flagship",
     "mech": "keleres-mech"
@@ -1067,6 +1374,7 @@
     "startingTechs": [
       "daxcive-animators"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "nekro-null-reference",
       "nekro-error-error"
@@ -1075,6 +1383,20 @@
       "Galactic Threat",
       "Technological Singularity",
       "Propagation"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Galactic Threat",
+        "text": "You cannot vote on agendas. Once per agenda phase, after an agenda is revealed, you may predict aloud the outcome of that agenda. If your prediction is correct, gain 1 technology that is owned by a player who voted how you predicted."
+      },
+      {
+        "name": "Technological Singularity",
+        "text": "Once per combat, after 1 of your opponent's units is destroyed, you may gain 1 technology that is owned by that player."
+      },
+      {
+        "name": "Propagation",
+        "text": "You cannot research technology. When you would research a technology, gain 3 command tokens instead."
+      }
     ],
     "flagship": "nekro-flagship",
     "mech": "nekro-mech"
@@ -1107,6 +1429,7 @@
     "startingTechs": [
       "gravity-drive"
     ],
+    "startingTechText": null,
     "factionTechs": [
       "creuss-wormhole-generator",
       "creuss-dimensional-splicer"
@@ -1115,6 +1438,20 @@
       "Quantum Entaglement",
       "Slipstream",
       "Creuss Gate"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Quantum Entaglement",
+        "text": "You treat all systems that contain either an alpha or beta wormhole as adjacent to each other. Game effects cannot prevent you from using this ability."
+      },
+      {
+        "name": "Slipstream",
+        "text": "During your tactical actions, apply +1 to the move value of each of your ships that starts its movement in your home system or in a system that contains either an alpha or beta wormhole."
+      },
+      {
+        "name": "Creuss Gate",
+        "text": "When you create the game board, place the Creuss Gate (tile 17) where your home system would normally be placed. The Creuss Gate system is not a home system. Then, place your home system (tile 51) in your play area."
+      }
     ],
     "flagship": "creuss-flagship",
     "mech": "creuss-mech"
@@ -1130,9 +1467,293 @@
       "ground": {}
     },
     "startingTechs": [],
+    "startingTechText": null,
     "factionTechs": [],
     "abilities": [],
+    "abilityDetails": [],
     "flagship": null,
     "mech": null
+  },
+  {
+    "id": "bastion",
+    "name": "Last Bastion",
+    "set": "te",
+    "homeSystem": [
+      {
+        "name": "Ordinian",
+        "resources": 0,
+        "influence": 0
+      },
+      {
+        "name": "Revelation",
+        "resources": 1,
+        "influence": 2
+      }
+    ],
+    "commodities": 1,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "carrier": 1,
+        "cruiser": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 3,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [],
+    "startingTechText": "Choose 1 Propulsion blue or 1 Cybernetic yellow technology with no prerequisites",
+    "factionTechs": [
+      "bastion-4x41c-helios-v2",
+      "bastion-proxima-targeting-vi"
+    ],
+    "abilities": [
+      "Liberate",
+      "Galvanize",
+      "Phoenix Standard"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Liberate",
+        "text": "When you gain control of a planet, ready that planet if it contains a number of infantry equal to or greater than that planet's resource value; otherwise, place 1 infantry on that planet."
+      },
+      {
+        "name": "Galvanize",
+        "text": "When a game effect instructs a player to galvanize a unit, they place a galvanize token beneath it if it does not have one. Galvanized units roll 1 additional die for combat rolls and unit abilities."
+      },
+      {
+        "name": "Phoenix Standard",
+        "text": "At the end of combat, you may galvanize 1 of your units that participated."
+      }
+    ],
+    "flagship": "bastion-flagship",
+    "mech": "bastion-mech"
+  },
+  {
+    "id": "deepwrought",
+    "name": "The Deepwrought Scholarate",
+    "set": "te",
+    "homeSystem": [
+      {
+        "name": "Ikatena",
+        "resources": 4,
+        "influence": 4
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "carrier": 1,
+        "fighter": 4
+      },
+      "ground": {
+        "infantry": 3,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [],
+    "startingTechText": "During setup, research technology twice",
+    "factionTechs": [
+      "deepwrought-hydrothermal-mining",
+      "deepwrought-radical-advancement"
+    ],
+    "abilities": [
+      "Research Team",
+      "Oceanbound"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Research Team",
+        "text": "When ground forces are committed, if your units on that planet are not already coexisting, you may choose for your units to coexist."
+      },
+      {
+        "name": "Oceanbound",
+        "text": "When your units begin coexisting on a planet, gain an ocean card and ready it. Any time you have more oceans cards than there are planets that contain your coexisting units, discard ocean cards until you do not."
+      }
+    ],
+    "flagship": "deepwrought-flagship",
+    "mech": "deepwrought-mech"
+  },
+  {
+    "id": "firmament",
+    "name": "The Firmament",
+    "set": "te",
+    "homeSystem": [
+      {
+        "name": "Cronos",
+        "resources": 2,
+        "influence": 1
+      },
+      {
+        "name": "Tallin",
+        "resources": 1,
+        "influence": 2
+      }
+    ],
+    "commodities": 3,
+    "startingUnits": {
+      "space": {
+        "carrier": 1,
+        "cruiser": 1,
+        "destroyer": 1,
+        "fighter": 3
+      },
+      "ground": {
+        "infantry": 3,
+        "spacedock": 1
+      }
+    },
+    "startingTechs": [],
+    "startingTechText": "Choose 1 Biotic green or 1 Cybernetic yellow technology with no prerequisites",
+    "factionTechs": [
+      "firmament-planesplitter",
+      "firmament-neural-parasite",
+      "obsidian-planesplitter",
+      "obsidian-neural-parasite"
+    ],
+    "abilities": [
+      "Plots Within Plots",
+      "Puppets of the Blade",
+      "Nocturne",
+      "The Blade's Orchestra",
+      "Marionettes"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Plots Within Plots",
+        "text": "You can score secret objectives already scored by other players if you fulfill their requirements; this does not count against your secret objective limit or the number you can score in a round. When you score another player's secret objective, do not gain a victory point; instead, place a facedown plot card into your play area with that player's control token on it.",
+        "form": "Firmament"
+      },
+      {
+        "name": "Puppets of the Blade",
+        "text": "If you have at least 1 plot card in your play area, gain the following ability: Action: Purge The Firmament's faction sheet, leaders, planet cards, and promissory note. Then, gain all the faction components for The Obsidian.",
+        "form": "Firmament"
+      },
+      {
+        "name": "Nocturne",
+        "text": "This faction cannot be chosen during setup.",
+        "form": "Obsidian"
+      },
+      {
+        "name": "The Blade's Orchestra",
+        "text": "When this faction comes into play, flip your home system, double-sided faction components, and all of your in-play plot cards. Then, ready Cronos Hollow and Tallin Hollow.",
+        "form": "Obsidian"
+      },
+      {
+        "name": "Marionettes",
+        "text": "The player or players whose control tokens are on each plot card are the puppeted players for that plot.",
+        "form": "Obsidian"
+      }
+    ],
+    "flagship": "firmament-flagship",
+    "mech": "firmament-mech"
+  },
+  {
+    "id": "ralnel",
+    "name": "The Ral Nel Consortium",
+    "set": "te",
+    "homeSystem": [
+      {
+        "name": "Mez Lo Orz Fei Zsha",
+        "resources": 2,
+        "influence": 1
+      },
+      {
+        "name": "Rep Lo Orz Qet",
+        "resources": 1,
+        "influence": 3
+      }
+    ],
+    "commodities": 4,
+    "startingUnits": {
+      "space": {
+        "dreadnought": 1,
+        "carrier": 1,
+        "destroyer": 1,
+        "fighter": 2
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1,
+        "pds": 2
+      }
+    },
+    "startingTechs": [],
+    "startingTechText": "Choose 1 Warfare red or 1 Biotic green technology with no prerequisites",
+    "factionTechs": [
+      "ralnel-linkship-ii",
+      "ralnel-nanomachines"
+    ],
+    "abilities": [
+      "Survival Instinct",
+      "Miniaturization"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Survival Instinct",
+        "text": "After another player activates a system that contains your ships, you may move up to 2 of your ships into the active system from adjacent systems that do not contain your command tokens."
+      },
+      {
+        "name": "Miniaturization",
+        "text": "Your structures can be transported by any ship; this does not require or count against capacity. While your structures are in the space area, they cannot use their unit abilities. At the end of your tactical actions, you may place your structures that are in space areas onto planets you control in their respective systems."
+      }
+    ],
+    "flagship": "ralnel-flagship",
+    "mech": "ralnel-mech"
+  },
+  {
+    "id": "rebellion",
+    "name": "The Crimson Rebellion",
+    "set": "te",
+    "homeSystem": [
+      {
+        "name": "Ahk Creuxx",
+        "resources": 4,
+        "influence": 2
+      }
+    ],
+    "commodities": 2,
+    "startingUnits": {
+      "space": {
+        "carrier": 1,
+        "destroyer": 2,
+        "fighter": 3
+      },
+      "ground": {
+        "infantry": 4,
+        "spacedock": 1,
+        "pds": 1
+      }
+    },
+    "startingTechs": [],
+    "startingTechText": "Choose 1 Propulsion blue or 1 Warfare red technology with no prerequisites You also start with your breakthrough, Resonance Generator",
+    "factionTechs": [
+      "rebellion-exile-ii",
+      "rebellion-subatomic-splicer"
+    ],
+    "abilities": [
+      "Sundered",
+      "Incursion",
+      "The Sorrow"
+    ],
+    "abilityDetails": [
+      {
+        "name": "Sundered",
+        "text": "You cannot use wormholes other than epsilon wormholes. Other players' units that move or are placed into your home system are destroyed."
+      },
+      {
+        "name": "Incursion",
+        "text": "When you activate a system that contains a breach, you may flip that breach; systems that contain active breaches are adjacent. At the end of the status phase, any player with ships in a system that contains an active breach may remove that breach."
+      },
+      {
+        "name": "The Sorrow",
+        "text": "When you create the game board, place The Sorrow (tile 94) where your home system would be placed, and place an inactive breach in it. The Sorrow is not a home system. Then, place your home system (tile 118) in your play area."
+      }
+    ],
+    "flagship": "rebellion-flagship",
+    "mech": "rebellion-mech"
   }
 ]

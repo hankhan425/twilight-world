@@ -1,0 +1,433 @@
+{
+  "arborec": {
+    "summary": "A slow-growing biological collective that turns infantry into mobile production centers. The Arborec expand by planting ground forces, then build reinforcements directly at the front.",
+    "strengths": "Decentralized production, excellent ground-force recovery, and a strong late-game board presence.",
+    "weaknesses": "A slow opening, limited early mobility, and an economy that can stall if its infantry network is removed.",
+    "goodAgainst": "Attrition strategies and opponents who leave planets lightly defended.",
+    "poorAgainst": "Early fleet pressure, heavy bombardment, and attacks that remove infantry before they can produce.",
+    "abilities": [
+      { "name": "Mitosis", "text": "Your space docks cannot build infantry. Instead, you add one infantry to any planet you control at the start of each status phase, so your ground network grows automatically." }
+    ],
+    "promissoryNotes": [
+      { "name": "Stymie Ω", "timing": "After an opponent moves ships into a system containing the holder's units.", "effect": "The holder puts one of that opponent's command tokens in a different non-home system, then returns the note. It can close off a future activation." }
+    ]
+  },
+  "creuss": {
+    "summary": "The galaxy's wormhole specialists. Creuss fleets treat distant wormholes as a private highway network and can reposition or create connections that other factions cannot match.",
+    "strengths": "Exceptional reach, surprise attacks, flexible retreats, and access to otherwise distant objectives.",
+    "weaknesses": "A separated home system, modest starting fleet, and reliance on wormhole positions for peak mobility.",
+    "goodAgainst": "Wide or static empires that depend on distance for safety.",
+    "poorAgainst": "Early blockades, fortified wormhole exits, and opponents who can punish predictable gateways.",
+    "abilities": [
+      { "name": "Quantum Entanglement", "text": "For you, every system containing an alpha or beta wormhole is adjacent to every other such system, and effects cannot switch this connection off." },
+      { "name": "Slipstream", "text": "During your tactical actions, ships beginning in your home system or at an alpha or beta wormhole gain one movement for that move." },
+      { "name": "Creuss Gate", "text": "Your home system sits outside the normal map. The Creuss Gate occupies your usual map position and provides the route back to Creuss." }
+    ],
+    "promissoryNotes": [
+      { "name": "Creuss IFF", "timing": "At the start of the holder's action-phase turn.", "effect": "The holder places or moves a Creuss wormhole token onto an eligible controlled-planet or empty non-home system, then returns the note." }
+    ]
+  },
+  "hacan": {
+    "summary": "A commercial powerhouse that can trade across the table and turn diplomacy into resources, favors, and action-card deals.",
+    "strengths": "The best commodity economy, table-wide transactions, and unusually flexible deal-making.",
+    "weaknesses": "Limited innate combat advantages and dependence on willing trading partners.",
+    "goodAgainst": "Passive tables and factions that need commodities, action cards, or negotiated access.",
+    "poorAgainst": "Coordinated embargoes, early aggression, and raiders who turn visible wealth into a liability.",
+    "abilities": [
+      { "name": "Masters of Trade", "text": "You resolve Trade's secondary without spending a command token, making routine replenishment more efficient." },
+      { "name": "Guild Ships", "text": "You may make transactions with players who are not your neighbors." },
+      { "name": "Arbiters", "text": "Action cards may be included when you negotiate a transaction, greatly widening what you can buy and sell." }
+    ],
+    "promissoryNotes": [
+      { "name": "Trade Convoys", "timing": "The holder uses an action to place it face up.", "effect": "The holder may transact with non-neighbors until they activate a system containing Hacan units; it then returns to Hacan." }
+    ]
+  },
+  "jolnar": {
+    "summary": "The premier research faction. Jol-Nar races through the technology tree and ignores some prerequisites, trading raw combat reliability for unmatched technical flexibility.",
+    "strengths": "Fast research, flexible tech paths, and excellent access to specialized counters and unit upgrades.",
+    "weaknesses": "Every combat roll is penalized, making early fleets and ground forces fragile despite their technology.",
+    "goodAgainst": "Long games and opponents whose plans can be answered by a specific technology.",
+    "poorAgainst": "Early rushes, repeated low-cost combats, and pressure before their technology lead matures.",
+    "abilities": [
+      { "name": "Fragile", "text": "Subtract one from every one of your units' combat-roll results, so your units hit less often than their printed values suggest." },
+      { "name": "Brilliant", "text": "When you pay a command token for Technology's secondary, you may resolve the primary ability instead, gaining the stronger research option." },
+      { "name": "Analytical", "text": "When researching a non-unit-upgrade technology, you may ignore one prerequisite." }
+    ],
+    "promissoryNotes": [
+      { "name": "Research Agreement", "timing": "After Jol-Nar researches a non-faction technology.", "effect": "The holder gains that same technology and returns the note, making it one of the game's most valuable research deals." }
+    ]
+  },
+  "l1z1x": {
+    "summary": "A methodical invasion faction built around dreadnoughts, bombardment, and taking over enemy infrastructure instead of destroying it.",
+    "strengths": "Powerful capital ships, repeated bombardment, and immediate conversion of captured docks and PDS.",
+    "weaknesses": "A narrow early fleet, low commodities, and less efficiency when forced to spread across many small fights.",
+    "goodAgainst": "Structure-heavy defenses and planets protected mainly by ground forces.",
+    "poorAgainst": "Large fighter screens, mobile skirmish fleets, and economies that can replace losses faster.",
+    "abilities": [
+      { "name": "Assimilate", "text": "When you take a planet, replace every enemy PDS and space dock there with your own matching pieces, preserving the infrastructure for yourself." },
+      { "name": "Harrow", "text": "After every round of ground combat, your ships in the active system may bombard the defending ground forces again." }
+    ],
+    "promissoryNotes": [
+      { "name": "Cybernetic Enhancements Ω", "timing": "When the holder gains command tokens in the status phase.", "effect": "The holder gains one extra command token, then returns the note to L1Z1X." }
+    ]
+  },
+  "letnev": {
+    "summary": "A heavy-fleet faction that pays for rerolls, fields more non-fighter ships than its fleet pool normally allows, and thrives in decisive space battles.",
+    "strengths": "Large fleets, strong sustain-damage synergy, reliable combat when trade goods are available, and a rich home system.",
+    "weaknesses": "Low commodities, limited influence, and a preference for concentrated fleets that can leave objectives uncovered.",
+    "goodAgainst": "Capital-ship fleets and opponents who must contest a fortified system directly.",
+    "poorAgainst": "Fast objective play, dispersed pressure, and effects that bypass or punish sustain damage.",
+    "abilities": [
+      { "name": "Munitions Reserves", "text": "At the start of a space-combat round, spend two trade goods to reroll any number of your dice from that round." },
+      { "name": "Armada", "text": "Your non-fighter ship limit in each system is two higher than your fleet-pool token count." }
+    ],
+    "promissoryNotes": [
+      { "name": "War Funding Ω", "timing": "After both sides roll dice in a space combat.", "effect": "The holder may reroll all opposing dice and any number of their own, then returns the note." }
+    ]
+  },
+  "mentak": {
+    "summary": "Pirates and opportunists who skim wealth from neighbors and open combat with pre-emptive cruiser or destroyer fire.",
+    "strengths": "Punishes rich neighbors, converts small ships into dangerous ambushers, and creates strong negotiating leverage.",
+    "weaknesses": "Makes enemies quickly, depends on nearby wealth, and can struggle against fleets that survive the opening ambush.",
+    "goodAgainst": "Trade-heavy factions, players banking trade goods, and fragile fighter-light fleets.",
+    "poorAgainst": "Poor or distant neighbors, durable capital fleets, and tables willing to coordinate against the pirate tax.",
+    "abilities": [
+      { "name": "Ambush", "text": "At the start of space combat, up to two of your cruisers or destroyers each make an immediate combat roll; their hits are assigned to enemy ships before normal rounds begin." },
+      { "name": "Pillage", "text": "After a neighbor with at least three trade goods gains trade goods or completes a transaction, you may take one of their trade goods or commodities." }
+    ],
+    "promissoryNotes": [
+      { "name": "Promise of Protection", "timing": "The holder uses an action to place it face up.", "effect": "Mentak cannot Pillage the holder until the holder activates a system containing Mentak units." }
+    ]
+  },
+  "muaat": {
+    "summary": "A war-sun faction with enormous threat projection. Muaat begins with its signature ship and can turn that mobile production anchor into fighters, destroyers, and political leverage.",
+    "strengths": "Early access to a war sun, excellent intimidation, supernova mobility, and explosive late-game movement.",
+    "weaknesses": "A thin starting position, expensive centerpiece ships, and severe setbacks if the first war sun is trapped or destroyed.",
+    "goodAgainst": "Dense fleets, fortified planets, and opponents who cannot afford to challenge a war sun.",
+    "poorAgainst": "Early carrier pressure, cheap screens, and attacks that force the war sun to defend instead of expand.",
+    "abilities": [
+      { "name": "Star Forge", "text": "As an action, spend a strategy token to place either two fighters or one destroyer in a system containing one of your war suns." },
+      { "name": "Gashlai Physiology", "text": "Your ships may move through supernovas, turning otherwise impassable terrain into a route only you can use normally." }
+    ],
+    "promissoryNotes": [
+      { "name": "Fires of the Gashlai", "timing": "The holder uses it as an action.", "effect": "The holder removes one token from Muaat's fleet pool and gains the War Sun unit upgrade, then returns the note." }
+    ]
+  },
+  "naalu": {
+    "summary": "A tempo faction that always acts first, fights efficiently with fighters, and can escape an incoming fleet before combat begins.",
+    "strengths": "Initiative control, excellent fighter efficiency, strong scoring timing, and an emergency evacuation ability.",
+    "weaknesses": "A delicate opening, limited ground presence, and vulnerability to anti-fighter barrage.",
+    "goodAgainst": "Slow fleets and plans that rely on acting before Naalu can score or withdraw.",
+    "poorAgainst": "Destroyer-heavy fleets, deep ground defenses, and early pressure on their limited carriers.",
+    "abilities": [
+      { "name": "Telepathic", "text": "At the end of the strategy phase, put your 0 token on your strategy card; you act before every numbered initiative." },
+      { "name": "Foresight", "text": "When another player moves into your ships' system, spend a strategy token to move your ships into an eligible adjacent system before combat." }
+    ],
+    "promissoryNotes": [
+      { "name": "Gift of Prescience", "timing": "At the end of the strategy phase.", "effect": "The holder takes the 0 token and acts first for the round; Naalu loses Telepathic until the note returns in the status phase." }
+    ]
+  },
+  "nekro": {
+    "summary": "A predatory technology faction that cannot research normally. Nekro gains command tokens from research opportunities and copies technology by destroying enemy units or correctly reading agenda votes.",
+    "strengths": "Can steal advanced technology, gains a large command economy, and becomes more dangerous as opponents improve.",
+    "weaknesses": "Cannot vote, needs interaction to gain technology, and may lag when opponents avoid combat or delay key upgrades.",
+    "goodAgainst": "Technology leaders and factions willing to expose small units in combat.",
+    "poorAgainst": "Low-tech opponents, diplomatic containment, and tables that deny favorable technology-copy fights.",
+    "abilities": [
+      { "name": "Galactic Threat", "text": "You cannot vote. Once per agenda, predict the result after it is revealed; if correct, copy a technology from a player who voted for that result." },
+      { "name": "Technological Singularity", "text": "Once per combat, after destroying an opponent's unit, you may copy one technology owned by that opponent." },
+      { "name": "Propagation", "text": "You cannot research technology. Whenever you would research, take three command tokens instead." }
+    ],
+    "promissoryNotes": [
+      { "name": "Antivirus", "timing": "At the start of a combat, the holder places it face up.", "effect": "Nekro cannot use Technological Singularity against the holder until the holder activates a system containing Nekro units." }
+    ]
+  },
+  "norr": {
+    "summary": "The game's straightforward combat specialists. Every N'orr unit hits more reliably, turning ordinary plastic into a credible threat in space and on the ground.",
+    "strengths": "A universal combat bonus, excellent invasions, and strong late-game dreadnoughts and mechs.",
+    "weaknesses": "No starting technology, a modest economy, and few economic or mobility tools outside combat.",
+    "goodAgainst": "Evenly matched fleets and ground positions decided by repeated combat rolls.",
+    "poorAgainst": "Faster economic engines, avoidance strategies, and defenses that deal damage before normal combat.",
+    "abilities": [
+      { "name": "Unrelenting", "text": "Add one to every one of your units' combat-roll results, effectively improving each printed combat value by one." }
+    ],
+    "promissoryNotes": [
+      { "name": "Tekklar Legion", "timing": "At the start of an invasion combat.", "effect": "The holder gains +1 on combat rolls for that fight; if fighting N'orr, N'orr also suffers -1. The note then returns." }
+    ]
+  },
+  "saar": {
+    "summary": "A nomadic production faction whose floating factories travel with its fleets. Saar can keep scoring without its home system and earns money whenever it takes a planet.",
+    "strengths": "Mobile production, resilient scoring, profitable expansion, and little dependence on a fixed home base.",
+    "weaknesses": "Floating factories can be blockaded, early capacity is tight, and scattered fleets can be picked apart.",
+    "goodAgainst": "Home-system pressure and static empires that cannot keep pace with moving production.",
+    "poorAgainst": "Fast blockades, layered space-cannon zones, and opponents who can pin or destroy the factory fleet.",
+    "abilities": [
+      { "name": "Scavenge", "text": "Gain one trade good whenever you gain control of a planet." },
+      { "name": "Nomadic", "text": "You may score objectives even when you do not control every planet in your home system." }
+    ],
+    "promissoryNotes": [
+      { "name": "Ragh's Call", "timing": "After the holder commits units to land on a planet.", "effect": "All Saar ground forces on that planet are moved to another Saar-controlled planet, clearing the landing before the note returns." }
+    ]
+  },
+  "sol": {
+    "summary": "A flexible expansion faction with extra command tokens, strong carriers, and an unmatched ability to reinforce controlled planets with infantry.",
+    "strengths": "Excellent capacity, command-token economy, durable planet control, and consistent early expansion.",
+    "weaknesses": "Few tricks in space combat and a strategy-token appetite when repeated infantry drops are needed.",
+    "goodAgainst": "Ground-focused objectives, contested planets, and opponents who cannot clear large infantry stacks.",
+    "poorAgainst": "Heavy bombardment, infantry conversion, and fleets that defeat Sol's carriers before troops can land.",
+    "abilities": [
+      { "name": "Orbital Drop", "text": "As an action, spend a strategy token to place two infantry from your reinforcements on any planet you control." },
+      { "name": "Versatile", "text": "Gain one additional command token during each status phase." }
+    ],
+    "promissoryNotes": [
+      { "name": "Military Support", "timing": "At the start of Sol's turn.", "effect": "Sol loses a strategy token if possible; the holder may place two infantry on a controlled planet, then returns the note." }
+    ]
+  },
+  "winnu": {
+    "summary": "A high-risk faction centered on reclaiming Mecatol Rex and leveraging important systems. Winnu can establish free defenses on the capital and becomes formidable around Mecatol, home systems, and legendary planets.",
+    "strengths": "Free Custodians access, instant Mecatol infrastructure, powerful key-system combat bonuses, and a flexible hero.",
+    "weaknesses": "A weak starting fleet and an obvious plan that opponents can delay or deny.",
+    "goodAgainst": "Tables that leave Mecatol open or must attack Winnu in its favored systems.",
+    "poorAgainst": "Early Mecatol blockers, home-system pressure, and opponents who score without entering Winnu's strongholds.",
+    "abilities": [
+      { "name": "Blood Ties", "text": "You pay no influence when removing the Custodians token from Mecatol Rex." },
+      { "name": "Reclamation", "text": "After a tactical action in which you take Mecatol Rex, place one PDS and one space dock there from your reinforcements." }
+    ],
+    "promissoryNotes": [
+      { "name": "Acquiescence Ω", "timing": "When Winnu resolves a strategic action.", "effect": "The holder resolves that strategy card's secondary without spending or placing a command token, then returns the note." }
+    ]
+  },
+  "xxcha": {
+    "summary": "A defensive and political faction that expands through diplomacy, controls which agendas reach a vote, and punishes attacks with space cannon and negotiation.",
+    "strengths": "Political control, defensive fire, influence efficiency, and peaceful access to empty neighboring planets.",
+    "weaknesses": "Slow tempo, limited early projection, and difficulty forcing progress against opponents who simply avoid the fortress.",
+    "goodAgainst": "Direct aggression and agenda-dependent plans.",
+    "poorAgainst": "Fast economic scoring, long-range bypasses, and opponents who can win without attacking Xxcha positions.",
+    "abilities": [
+      { "name": "Peace Accords", "text": "After resolving Diplomacy's primary or secondary, take control of one eligible empty non-Mecatol planet in a system adjacent to a planet you control." },
+      { "name": "Quash", "text": "When an agenda is revealed, spend a strategy token to discard it and reveal the next agenda for the table to vote on instead." }
+    ],
+    "promissoryNotes": [
+      { "name": "Political Favor", "timing": "When an agenda is revealed.", "effect": "The holder removes one of Xxcha's strategy tokens to discard and replace that agenda, then returns the note." }
+    ]
+  },
+  "yin": {
+    "summary": "A sacrificial combat faction. Yin converts enemy infantry during invasions and trades expendable cruisers or destroyers for guaranteed hits on valuable ships.",
+    "strengths": "Excellent swing potential in ground combat, targeted ship removal, and dangerous deterrence pieces.",
+    "weaknesses": "Abilities consume influence or units, the economy is modest, and sacrifice effects can leave the fleet thin.",
+    "goodAgainst": "Elite infantry, expensive unshielded ships, and opponents relying on small high-value forces.",
+    "poorAgainst": "Cheap fighter swarms, long-range attacks, and economies able to absorb one-for-one losses.",
+    "abilities": [
+      { "name": "Indoctrination", "text": "At the start of ground combat, spend two influence to replace one participating enemy infantry with one of your own." },
+      { "name": "Devotion", "text": "After each space-combat round, destroy one of your cruisers or destroyers to assign one hit directly to an opposing ship in the system." }
+    ],
+    "promissoryNotes": [
+      { "name": "Greyfire Mutagen Ω", "timing": "At the start of ground combat against at least two non-Yin ground forces.", "effect": "The holder replaces one enemy infantry with one of their own, then returns the note." }
+    ]
+  },
+  "yssaril": {
+    "summary": "Action-card specialists who build enormous hands, filter every draw, and stall until the table has committed before revealing their real plan.",
+    "strengths": "Card selection, unlimited hand size, exceptional timing control, and flexible reactive play.",
+    "weaknesses": "A modest starting fleet, dependence on cards for peak impact, and high threat once the hand becomes visibly large.",
+    "goodAgainst": "Predictable plans and opponents who exhaust their useful actions early in the round.",
+    "poorAgainst": "Hand disruption, repeated early pressure, and situations where action cards cannot solve the underlying fleet deficit.",
+    "abilities": [
+      { "name": "Stall Tactics", "text": "As an action, discard an action card. This spends a turn without moving or committing to a larger play." },
+      { "name": "Scheming", "text": "Whenever you draw action cards, draw one extra and then discard one, improving the quality of your hand." },
+      { "name": "Crafty", "text": "Your action-card hand has no size limit, and other effects cannot disable this ability." }
+    ],
+    "promissoryNotes": [
+      { "name": "Spy Net", "timing": "At the start of the holder's turn.", "effect": "The holder looks through Yssaril's action-card hand, takes one card, and returns the note." }
+    ]
+  },
+  "argent": {
+    "summary": "A flexible destroyer faction whose anti-fighter barrage also damages larger ships. Argent combines fast expansion, strong unit-ability rolls, and dependable agenda votes.",
+    "strengths": "Excellent destroyers, anti-fighter control, multi-planet landings, and guaranteed political relevance.",
+    "weaknesses": "A low-value home system and less raw force when opponents bring fighter-light capital fleets.",
+    "goodAgainst": "Fighter screens and sustain-damage fleets that can be softened before normal combat.",
+    "poorAgainst": "Dense capital-ship fleets, resource-rich attrition, and attacks that bypass their barrage advantage.",
+    "abilities": [
+      { "name": "Zeal", "text": "You vote first. Whenever you cast at least one vote, add one extra vote for every player in the game." },
+      { "name": "Raid Formation", "text": "Excess anti-fighter-barrage hits beyond the number of enemy fighters may damage opposing ships with Sustain Damage." }
+    ],
+    "promissoryNotes": [
+      { "name": "Strike Wing Ambuscade", "timing": "When the holder rolls for a unit ability.", "effect": "One participating unit rolls one additional die, then the note returns to Argent." }
+    ]
+  },
+  "cabal": {
+    "summary": "An aggressive capture faction that drags destroyed units into its dimensional network, then spends those captives to build or research for free.",
+    "strengths": "Resource-free production, prerequisite-free unit upgrades, extreme gravity-rift mobility, and strong combat rewards.",
+    "weaknesses": "Needs fighting to fuel its engine, dimensional tears can be blockaded, and aggression makes diplomacy difficult.",
+    "goodAgainst": "Expensive fleets whose captured units provide high-value production fodder.",
+    "poorAgainst": "Players who avoid combat, cheap disposable forces, and coordinated blockades of dimensional tears.",
+    "abilities": [
+      { "name": "Devour", "text": "Capture an opponent's non-structure units when those units are destroyed during combat with you." },
+      { "name": "Amalgamation", "text": "When producing a unit, return a captured unit of that type to produce your copy without paying resources." },
+      { "name": "Riftmeld", "text": "When researching a unit upgrade, return a captured unit of that type to ignore every prerequisite." }
+    ],
+    "promissoryNotes": [
+      { "name": "Crucible", "timing": "After the holder activates a system.", "effect": "For that movement, ships avoid gravity-rift rolls and gain an extra movement when leaving or crossing a rift, then the note returns." }
+    ]
+  },
+  "empyrean": {
+    "summary": "Diplomatic explorers of empty space. The Empyrean turn nebulae and frontier tokens into mobility, information, and mutually beneficial pacts.",
+    "strengths": "Frontier exploration, open movement through nebulae, excellent deal-making, and two faction promissory notes.",
+    "weaknesses": "Limited direct combat bonuses and dependence on open space, neighbors, and cooperative agreements.",
+    "goodAgainst": "Rigid borders and opponents whose movement routes can be sold or denied.",
+    "poorAgainst": "Direct early aggression, crowded maps with little empty space, and tables unwilling to honor long-term deals.",
+    "abilities": [
+      { "name": "Voidborn", "text": "Nebulae do not reduce or stop your ships' movement." },
+      { "name": "Aetherpassage", "text": "After another player activates a system, you may allow their ships to move through systems containing your ships during that action." },
+      { "name": "Dark Whispers", "text": "You begin with two different Empyrean faction promissory notes instead of one." }
+    ],
+    "promissoryNotes": [
+      { "name": "Dark Pact", "timing": "The holder uses an action to place it face up.", "effect": "When the holder gives Empyrean commodities equal to the holder's maximum, both gain a trade good. Hostile activation ends the pact." },
+      { "name": "Blood Pact", "timing": "The holder uses an action to place it face up.", "effect": "When holder and Empyrean vote for the same result, each adds four votes. Hostile activation ends the pact." }
+    ]
+  },
+  "mahact": {
+    "summary": "Command-token manipulators who collect enemy tokens by winning combat, use those tokens as fleet supply, and borrow the corresponding commanders.",
+    "strengths": "Growing fleet capacity, access to other factions' commanders, and powerful control over activations and forced battles.",
+    "weaknesses": "Needs combat victories to assemble its toolkit, starts with awkward expansion, and cannot trade Alliance notes.",
+    "goodAgainst": "Factions with excellent commanders and opponents whose token economy is already tight.",
+    "poorAgainst": "Early containment, combat avoidance, and pressure before Mahact has collected multiple faction tokens.",
+    "abilities": [
+      { "name": "Edict", "text": "After winning combat, add one token from that opponent's reinforcements to your fleet pool if you do not already have theirs. It increases fleet capacity but cannot be redistributed." },
+      { "name": "Imperia", "text": "While another faction's token is in your fleet pool, you may use that faction's commander ability if it is unlocked." },
+      { "name": "Hubris", "text": "Purge your Alliance note during setup, and you cannot receive another player's Alliance note." }
+    ],
+    "promissoryNotes": [
+      { "name": "Scepter of Dominion", "timing": "At the start of the strategy phase.", "effect": "The holder chooses one occupied non-home system; every player represented on Mahact's command sheet places a token there, then the note returns." }
+    ]
+  },
+  "naaz": {
+    "summary": "An exploration and relic faction whose mechs turn planet draws into choices. Naaz-Rokha converts fragments into relics or command tokens and gains extra value whenever it claims new worlds.",
+    "strengths": "Reliable exploration rewards, fast relic access, flexible mechs, and strong planet-based economy.",
+    "weaknesses": "Limited early fleet power and performance that varies with planet access and exploration decks.",
+    "goodAgainst": "Slow expanders and maps with many accessible trait planets.",
+    "poorAgainst": "Early fleet pressure, planet denial, and sparse positions that limit exploration opportunities.",
+    "abilities": [
+      { "name": "Distant Suns", "text": "When exploring a planet containing one of your mechs, draw one extra matching card, resolve one, and discard the other." },
+      { "name": "Fabrication", "text": "As an action, either purge two matching relic fragments to gain a relic or purge one fragment to gain a command token." }
+    ],
+    "promissoryNotes": [
+      { "name": "Black Market Forgery", "timing": "The holder uses it as an action.", "effect": "The holder purges two matching relic fragments to gain a relic, then returns the note." }
+    ]
+  },
+  "nomad": {
+    "summary": "A flexible flagship faction supported by three agents. Nomad can rebuild its flagship for free, manipulate combat and trade timing, and launch a late-round burst of unrestricted movement.",
+    "strengths": "Three versatile agents, a reusable flagship plan, good trade-goods generation, and excellent tactical flexibility.",
+    "weaknesses": "Many advantages concentrate around the flagship, and choosing the wrong agent timing can waste much of the faction's flexibility.",
+    "goodAgainst": "Predictable fleets and opponents who cannot answer repeated flagship pressure.",
+    "poorAgainst": "Flagship suppression, multiple simultaneous fronts, and effects that force key tools before the decisive turn.",
+    "abilities": [
+      { "name": "The Company", "text": "You begin with two additional faction agents, giving you three separate exhaustible support abilities." },
+      { "name": "Future Sight", "text": "After an agenda result you voted for or successfully predicted resolves, gain one trade good." }
+    ],
+    "promissoryNotes": [
+      { "name": "The Cavalry", "timing": "At the start of a space combat not involving Nomad as the opponent.", "effect": "One of the holder's non-fighter ships temporarily uses the Nomad flagship's combat, barrage, and Sustain Damage profile." }
+    ]
+  },
+  "titans": {
+    "summary": "A map-development faction that seeds explored planets with sleeper tokens, later awakens them as PDS, and expands behind unusually fast, capable cruisers.",
+    "strengths": "Efficient cruisers, durable structures, strong forward production, and a defensive network that grows while exploring.",
+    "weaknesses": "Setup time, low commodities, and dependence on sleeper placement before the structure engine comes online.",
+    "goodAgainst": "Slow territorial pressure and fleets forced to enter developed space-cannon networks.",
+    "poorAgainst": "Fast home pressure, bombardment that bypasses the ground plan, and opponents who seize sleeper planets first.",
+    "abilities": [
+      { "name": "Terragenesis", "text": "After exploring a planet without a sleeper token, place a sleeper there or move one there from elsewhere." },
+      { "name": "Awaken", "text": "After activating a system containing your sleeper tokens, you may replace each of them with one PDS from your reinforcements." },
+      { "name": "Coalesce", "text": "If Awaken or your flagship places units alongside another player's units, the relevant space or ground combat must occur." }
+    ],
+    "promissoryNotes": [
+      { "name": "Terraform", "timing": "The holder uses an action to attach it to an eligible controlled non-home planet.", "effect": "That planet gains one resource, one influence, and all three planet traits. The attachment stays in play." }
+    ]
+  },
+  "keleres": {
+    "summary": "A modular law-enforcement faction assembled from an unused Mentak, Xxcha, or Argent delegation. Keleres combines steady income, action-card tempo, and temporary immunity to inconvenient laws.",
+    "strengths": "Automatic economic value, flexible setup, strong component-action tempo, and answers to restrictive laws.",
+    "weaknesses": "Setup depends on which eligible faction is unused, and its strongest tools need action cards or a developed economy.",
+    "goodAgainst": "Law-dependent control and opponents who give Keleres time to chain component actions.",
+    "poorAgainst": "Early concentrated pressure and games where the available delegation poorly fits the map or slice.",
+    "abilities": [
+      { "name": "The Tribunii", "text": "During setup, choose an unplayed Mentak, Xxcha, or Argent faction and use that faction's home system, tokens, control markers, and matching Keleres hero." },
+      { "name": "Council Patronage", "text": "At the start of every strategy phase, replenish your commodities and gain one trade good." },
+      { "name": "Law's Order", "text": "At the start of your turn, spend one influence to treat every law as blank until that turn ends." }
+    ],
+    "promissoryNotes": [
+      { "name": "Keleres Rider", "timing": "After an agenda is revealed.", "effect": "The holder gives up voting and predicts a result; a correct prediction gives one action card and two trade goods before the note returns." }
+    ]
+  },
+  "bastion": {
+    "summary": "A resilient expeditionary faction that stretches a small economy by liberating planets, improving their value, and galvanizing individual units into unusually effective combatants.",
+    "strengths": "High value from limited planets, extra dice from galvanized units, flexible ship placement, and strong action-card protection after the commander unlocks.",
+    "weaknesses": "Only one commodity, a resource-thin opening, and a combat plan that can lose momentum when key galvanized units are removed before they act.",
+    "goodAgainst": "Opponents who underestimate small fleets or rely on bombardment to clear lightly held planets.",
+    "poorAgainst": "Wide economic engines, effects that remove key units outside normal combat, and pressure that forces several simultaneous defenses."
+  },
+  "deepwrought": {
+    "summary": "A cooperative research faction that can coexist with other players on planets, turn those shared positions into ocean-card income, and spread technology around the table while keeping the same discoveries for itself.",
+    "strengths": "Two starting technologies, excellent research acceleration, extra ocean-card economy, and peaceful access to planets needed for objectives.",
+    "weaknesses": "Coexistence usually gives up ordinary planet control, ocean income depends on maintaining shared positions, and hostile partners can force awkward ground fights.",
+    "goodAgainst": "Crowded maps and tables willing to exchange access or technology for mutual gain.",
+    "poorAgainst": "Early fleet pressure, opponents who refuse technology deals, and factions that can efficiently clear coexisting ground forces.",
+    "specialComponents": [
+      { "name": "Ocean cards", "text": "Brine Pool, Coral Reef, Deep Abyss, Ice Shelf, and Lost Fleet each provide one resource and one influence. Oceanbound gains and readies one when your units begin coexisting, but you cannot keep more ocean cards than planets containing your coexisting units." }
+    ]
+  },
+  "rebellion": {
+    "summary": "A displaced Creuss offshoot that cannot use ordinary wormholes. Instead, the Crimson Rebellion opens and flips breaches to make distant systems adjacent while protecting a remote home system beyond The Sorrow.",
+    "strengths": "Surprise adjacency, strong movement from active breaches, a safe off-board home system, and capable destroyers with useful capacity.",
+    "weaknesses": "Cannot use alpha, beta, or gamma wormholes, depends on managing breach tokens, and gives opponents opportunities to remove active breaches during the status phase.",
+    "goodAgainst": "Static borders and empires that depend on distance or conventional chokepoints for safety.",
+    "poorAgainst": "Players who clear breaches quickly, cover likely breach destinations, or can threaten several separated systems at once."
+  },
+  "ralnel": {
+    "summary": "A mobile infrastructure faction whose ships can carry PDS and space docks. Ral Nel reacts to enemy activations, relocates structures as the front changes, and turns its Linkships into moving space-cannon platforms.",
+    "strengths": "Reactive fleet movement, transportable structures, strong positional flexibility, and four commodities for a healthy trading economy.",
+    "weaknesses": "Many advantages require careful timing and adjacency, transported structures lose their abilities while in space, and the faction can be pulled out of position by repeated activations.",
+    "goodAgainst": "Predictable attacks, static defenses, and opponents who cannot account for reinforcements arriving from adjacent systems.",
+    "poorAgainst": "Multi-front pressure, movement denial, and attacks that isolate systems from the nearby ships needed for Survival Instinct."
+  },
+  "firmament": {
+    "summary": "A two-stage conspiracy faction. The Firmament copies other players' scored secret objectives to seed hidden plots, then may permanently transform into The Obsidian and turn those plots into a much more aggressive engine.",
+    "strengths": "Unusual access to secret-objective conditions, adaptable plot effects, strong information pressure, and a powerful late-game transformation with alternate units, leaders, technologies, and promissory note.",
+    "weaknesses": "A modest opening, high rules complexity, dependence on opponents scoring achievable secrets, and an irreversible transformation that rewards exact timing.",
+    "goodAgainst": "Players whose scored secrets are easy to reproduce and opponents who give the faction time to establish several plots.",
+    "poorAgainst": "Fast early pressure, sparse secret-objective opportunities, and tables that can identify and disrupt the puppeted players central to its plots.",
+    "specialComponents": [
+      { "name": "Assail", "text": "After it is revealed, add one to your combat and unit-ability roll results against the player or players whose control tokens are on this plot." },
+      { "name": "Enervate", "text": "You may resolve the secondary abilities of the puppeted players' strategy cards without spending command tokens; for Leadership, you may resolve the primary instead." },
+      { "name": "Extract", "text": "When revealed, gain one non-faction technology owned by a puppeted player. Whenever that player later gains a non-faction technology, you may spend four resources to gain it too." },
+      { "name": "Seethe", "text": "When revealed, destroy every unit on one non-home planet controlled by a puppeted player. At the start of each status phase, destroy one of a puppeted player's infantry in any system." },
+      { "name": "Siphon", "text": "Whenever a puppeted player gains commodities, you gain the same number of trade goods." }
+    ]
+  },
+  "ordiniannekro": {
+    "inherits": "nekro",
+    "iconSet": "base",
+    "iconId": "nekro",
+    "summary": "The scenario version of the Nekro Virus used in Liberation of Ordinian. It keeps Nekro's technology-copying identity but should be evaluated within the scenario's fixed objectives and forces.",
+    "strengths": "Copies enemy technology and converts research opportunities into command tokens.",
+    "weaknesses": "Cannot vote or research normally and relies on scenario combat to advance technologically.",
+    "goodAgainst": "Scenario opponents with valuable technology exposed in combat.",
+    "poorAgainst": "Containment and opponents who deny useful unit destructions."
+  },
+  "redcreuss": {
+    "inherits": "creuss",
+    "summary": "A Liberation of Ordinian scenario faction based on Creuss mobility. The Crimson Rebellion uses wormholes and special leaders to reposition ships and arrive unexpectedly.",
+    "strengths": "Exceptional scenario mobility, flexible ship swaps, and surprise reinforcement.",
+    "weaknesses": "Relies on wormhole geometry and scenario timing rather than a broad economic engine.",
+    "goodAgainst": "Separated fleets and objectives protected mainly by distance.",
+    "poorAgainst": "Fortified wormhole exits and opponents who can cover multiple arrival points."
+  },
+  "salientsun": {
+    "summary": "A specialized alliance force from Liberation of Ordinian rather than a standard competitive faction. Its defining tool is a scenario hero capable of turning a destroyed unit into a system-wide retaliation.",
+    "strengths": "A powerful emergency retaliation in the Ordinian system and a role tailored to the scenario objective.",
+    "weaknesses": "No standard faction roster, economy, or general-purpose ability suite outside the scenario.",
+    "goodAgainst": "Large enemy concentrations in the Ordinian system.",
+    "poorAgainst": "Dispersed forces and situations outside the Liberation of Ordinian scenario.",
+    "abilities": [],
+    "promissoryNotes": []
+  }
+}

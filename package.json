@@ -9,6 +9,7 @@
     "extract": "node scripts/extract.mjs && node scripts/extract-cards.mjs && node scripts/extract-map.mjs",
     "build": "node scripts/build.mjs",
     "all": "npm run fetch && npm run extract && npm run build",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "test": "python3 -m unittest discover -s tests"
   }
 }

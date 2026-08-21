@@ -1,0 +1,54 @@
+name: Update faction stats
+
+on:
+  schedule:
+    - cron: "17 8 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-faction-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Download AsyncTI4 statistics
+        run: >-
+          curl --fail --location --retry 4 --retry-all-errors
+          --output "$RUNNER_TEMP/statistics.json"
+          https://asyncti4.com/statistics/statistics.json
+
+      - name: Rebuild the stats data
+        run: python3 scripts/update_stats.py "$RUNNER_TEMP/statistics.json" --output data/stats.json
+
+      - name: Validate the static site
+        run: npm test && npm run build
+
+      - name: Commit updated stats
+        run: |
+          if git diff --quiet -- data/stats.json; then
+            echo "Stats are unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/stats.json
+          git commit -m "chore: update faction win rates"
+          git push

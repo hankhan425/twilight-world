@@ -658,7 +658,7 @@
     "name": "Prototype War Sun I",
     "set": "base",
     "faction": "muaat",
-    "type": "war",
+    "type": "war-sun",
     "cost": {
       "value": 12
     },
@@ -938,7 +938,7 @@
     "name": "Floating Factory I",
     "set": "base",
     "faction": "saar",
-    "type": "space",
+    "type": "space-dock",
     "cost": null,
     "combat": null,
     "move": {
@@ -1348,7 +1348,7 @@
     "name": "Dimensional Tear I",
     "set": "pok",
     "faction": "cabal",
-    "type": "space",
+    "type": "space-dock",
     "cost": null,
     "combat": null,
     "move": null,
@@ -1724,6 +1724,355 @@
     "name": "Omniopiares",
     "set": "codex",
     "faction": "keleres",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "bastion-bastion-flagship",
+    "name": "The Egeiro",
+    "set": "te",
+    "faction": "bastion",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 9
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Production",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "bastion-bastion-mech",
+    "name": "A3 Valiance",
+    "set": "te",
+    "faction": "bastion",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "bastion-bastion-spacedock",
+    "name": "4X41C \"Helios\" V1",
+    "set": "te",
+    "faction": "bastion",
+    "type": "space-dock",
+    "cost": null,
+    "combat": null,
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Production X+2"
+      }
+    ],
+    "upgradePrereqs": [
+      "cybernetic",
+      "cybernetic"
+    ]
+  },
+  {
+    "id": "deepwrought-deepwrought-flagship",
+    "name": "D.W.S. Luminous",
+    "set": "te",
+    "faction": "deepwrought",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 7,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 6
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "deepwrought-deepwrought-mech",
+    "name": "Eanautic",
+    "set": "te",
+    "faction": "deepwrought",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      },
+      {
+        "name": "Production",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "firmament-firmament-flagship",
+    "name": "Heaven's Eye",
+    "set": "te",
+    "faction": "firmament",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ],
+    "form": "Firmament"
+  },
+  {
+    "id": "firmament-firmament-mech",
+    "name": "Viper EX-23",
+    "set": "te",
+    "faction": "firmament",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ],
+    "form": "Firmament"
+  },
+  {
+    "id": "firmament-obsidian-flagship",
+    "name": "Heaven's Hollow",
+    "set": "te",
+    "faction": "firmament",
+    "type": "decayed-flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 3
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ],
+    "form": "Obsidian"
+  },
+  {
+    "id": "firmament-obsidian-mech",
+    "name": "Viper Hollow",
+    "set": "te",
+    "faction": "firmament",
+    "type": "decayed-mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ],
+    "form": "Obsidian"
+  },
+  {
+    "id": "ralnel-ralnel-destroyer",
+    "name": "Linkship I",
+    "set": "te",
+    "faction": "ralnel",
+    "type": "destroyer",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 9
+    },
+    "move": {
+      "value": 3
+    },
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Anti-Fighter Barrage",
+        "value": 9,
+        "dice": 2
+      }
+    ]
+  },
+  {
+    "id": "ralnel-ralnel-flagship",
+    "name": "Last Dispatch",
+    "set": "te",
+    "faction": "ralnel",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 8,
+      "dice": 2
+    },
+    "move": {
+      "value": 2
+    },
+    "capacity": {
+      "value": 4
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "ralnel-ralnel-mech",
+    "name": "Alarum",
+    "set": "te",
+    "faction": "ralnel",
+    "type": "mech",
+    "cost": {
+      "value": 2
+    },
+    "combat": {
+      "value": 6
+    },
+    "move": null,
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "rebellion-rebellion-destroyer",
+    "name": "Exile I",
+    "set": "te",
+    "faction": "rebellion",
+    "type": "destroyer",
+    "cost": {
+      "value": 1
+    },
+    "combat": {
+      "value": 8
+    },
+    "move": {
+      "value": 2
+    },
+    "capacity": null,
+    "abilities": [
+      {
+        "name": "Anti-Fighter Barrage",
+        "value": 9,
+        "dice": 2
+      }
+    ]
+  },
+  {
+    "id": "rebellion-rebellion-flagship",
+    "name": "Quietus",
+    "set": "te",
+    "faction": "rebellion",
+    "type": "flagship",
+    "cost": {
+      "value": 8
+    },
+    "combat": {
+      "value": 5,
+      "dice": 2
+    },
+    "move": {
+      "value": 1
+    },
+    "capacity": {
+      "value": 3
+    },
+    "abilities": [
+      {
+        "name": "Sustain Damage"
+      }
+    ]
+  },
+  {
+    "id": "rebellion-rebellion-mech",
+    "name": "Revenant",
+    "set": "te",
+    "faction": "rebellion",
     "type": "mech",
     "cost": {
       "value": 2

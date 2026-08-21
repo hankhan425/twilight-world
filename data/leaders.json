@@ -1,611 +1,1058 @@
 [
   {
     "id": "arborec-agent",
-    "name": "Agent: Letani Ospha – _Unity Through Peace_",
+    "name": "Agent: Letani Ospha – Unity Through Peace",
     "set": "base",
     "kind": "agent",
-    "faction": "arborec"
+    "faction": "arborec",
+    "unlock": "Always Unlocked",
+    "timing": "Action",
+    "effect": "Exhaust this card and choose a player's non-fighter ship: that player may replace that ship with one from their reinforcements that costs up to 2 more than the replaced ship."
   },
   {
     "id": "arborec-commander",
-    "name": "Commander: Dirzuga Rophal – _Peace Through Strength_",
+    "name": "Commander: Dirzuga Rophal – Peace Through Strength",
     "set": "base",
     "kind": "commander",
-    "faction": "arborec"
+    "faction": "arborec",
+    "unlock": "Have 12 ground forces on planets you control.",
+    "timing": "After another player activates a system that contains 1 or more of your units that have Production",
+    "effect": "You may produce 1 unit in that system."
   },
   {
     "id": "arborec-hero",
-    "name": "Hero: Letani Miasmiala – _Strength Through Unity_",
+    "name": "Hero: Letani Miasmiala – Strength Through Unity",
     "set": "base",
     "kind": "hero",
-    "faction": "arborec"
+    "faction": "arborec",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Produce any number of units in any number of systems that contain 1 or more of your ground forces. Then, purge this card."
   },
   {
     "id": "creuss-agent",
-    "name": "Agent: Emissary Taivra – _The Azure Whisper_",
+    "name": "Agent: Emissary Taivra – The Azure Whisper",
     "set": "base",
     "kind": "agent",
-    "faction": "creuss"
+    "faction": "creuss",
+    "unlock": "Always Unlocked",
+    "timing": "After a player activates a system that contains a non-delta wormhole",
+    "effect": "You may exhaust this card: if you do, that system is adjacent to all other systems that contain a wormhole during this tactical action."
   },
   {
     "id": "creuss-commander",
-    "name": "Commander: Sai Seravus – _Gatewarden_",
+    "name": "Commander: Sai Seravus – Gatewarden",
     "set": "base",
     "kind": "commander",
-    "faction": "creuss"
+    "faction": "creuss",
+    "unlock": "Have units in 3 systems that contain alpha or beta wormholes.",
+    "timing": "After your ships move",
+    "effect": "For each ship that has a capacity value and moved through 1 or more wormholes, you may place 1 fighter from your reinforcements with that ship if you have unused capacity in the active system."
   },
   {
     "id": "creuss-hero",
-    "name": "Hero: Riftwalker Meian – _Shaleri Guardian_",
+    "name": "Hero: Riftwalker Meian – Shaleri Guardian",
     "set": "base",
     "kind": "hero",
-    "faction": "creuss"
+    "faction": "creuss",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Swap the positions of any 2 systems that contain wormholes or your units, other than the Creuss system and the wormhole nexus. Then, purge this card."
   },
   {
     "id": "hacan-agent",
-    "name": "Agent: Carth of Golden Sands – _Tripartite Governor_",
+    "name": "Agent: Carth of Golden Sands – Tripartite Governor",
     "set": "base",
     "kind": "agent",
-    "faction": "hacan"
+    "faction": "hacan",
+    "unlock": "Always Unlocked",
+    "timing": "During the action phase",
+    "effect": "You may exhaust this card to gain 2 commodities or replenish another player's commodities."
   },
   {
     "id": "hacan-commander",
-    "name": "Commander: Gila the Silvertongue – _Kenaran Ambassador_",
+    "name": "Commander: Gila the Silvertongue – Kenaran Ambassador",
     "set": "base",
     "kind": "commander",
-    "faction": "hacan"
+    "faction": "hacan",
+    "unlock": "Have 10 trade goods.",
+    "timing": "When you cast votes",
+    "effect": "You may spend any number of trade goods: cast 2 additional votes for each trade good spent."
   },
   {
     "id": "hacan-hero",
-    "name": "Hero: Harrugh Gefhara – _The Nascent Twilight_",
+    "name": "Hero: Harrugh Gefhara – The Nascent Twilight",
     "set": "base",
     "kind": "hero",
-    "faction": "hacan"
+    "faction": "hacan",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "When 1 or more of your units use Production",
+    "effect": "You may reduce the cost of each of your units to 0 during this use of Production. If you do, purge this card."
   },
   {
     "id": "jolnar-agent",
-    "name": "Agent: Doctor Sucaban - _Head of Medical \"R&D\"_",
+    "name": "Agent: Doctor Sucaban - Head of Medical \"R&D\"",
     "set": "base",
     "kind": "agent",
-    "faction": "jolnar"
+    "faction": "jolnar",
+    "unlock": "Always Unlocked",
+    "timing": "When a player spends resources to research",
+    "effect": "You may exhaust this card to allow that player to remove any number of their infantry from the game board. For each unit removed, reduce the resources spent by 1."
   },
   {
     "id": "jolnar-commander-te",
-    "name": "Commander: Agnlan Oln – _Advisor Adjunct_",
+    "name": "Commander: Agnlan Oln – Advisor Adjunct",
     "set": "base",
-    "kind": null,
-    "faction": "jolnar-commander"
+    "kind": "commander",
+    "faction": "jolnar",
+    "unlock": "Own 8 technologies.",
+    "timing": "After you roll dice for a unit ability",
+    "effect": "You may reroll any of those dice."
   },
   {
     "id": "jolnar-commander",
-    "name": "Commander: Ta Zern – _Deepwrought Visionary_",
+    "name": "Commander: Ta Zern – Deepwrought Visionary",
     "set": "base",
     "kind": "commander",
-    "faction": "jolnar"
+    "faction": "jolnar",
+    "unlock": "Own 8 technologies.",
+    "timing": "After you roll dice for a unit ability",
+    "effect": "You may reroll any of those dice."
   },
   {
     "id": "jolnar-hero",
-    "name": "Hero: Rin, the Master's Legacy – _Perfected Being_",
+    "name": "Hero: Rin, the Master's Legacy – Perfected Being",
     "set": "base",
     "kind": "hero",
-    "faction": "jolnar"
+    "faction": "jolnar",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "For each non-unit upgrade technology you own, you may replace that technology with any technology of the same color from the deck. Then, purge this card."
   },
   {
     "id": "l1z1x-agent",
-    "name": "Agent: I48S – _Enhancer Prodigy_",
+    "name": "Agent: I48S – Enhancer Prodigy",
     "set": "base",
     "kind": "agent",
-    "faction": "l1z1x"
+    "faction": "l1z1x",
+    "unlock": "Always Unlocked",
+    "timing": "After a player activates a system",
+    "effect": "You may exhaust this card to allow that player to replace 1 of their infantry in the active system with 1 mech from their reinforcements."
   },
   {
     "id": "l1z1x-commander",
-    "name": "Commander: 2RAM – _Integrated Systems Engineer_",
+    "name": "Commander: 2RAM – Integrated Systems Engineer",
     "set": "base",
     "kind": "commander",
-    "faction": "l1z1x"
+    "faction": "l1z1x",
+    "unlock": "Have 4 dreadnoughts on the game board.",
+    "timing": "At any time",
+    "effect": "Units that have Planetary Shield do not prevent you from using Bombardment."
   },
   {
     "id": "l1z1x-hero",
-    "name": "Hero: The Helmsman – _The Last Record_",
+    "name": "Hero: The Helmsman – The Last Record",
     "set": "base",
     "kind": "hero",
-    "faction": "l1z1x"
+    "faction": "l1z1x",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Choose 1 system that does not contain other players' ships. you may move your flagship and any number of your dreadnoughts from other systems into the chosen system. Then, purge this card. Note: This can move/carry ground forces and fighters up to capacity, but cannot land them"
   },
   {
     "id": "letnev-agent",
-    "name": "Agent: Viscount Unlenn – _The Dunlain Scourge_",
+    "name": "Agent: Viscount Unlenn – The Dunlain Scourge",
     "set": "base",
     "kind": "agent",
-    "faction": "letnev"
+    "faction": "letnev",
+    "unlock": "Always Unlocked",
+    "timing": "At the start of a space combat round",
+    "effect": "You may exhaust this card to choose 1 ship in the active system: that ship rolls 1 additional die during this combat round."
   },
   {
     "id": "letnev-commander",
-    "name": "Commander: Rear Admiral Farran – _Sector XVIII Viceroy_",
+    "name": "Commander: Rear Admiral Farran – Sector XVIII Viceroy",
     "set": "base",
     "kind": "commander",
-    "faction": "letnev"
+    "faction": "letnev",
+    "unlock": "Have 5 non-fighter ships in 1 system.",
+    "timing": "After 1 of your units uses Sustain Damage",
+    "effect": "You may gain 1 trade good."
   },
   {
     "id": "letnev-hero",
-    "name": "Hero: Darktalon Treilla – _Void Revenant_",
+    "name": "Hero: Darktalon Treilla – Void Revenant",
     "set": "base",
     "kind": "hero",
-    "faction": "letnev"
+    "faction": "letnev",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Place this card near the game board. the number of non-fighter ships you can have in systems is not limited by laws or by the number of command tokens in your fleet pool during this game round. At the end of that game round, purge this card."
   },
   {
     "id": "mentak-agent",
-    "name": "Agent: Suffi An - _90% Smuggler, 110% Energy_",
+    "name": "Agent: Suffi An - 90% Smuggler, 110% Energy",
     "set": "base",
     "kind": "agent",
-    "faction": "mentak"
+    "faction": "mentak",
+    "unlock": "Always Unlocked",
+    "timing": "After the Pillage faction ability is used against another player",
+    "effect": "You may exhaust this card: if you do, you and that player each draw 1 action card."
   },
   {
     "id": "mentak-commander",
-    "name": "Commander: S'ula Mentarion - _Everyone's \"Best Friend\"_",
+    "name": "Commander: S'ula Mentarion - Everyone's \"Best Friend\"",
     "set": "base",
     "kind": "commander",
-    "faction": "mentak"
+    "faction": "mentak",
+    "unlock": "Have 4 cruisers on the game board.",
+    "timing": "After you win a space combat",
+    "effect": "You may force your opponent to give you 1 promissory note from their hand."
   },
   {
     "id": "mentak-hero",
-    "name": "Hero: Ipswitch, Loose Cannon – _Mercenary Raider_",
+    "name": "Hero: Ipswitch, Loose Cannon – Mercenary Raider",
     "set": "base",
     "kind": "hero",
-    "faction": "mentak"
+    "faction": "mentak",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "At the start of a space combat that you are participating in",
+    "effect": "You may purge this card. if you do, for each other player's ship that is destroyed during this combat, place 1 ship of that type from your reinforcements in the active system."
   },
   {
     "id": "muaat-agent",
-    "name": "Agent: Umbat – _Forgemaster_",
+    "name": "Agent: Umbat – Forgemaster",
     "set": "base",
     "kind": "agent",
-    "faction": "muaat"
+    "faction": "muaat",
+    "unlock": "Always Unlocked",
+    "timing": "Action",
+    "effect": "Exhaust this card to choose a player: that player may produce up to 2 units that each have a cost of 4 or less in a system that contains one of their war suns or their flagship."
   },
   {
     "id": "muaat-commander",
-    "name": "Commander: Magmus – _Gashlai Tribune_",
+    "name": "Commander: Magmus – Gashlai Tribune",
     "set": "base",
     "kind": "commander",
-    "faction": "muaat"
+    "faction": "muaat",
+    "unlock": "Produce a war sun.",
+    "timing": "After you spend a token from your strategy pool",
+    "effect": "You may gain 1 trade good."
   },
   {
     "id": "muaat-hero",
-    "name": "Hero: Adjudicator Ba'al – _Starscourge_",
+    "name": "Hero: Adjudicator Ba'al – Starscourge",
     "set": "base",
     "kind": "hero",
-    "faction": "muaat"
+    "faction": "muaat",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "After you move a war sun into a non-home system other than Mecatol Rex",
+    "effect": "You may destroy all other players' units in that system and replace that system tile with the Muaat supernova tile. If you do, purge this card and each planet card that corresponds to the replaced system tile."
   },
   {
     "id": "naalu-agent-te",
-    "name": "Agent: Z'eu ΩΩ – _Agent of the Nefishh_",
+    "name": "Agent: Z'eu ΩΩ – Agent of the Nefishh",
     "set": "base",
-    "kind": null,
-    "faction": "naalu-agent"
+    "kind": "agent",
+    "faction": "naalu",
+    "unlock": "Always Unlocked",
+    "timing": "Passive while unlocked",
+    "effect": "You may exhaust this card to return that token to that player's reinforcements."
   },
   {
     "id": "naalu-agent",
-    "name": "Agent: Z'eu Ω – _Agent of the Nefishh_",
+    "name": "Agent: Z'eu Ω – Agent of the Nefishh",
     "set": "base",
     "kind": "agent",
-    "faction": "naalu"
+    "faction": "naalu",
+    "unlock": "Always Unlocked",
+    "timing": "Action",
+    "effect": "Exhaust this card and choose a player. That player may perform a tactical action in a non-home system without placing a command token. That system still counts as being activated."
   },
   {
     "id": "naalu-commander",
-    "name": "Commander: M'aban Ω – _Crystalline Sorceress_",
+    "name": "Commander: M'aban Ω – Crystalline Sorceress",
     "set": "base",
     "kind": "commander",
-    "faction": "naalu"
+    "faction": "naalu",
+    "unlock": "Have ground forces in or adjacent to the Mecatol Rex system.",
+    "timing": "At any time",
+    "effect": "You may look at your neighbors' hands of promissory notes and the top and bottom card of the agenda deck."
   },
   {
     "id": "naalu-hero",
-    "name": "Hero: The Oracle – _Corrupted Mind_",
+    "name": "Hero: The Oracle – Corrupted Mind",
     "set": "base",
     "kind": "hero",
-    "faction": "naalu"
+    "faction": "naalu",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "At the end of the status phase",
+    "effect": "You may force each other player to give you 1 promissory note from their hand. If you do, purge this card."
   },
   {
     "id": "nekro-agent",
-    "name": "Agent: Nekro Malleon – _The Shifting Host_",
+    "name": "Agent: Nekro Malleon – The Shifting Host",
     "set": "base",
     "kind": "agent",
-    "faction": "nekro"
+    "faction": "nekro",
+    "unlock": "Always Unlocked",
+    "timing": "During the action phase",
+    "effect": "You may exhaust this card to choose a player: that player may discard 1 action card or spend 1 command token from their command sheet to gain 2 trade goods."
   },
   {
     "id": "nekro-commander",
-    "name": "Commander: Nekro Acidos – _Obsidian Reaper_",
+    "name": "Commander: Nekro Acidos – Obsidian Reaper",
     "set": "base",
     "kind": "commander",
-    "faction": "nekro"
+    "faction": "nekro",
+    "unlock": "Own 3 technologies. A \"Valefar Assimilator\" technology counts only if its X or Y token is on a technology.",
+    "timing": "After you gain a technology",
+    "effect": "You may draw 1 action card."
   },
   {
     "id": "nekro-hero",
-    "name": "Hero: UNIT.DSGN.FLAYESH – _Recursive Tyrant_",
+    "name": "Hero: UNIT.DSGN.FLAYESH – Recursive Tyrant",
     "set": "base",
     "kind": "hero",
-    "faction": "nekro"
+    "faction": "nekro",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Choose a planet that has a technology specialty in a system that contains your units. Destroy any other player's units on that planet. Gain trade goods equal to the planet's combined resource and influence values and gain 1 technology that matches the specialty of that planet. Then, purge this card."
   },
   {
     "id": "norr-agent",
-    "name": "Agent: T'ro – _Tekklar Legionnaire_",
+    "name": "Agent: T'ro – Tekklar Legionnaire",
     "set": "base",
     "kind": "agent",
-    "faction": "norr"
+    "faction": "norr",
+    "unlock": "Always Unlocked",
+    "timing": "At the end of a player's tactical action",
+    "effect": "You may exhaust this card: if you do, that player may place 2 infantry from their reinforcements on a planet they control in the active system."
   },
   {
     "id": "norr-commander",
-    "name": "Commander: G'hom Sek'kus – _Valkyrie Elite_",
+    "name": "Commander: G'hom Sek'kus – Valkyrie Elite",
     "set": "base",
     "kind": "commander",
-    "faction": "norr"
+    "faction": "norr",
+    "unlock": "Control 5 planets in non-home systems.",
+    "timing": "During the \"Commit Ground Forces\" step",
+    "effect": "You can commit (move) up to 1 ground force from each planet in the active system and each planet in adjacent systems that do not contain 1 of your command tokens."
   },
   {
     "id": "norr-hero",
-    "name": "Hero: Sh'val, Harbinger – _Master of the First_",
+    "name": "Hero: Sh'val, Harbinger – Master of the First",
     "set": "base",
     "kind": "hero",
-    "faction": "norr"
+    "faction": "norr",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "After you move ships into the active system",
+    "effect": "You may skip directly to the \"Commit Ground Forces\" step. If you do, after you commit ground forces to land on planets, purge this card and return each of your ships in the active system to your reinforcements."
   },
   {
     "id": "saar-agent",
-    "name": "Agent: Captain Mendosa – _Captain of the Fifth Fleet_",
+    "name": "Agent: Captain Mendosa – Captain of the Fifth Fleet",
     "set": "base",
     "kind": "agent",
-    "faction": "saar"
+    "faction": "saar",
+    "unlock": "Always Unlocked",
+    "timing": "When a player activates a system",
+    "effect": "You may exhaust this card to increase the move value of 1 of that player's ships to match the move value of the ship on the game board that has the highest move value."
   },
   {
     "id": "saar-commander",
-    "name": "Commander: Rowl Sarring – _Relay Engineer_",
+    "name": "Commander: Rowl Sarring – Relay Engineer",
     "set": "base",
     "kind": "commander",
-    "faction": "saar"
+    "faction": "saar",
+    "unlock": "Have 3 space docks on the game board.",
+    "timing": "When you produce fighters or infantry",
+    "effect": "You may place each of those units at any of your space docks that are not blockaded."
   },
   {
     "id": "saar-hero",
-    "name": "Hero: Gurno Aggero – _Captain of the First Fleet_",
+    "name": "Hero: Gurno Aggero – Captain of the First Fleet",
     "set": "base",
     "kind": "hero",
-    "faction": "saar"
+    "faction": "saar",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Choose 1 system that is adjacent to 1 of your space docks. Destroy all other players' infantry and fighters in that system. Then, purge this card."
   },
   {
     "id": "sol-agent",
-    "name": "Agent: Evelyn DeLouis – _Master Tactician_",
+    "name": "Agent: Evelyn DeLouis – Master Tactician",
     "set": "base",
     "kind": "agent",
-    "faction": "sol"
+    "faction": "sol",
+    "unlock": "Always Unlocked",
+    "timing": "At the start of a ground combat round",
+    "effect": "You may exhaust this card to choose 1 ground force in the active system: that ground force rolls 1 additional die during this combat round."
   },
   {
     "id": "sol-commander",
-    "name": "Commander: Claire Gibson – _Voice of the People_",
+    "name": "Commander: Claire Gibson – Voice of the People",
     "set": "base",
     "kind": "commander",
-    "faction": "sol"
+    "faction": "sol",
+    "unlock": "Control planets that have a combined total of at least 12 resources.",
+    "timing": "At the start of a ground combat on a planet you control",
+    "effect": "You may place 1 infantry from your reinforcements on that planet."
   },
   {
     "id": "sol-hero",
-    "name": "Hero: Jace X, 4th Air Legion – _Federation Hero_",
+    "name": "Hero: Jace X, 4th Air Legion – Federation Hero",
     "set": "base",
     "kind": "hero",
-    "faction": "sol"
+    "faction": "sol",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Remove each of your command tokens from the game board and return them to your reinforcements. Then, purge this card."
   },
   {
     "id": "winnu-agent",
-    "name": "Agent: Berekar Berekon – _Arbiter of Divine Right_",
+    "name": "Agent: Berekar Berekon – Arbiter of Divine Right",
     "set": "base",
     "kind": "agent",
-    "faction": "winnu"
+    "faction": "winnu",
+    "unlock": "Always Unlocked",
+    "timing": "When 1 or more of a player's units use Production",
+    "effect": "You may exhaust this card to reduce the combined cost of the produced units by 2."
   },
   {
     "id": "winnu-commander",
-    "name": "Commander: Rickar Rickani – _The Hand of the Emperor_",
+    "name": "Commander: Rickar Rickani – The Hand of the Emperor",
     "set": "base",
     "kind": "commander",
-    "faction": "winnu"
+    "faction": "winnu",
+    "unlock": "Control Mecatol Rex or enter into a combat in the Mecatol Rex system.",
+    "timing": "During combat",
+    "effect": "Apply +2 to the result of each of your unit's combat rolls in the Mecatol Rex system, your home system, and each system that contains a legendary planet."
   },
   {
     "id": "winnu-hero",
-    "name": "Hero: Mathis Mathinus – _Reclamation Executor_",
+    "name": "Hero: Mathis Mathinus – Reclamation Executor",
     "set": "base",
     "kind": "hero",
-    "faction": "winnu"
+    "faction": "winnu",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Perform the primary ability of any strategy card. Then, choose any number of other players. Those players may perform the secondary ability of that strategy card. Then, purge this card."
   },
   {
     "id": "xxcha-agent",
-    "name": "Agent: Ggrocuto Rinn - _The King's Shield_",
+    "name": "Agent: Ggrocuto Rinn - The King's Shield",
     "set": "base",
     "kind": "agent",
-    "faction": "xxcha"
+    "faction": "xxcha",
+    "unlock": "Always Unlocked",
+    "timing": "Action",
+    "effect": "Exhaust this card to ready any planet: if that planet is in a system that is adjacent to a planet you control, you may remove 1 infantry from that planet and return it to its reinforcements."
   },
   {
     "id": "xxcha-commander",
-    "name": "Commander: Elder Qanoj – _The Doom from Kklaj_",
+    "name": "Commander: Elder Qanoj – The Doom from Kklaj",
     "set": "base",
     "kind": "commander",
-    "faction": "xxcha"
+    "faction": "xxcha",
+    "unlock": "Control planets that have a combined total of at least 12 influence.",
+    "timing": "When you vote",
+    "effect": "Each planet you exhaust to cast votes provides 1 additional vote. Game effects cannot prevent you from voting on an agenda."
   },
   {
     "id": "xxcha-hero-te",
-    "name": "Hero: Xxekir Grom ΩΩ - _The Council's Heart_",
+    "name": "Hero: Xxekir Grom ΩΩ - The Council's Heart",
     "set": "base",
-    "kind": null,
-    "faction": "xxcha-hero"
+    "kind": "hero",
+    "faction": "xxcha",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Place any combination of up to 4 PDS or mechs onto planets you control; ready each planet that you place a unit on. Then, purge this card."
   },
   {
     "id": "xxcha-hero",
-    "name": "Hero: Xxekir Grom Ω - _The Council's Heart_",
+    "name": "Hero: Xxekir Grom Ω - The Council's Heart",
     "set": "base",
     "kind": "hero",
-    "faction": "xxcha"
+    "faction": "xxcha",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "When you exhaust planets",
+    "effect": "Combine the values of their resources and influence. Treat the combined value as if it were both resources and influence."
   },
   {
     "id": "yin-agent-te",
-    "name": "Agent: Brother Milor Ω – _Purifed by Fire_",
+    "name": "Agent: Brother Milor Ω – Purifed by Fire",
     "set": "base",
-    "kind": null,
-    "faction": "yin-agent"
+    "kind": "agent",
+    "faction": "yin",
+    "unlock": "Always Unlocked",
+    "timing": "After a player's unit is destroyed during combat",
+    "effect": "You may exhaust this card to allow that player to place 2 fighters in the destroyed unit's system if it was a ship, or 2 infantry on its planet if it was a ground force."
   },
   {
     "id": "yin-agent",
-    "name": "Agent: Brother Milor Ω – _Purifed by Fire_",
+    "name": "Agent: Brother Milor Ω – Purifed by Fire",
     "set": "base",
     "kind": "agent",
-    "faction": "yin"
+    "faction": "yin",
+    "unlock": "Always Unlocked",
+    "timing": "After a player's unit is destroyed",
+    "effect": "You may exhaust this card to allow that player to place 2 fighters in the destroyed unit's system if it was a ship, or 2 infantry on its planet if it was a ground force."
   },
   {
     "id": "yin-commander",
-    "name": "Commander: Brother Omar Ω – _Spinner Devotee_",
+    "name": "Commander: Brother Omar Ω – Spinner Devotee",
     "set": "base",
     "kind": "commander",
-    "faction": "yin"
+    "faction": "yin",
+    "unlock": "Use one of your faction abilities.",
+    "timing": "At any time",
+    "effect": "This card satisfies a green technology prerequisite. When you research a technology owned by another player, you may return 1 of your infantry to reinforcements to ignore all prerequisites. { .tech-type }"
   },
   {
     "id": "yin-hero",
-    "name": "Hero: Dannel of the Tenth – _High Priest of Yin_",
+    "name": "Hero: Dannel of the Tenth – High Priest of Yin",
     "set": "base",
     "kind": "hero",
-    "faction": "yin"
+    "faction": "yin",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Commit up to 3 infantry from your reinforcements to any non-home planets and resolve ground combats on those planets; players cannot use Space Cannon against these units. Then, purge this card."
   },
   {
     "id": "yssaril-agent",
-    "name": "Agent: Ssruu – _Clever, Clever Ssruu_",
+    "name": "Agent: Ssruu – Clever, Clever Ssruu",
     "set": "base",
     "kind": "agent",
-    "faction": "yssaril"
+    "faction": "yssaril",
+    "unlock": "Always Unlocked",
+    "timing": "At any time",
+    "effect": "This card has the text ability of each other player's agent, even if that agent is exhausted."
   },
   {
     "id": "yssaril-commander",
-    "name": "Commander: So Ata – _Loyal Only to a Point_",
+    "name": "Commander: So Ata – Loyal Only to a Point",
     "set": "base",
     "kind": "commander",
-    "faction": "yssaril"
+    "faction": "yssaril",
+    "unlock": "Have 7 action cards.",
+    "timing": "After another player activates a system that contains your units",
+    "effect": "You may look at that player's action cards, promissory notes, or secret objectives."
   },
   {
     "id": "yssaril-hero",
-    "name": "Hero: Kyver, Blade and Key – _Guild Assassin_",
+    "name": "Hero: Kyver, Blade and Key – Guild Assassin",
     "set": "base",
     "kind": "hero",
-    "faction": "yssaril"
+    "faction": "yssaril",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Each other player shows you 1 action card from their hand. For each player, you may either take that card or force that player to discard 3 random action cards from their hand. Then, purge this card."
   },
   {
     "id": "argent-agent",
-    "name": "Agent: Trilossa Aun Mirik – _Scorn of Ylir_",
+    "name": "Agent: Trilossa Aun Mirik – Scorn of Ylir",
     "set": "pok",
     "kind": "agent",
-    "faction": "argent"
+    "faction": "argent",
+    "unlock": "Always Unlocked",
+    "timing": "When a player produces ground forces in a system",
+    "effect": "You may exhaust this card: that player may place those units on any planets they control in that system and any adjacent systems."
   },
   {
     "id": "argent-commander",
-    "name": "Commander: Trrakan Aun Zulok – _Strike Wing Commander_",
+    "name": "Commander: Trrakan Aun Zulok – Strike Wing Commander",
     "set": "pok",
     "kind": "commander",
-    "faction": "argent"
+    "faction": "argent",
+    "unlock": "Have 6 units that have Anti-Fighter Barrage, Space Cannon, or Bombardment on the game board.",
+    "timing": "When 1 or more of your units make a roll for a unit ability",
+    "effect": "You may choose 1 of those units to roll 1 additional die."
   },
   {
     "id": "argent-hero",
-    "name": "Hero: Mirik Aun Sissiri – _Flightmaster_",
+    "name": "Hero: Mirik Aun Sissiri – Flightmaster",
     "set": "pok",
     "kind": "hero",
-    "faction": "argent"
+    "faction": "argent",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Move any number of your ships from any systems to any number of other systems that contain 1 of your command tokens and no other players' ships. Then, purge this card. Note: This can move/carry ground forces and fighters up to capacity, but cannot land them"
   },
   {
     "id": "cabal-agent",
-    "name": "Agent: The Stillness of Stars – _Oppressive Silence_",
+    "name": "Agent: The Stillness of Stars – Oppressive Silence",
     "set": "pok",
     "kind": "agent",
-    "faction": "cabal"
+    "faction": "cabal",
+    "unlock": "Always Unlocked",
+    "timing": "After another player replenishes commodities",
+    "effect": "You may exhaust this card to convert their commodities to trade goods and capture 1 unit from their reinforcements that has a cost equal to or lower than their commodity value."
   },
   {
     "id": "cabal-commander",
-    "name": "Commander: That Which Molds Flesh – _Grisly Abomination_",
+    "name": "Commander: That Which Molds Flesh – Grisly Abomination",
     "set": "pok",
     "kind": "commander",
-    "faction": "cabal"
+    "faction": "cabal",
+    "unlock": "Have units in 3 gravity rifts.",
+    "timing": "When you produce fighter or infantry units",
+    "effect": "Up to 2 of those units do not count against your Production limit."
   },
   {
     "id": "cabal-hero",
-    "name": "Hero: It Feeds on Carrion – _Twisted Horror_",
+    "name": "Hero: It Feeds on Carrion – Twisted Horror",
     "set": "pok",
     "kind": "hero",
-    "faction": "cabal"
+    "faction": "cabal",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Each other player rolls a die for each of his non-fighter ships that are in or adjacent to a system that contains a dimensional tear. On a 1-3, capture that unit. If this causes a player's ground forces or fighter to be removed, also capture those units. Then, purge this card."
   },
   {
     "id": "empyrean-agent",
-    "name": "Agent: Acamar – _The Gift of Night_",
+    "name": "Agent: Acamar – The Gift of Night",
     "set": "pok",
     "kind": "agent",
-    "faction": "empyrean"
+    "faction": "empyrean",
+    "unlock": "Always Unlocked",
+    "timing": "After a player moves ships into a system that does not contain any planets",
+    "effect": "You may exhaust this card: that player gains 1 command token."
   },
   {
     "id": "empyrean-commander",
-    "name": "Commander: Xuange – _The Archivist_",
+    "name": "Commander: Xuange – The Archivist",
     "set": "pok",
     "kind": "commander",
-    "faction": "empyrean"
+    "faction": "empyrean",
+    "unlock": "Be neighbors with all other players.",
+    "timing": "After another player moves ships into a system that contains 1 of your command tokens",
+    "effect": "You may return that token to your reinforcements."
   },
   {
     "id": "empyrean-hero",
-    "name": "Hero: Conservator Procyon – _One with the Void_",
+    "name": "Hero: Conservator Procyon – One with the Void",
     "set": "pok",
     "kind": "hero",
-    "faction": "empyrean"
+    "faction": "empyrean",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Place 1 frontier token in each system that does not contain any planets and does not already have a frontier token. Then, explore each frontier token that is in a system that contains 1 or more of your ships. Then, purge this card."
   },
   {
     "id": "mahact-agent",
-    "name": "Agent: Jae Mir Kan – _Archon of Prosperity_",
+    "name": "Agent: Jae Mir Kan – Archon of Prosperity",
     "set": "pok",
     "kind": "agent",
-    "faction": "mahact"
+    "faction": "mahact",
+    "unlock": "Always Unlocked",
+    "timing": "When you would spend a command token during the secondary ability of a strategic action",
+    "effect": "You may exhaust this card to remove 1 of the active player's command tokens from the board and use it instead."
   },
   {
     "id": "mahact-commander",
-    "name": "Commander: Il Na Viroset – _Archon of Virtue_",
+    "name": "Commander: Il Na Viroset – Archon of Virtue",
     "set": "pok",
     "kind": "commander",
-    "faction": "mahact"
+    "faction": "mahact",
+    "unlock": "Have 2 other factions' command tokens in your fleet pool.",
+    "timing": "During your tactical actions",
+    "effect": "You can activate systems that contain your command tokens. If you do, return both command tokens to your reinforcements and end your turn. Note: This is not really a tactical action and does not trigger any \"on activation\" effects. It's really a component action in effect."
   },
   {
     "id": "mahact-hero",
-    "name": "Hero: Airo Shir Aur – _Archon of Command_",
+    "name": "Hero: Airo Shir Aur – Archon of Command",
     "set": "pok",
     "kind": "hero",
-    "faction": "mahact"
+    "faction": "mahact",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Move all units in the space area of any system to an adjacent system that contains a different player's ships. Space combat is resolved in that system. neither player can retreat or resolve abilities that would move their ships. Then, purge this card."
   },
   {
     "id": "naaz-agent",
-    "name": "Agent: Garv and Gunn – _Plucky Archaeologists_",
+    "name": "Agent: Garv and Gunn – Plucky Archaeologists",
     "set": "pok",
     "kind": "agent",
-    "faction": "naaz"
+    "faction": "naaz",
+    "unlock": "Always Unlocked",
+    "timing": "At the end of a player's turn",
+    "effect": "You may exhaust this card to allow that player to explore 1 of their planets."
   },
   {
     "id": "naaz-commander",
-    "name": "Commander: Dart and Tai – _Adrenaline Junkies_",
+    "name": "Commander: Dart and Tai – Adrenaline Junkies",
     "set": "pok",
     "kind": "commander",
-    "faction": "naaz"
+    "faction": "naaz",
+    "unlock": "Have mechs in 3 systems.",
+    "timing": "After you gain control of a planet that was controlled by another player",
+    "effect": "You may explore that planet."
   },
   {
     "id": "naaz-hero",
-    "name": "Hero: Hesh and Prit – _Architect Savants_",
+    "name": "Hero: Hesh and Prit – Architect Savants",
     "set": "pok",
     "kind": "hero",
-    "faction": "naaz"
+    "faction": "naaz",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Gain 1 relic and perform the secondary ability of up to 2 readied or unchosen strategy cards. during this action, spend command tokens from your reinforcements instead of your strategy pool. Then, purge this card."
   },
   {
     "id": "nomad-agent-artuno",
-    "name": "Agent: Artuno the Betrayer – _Sumerian Overseer_",
+    "name": "Agent: Artuno the Betrayer – Sumerian Overseer",
     "set": "pok",
-    "kind": null,
-    "faction": "nomad-agent"
+    "kind": "agent",
+    "faction": "nomad",
+    "unlock": "Always Unlocked",
+    "timing": "When you gain trade goods from the supply",
+    "effect": "You may exhaust this card to place an equal number of trade goods on this card. When this card readies, gain the trade goods on this card."
   },
   {
     "id": "nomad-agent-mercer",
-    "name": "Agent: Field Marshal Mercer – _Shikrai General_",
+    "name": "Agent: Field Marshal Mercer – Shikrai General",
     "set": "pok",
-    "kind": null,
-    "faction": "nomad-agent"
+    "kind": "agent",
+    "faction": "nomad",
+    "unlock": "Always Unlocked",
+    "timing": "At the end of a player's turn",
+    "effect": "You may exhaust this card to allow that player to remove up to 2 of their ground forces from the game board and place them on planets they control in the active system."
   },
   {
     "id": "nomad-agent-thundarian",
-    "name": "Agent: The Thundarian – _Temporal Engima_",
+    "name": "Agent: The Thundarian – Temporal Engima",
     "set": "pok",
-    "kind": null,
-    "faction": "nomad-agent"
+    "kind": "agent",
+    "faction": "nomad",
+    "unlock": "Always Unlocked",
+    "timing": "After the \"Roll Dice\" step of combat",
+    "effect": "You may exhaust this card. If you do, hits are not assigned to either player's units. Return to the start of this combat round's \"Roll Dice\" step."
   },
   {
     "id": "nomad-commander",
-    "name": "Commander: Navarch Feng – _Company Shipmaster_",
+    "name": "Commander: Navarch Feng – Company Shipmaster",
     "set": "pok",
     "kind": "commander",
-    "faction": "nomad"
+    "faction": "nomad",
+    "unlock": "Have 1 scored secret objective.",
+    "timing": "When you produce",
+    "effect": "You can produce your flagship without spending resources."
   },
   {
     "id": "nomad-hero",
-    "name": "Hero: Ahk-Syl Siven - _Sole Survivor_",
+    "name": "Hero: Ahk-Syl Siven - Sole Survivor",
     "set": "pok",
     "kind": "hero",
-    "faction": "nomad"
+    "faction": "nomad",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Place this card near the game board. Your flagship and units it transports can move out of systems that contain your command tokens during this game round. At the end of that game round, purge this card."
   },
   {
     "id": "titans-agent",
-    "name": "Agent: Tellurian – _The Protector_",
+    "name": "Agent: Tellurian – The Protector",
     "set": "pok",
     "kind": "agent",
-    "faction": "titans"
+    "faction": "titans",
+    "unlock": "Always Unlocked",
+    "timing": "Before a hit would be assigned",
+    "effect": "You may exhaust this card to cancel that hit."
   },
   {
     "id": "titans-commander",
-    "name": "Commander: Tungstantus – _The Gardener_",
+    "name": "Commander: Tungstantus – The Gardener",
     "set": "pok",
     "kind": "commander",
-    "faction": "titans"
+    "faction": "titans",
+    "unlock": "Have 5 structures on the game board.",
+    "timing": "When 1 or more of your units use Production",
+    "effect": "You may gain 1 trade good."
   },
   {
     "id": "titans-hero",
-    "name": "Hero: Ul the Progenitor - _Elysium's Core_",
+    "name": "Hero: Ul the Progenitor - Elysium's Core",
     "set": "pok",
     "kind": "hero",
-    "faction": "titans"
+    "faction": "titans",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Ready Elysium and attach this card to it. Its resource and influence values are each increased by 3, and it gains the Space Cannon 5 (x3) ability as if it were a unit."
   },
   {
     "id": "keleres-agent",
-    "name": "Agent: Xander Alexin Victori III – _Miracle Worker_",
+    "name": "Agent: Xander Alexin Victori III – Miracle Worker",
     "set": "codex",
     "kind": "agent",
-    "faction": "keleres"
+    "faction": "keleres",
+    "unlock": "Always Unlocked",
+    "timing": "At any time",
+    "effect": "You may exhaust this card to allow any player to spend commodities as if they were trade goods."
   },
   {
     "id": "keleres-commander",
-    "name": "Commander: Suffi An – _Working Multiple Angles_",
+    "name": "Commander: Suffi An – Working Multiple Angles",
     "set": "codex",
     "kind": "commander",
-    "faction": "keleres"
+    "faction": "keleres",
+    "unlock": "Spend 1 trade good after you play an action card that has a component action",
+    "timing": "After you perform a component action",
+    "effect": "You may perform an additional action."
   },
   {
     "id": "keleres-hero-argent",
-    "name": "Hero: Kuuasi Aun Jalatai – _Keleres Tribunii_",
+    "name": "Hero: Kuuasi Aun Jalatai – Keleres Tribunii",
     "set": "codex",
-    "kind": null,
-    "faction": "keleres-hero"
+    "kind": "hero",
+    "faction": "keleres",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "At the start of a round of of space combat in a system that contains a planet you control",
+    "effect": "Place your flagship and up to a total of 2 cruisers and/or destroyers from your reinforcements in the active system. Then, purge this card."
   },
   {
     "id": "keleres-hero-mentak",
-    "name": "Hero: Harka Leeds – _Keleres Tribunii_",
+    "name": "Hero: Harka Leeds – Keleres Tribunii",
     "set": "codex",
-    "kind": null,
-    "faction": "keleres-hero"
+    "kind": "hero",
+    "faction": "keleres",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Reveal cards from the action card deck until you reveal 3 action cards that have component actions. Draw those cards and shuffle the rest back into the action card deck. Then, purge this card."
   },
   {
     "id": "keleres-hero-xxcha",
-    "name": "Hero: Odlynn Myrr – _Keleres Tribunii_",
+    "name": "Hero: Odlynn Myrr – Keleres Tribunii",
     "set": "codex",
-    "kind": null,
-    "faction": "keleres-hero"
+    "kind": "hero",
+    "faction": "keleres",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "After an agenda is revealed",
+    "effect": "You may cast up to 6 additional votes on this agenda. Predict aloud an outcome of this agenda. For each player that votes for another outcome, gain 1 trade good and 1 command token. Then, purge this card."
   },
   {
     "id": "redcreuss-agent",
-    "name": "Agent: Unknown – _Forlorn Shadow_",
+    "name": "Agent: Unknown – Forlorn Shadow",
     "set": "codex",
     "kind": "agent",
-    "faction": "redcreuss"
+    "faction": "redcreuss",
+    "unlock": "Always Unlocked",
+    "timing": "Action",
+    "effect": "Exhaust this card to choose 1 player. That player may swap the position of 2 of their ships in any systems; they may transport units when they swap."
   },
   {
     "id": "redcreuss-commander",
-    "name": "Commander: Unknown – _Wistful Soul_",
+    "name": "Commander: Unknown – Wistful Soul",
     "set": "codex",
     "kind": "commander",
-    "faction": "redcreuss"
+    "faction": "redcreuss",
+    "unlock": "Resolve a combat with another player.",
+    "timing": "At the end of a combat between any players",
+    "effect": "Gain 1 commodity or convert 1 of your commodities to a trade good."
   },
   {
     "id": "redcreuss-hero",
-    "name": "Hero: Unknown – _Wayward Riftwalker_",
+    "name": "Hero: Unknown – Wayward Riftwalker",
     "set": "codex",
     "kind": "hero",
-    "faction": "redcreuss"
+    "faction": "redcreuss",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "When you produce ships",
+    "effect": "You may place any of those ships onto this card. At the start of a space combat, you may purge this card to place all ships from this card into the active system."
   },
   {
     "id": "salientsun-hero",
-    "name": "Hero: F.S.S. Orlando – _Apollo Protocol_",
+    "name": "Hero: F.S.S. Orlando – Apollo Protocol",
     "set": "codex",
     "kind": "hero",
-    "faction": "salientsun"
+    "faction": "salientsun",
+    "unlock": "The Nekro Virus has 5 victory points.",
+    "timing": "When one of your units in the Ordinian system is destroyed",
+    "effect": "You may purge this card to designate that unit as the catalyst; roll 1 die for each other player's unit in the system. For each result equal to or greater than the catalyst's combat value, destroy that unit."
+  },
+  {
+    "id": "bastion-agent",
+    "name": "Agent: Dame Briar – Bastion Valiant",
+    "set": "te",
+    "kind": "agent",
+    "faction": "bastion",
+    "unlock": "Always Unlocked",
+    "timing": "When a player's unit is destroyed",
+    "effect": "You may exhaust this card to galvanize another of that player's units in the destroyed unit's system."
+  },
+  {
+    "id": "bastion-commander",
+    "name": "Commander: Nip and Tuck – Children of Ordinian",
+    "set": "te",
+    "kind": "commander",
+    "faction": "bastion",
+    "unlock": "There are 3 galvanized units on the game board",
+    "timing": "Passive while unlocked",
+    "effect": "Your action cards cannot be canceled by \"Sabotage\" action cards. The Nekro Virus cannot place assimilator tokens on your components."
+  },
+  {
+    "id": "bastion-hero",
+    "name": "Hero: Lyra Keen – Shield of the Reef",
+    "set": "te",
+    "kind": "hero",
+    "faction": "bastion",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "When one of your galvanized units is destroyed",
+    "effect": "you may purge this card to roll 1 die for each unit in its system that belongs to another player; if the result is equal to or greater than the galvanized unit's combat value, destroy that unit."
+  },
+  {
+    "id": "deepwrought-agent",
+    "name": "Agent: Doctor Carrina – Oceanographer",
+    "set": "te",
+    "kind": "agent",
+    "faction": "deepwrought",
+    "unlock": "Always Unlocked",
+    "timing": "When another player researches a technology",
+    "effect": "You may exhaust this card to allow that player to ignore 1 prerequisite; if they do, you may place 1 infantry from your reinforcements into coexistence on a non-home planet they control."
+  },
+  {
+    "id": "deepwrought-commander",
+    "name": "Commander: Aello – Ikaten Kieros",
+    "set": "te",
+    "kind": "commander",
+    "faction": "deepwrought",
+    "unlock": "Have an ocean card in play.",
+    "timing": "When another player spends resources to research a technology",
+    "effect": "That player may reduce the cost by 1; if they do, gain 1 commodity or convert 1 of your commodities to a trade good."
+  },
+  {
+    "id": "deepwrought-hero",
+    "name": "Hero: Ta Zern – Scholarate Founder",
+    "set": "te",
+    "kind": "hero",
+    "faction": "deepwrought",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Purge this card and a non-unit upgrade technology you own or from your deck; then, purge all cards with the same name owned by other players and in other players' decks. Then, each player that purged a technology they owned researches another technology."
+  },
+  {
+    "id": "firmament-agent",
+    "name": "Agent: Myru Vos – The Hungry Shadow",
+    "set": "te",
+    "kind": "agent",
+    "faction": "firmament",
+    "unlock": "Always Unlocked",
+    "timing": "When a player moves ships",
+    "effect": "You may exhaust this card; if you do Space Cannon cannot be used against those ships. If they are not transporting units, they can also move through other players' ships.",
+    "form": "Firmament"
+  },
+  {
+    "id": "firmament-commander",
+    "name": "Commander: Captain Aroz – The Black Flag",
+    "set": "te",
+    "kind": "commander",
+    "faction": "firmament",
+    "unlock": "Have a plot card in play.",
+    "timing": "Passive while unlocked",
+    "effect": "You may treat planets in systems that contain your ships as if you controlled them for the purpose of scoring secret objectives.",
+    "form": "Firmament"
+  },
+  {
+    "id": "firmament-hero",
+    "name": "Hero: Sharsiss – The Coiling Void",
+    "set": "te",
+    "kind": "hero",
+    "faction": "firmament",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Place one of your plot cards in play with any other player's control token on it. Then, you may place any player's control token on 1 of your in-play plot cards; one plot cannot have two of the same player's tokens. Then, purge this card.",
+    "form": "Firmament"
+  },
+  {
+    "id": "obsidian-agent",
+    "name": "Agent: Vos Hollow – Hunger Burning",
+    "set": "te",
+    "kind": "agent",
+    "faction": "firmament",
+    "unlock": "Always Unlocked",
+    "timing": "When a player's ship is destroyed during any combat",
+    "effect": "You may exhaust this card; if you do that player's opponent must destroy 1 of their ships of the same type in the active system.",
+    "form": "Obsidian"
+  },
+  {
+    "id": "obsidian-commander",
+    "name": "Commander: Aroz Hollow – Standard Broken",
+    "set": "te",
+    "kind": "commander",
+    "faction": "firmament",
+    "unlock": "Have units in The Fracture.",
+    "timing": "Passive while unlocked",
+    "effect": "Apply +1 to the result of each of your units' combat rolls in The Fracture.",
+    "form": "Obsidian"
+  },
+  {
+    "id": "obsidian-hero",
+    "name": "Hero: Sharsiss Hollow – Sanity Snapped",
+    "set": "te",
+    "kind": "hero",
+    "faction": "firmament",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "Action",
+    "effect": "Ready all of your planets. Then, purge this card.",
+    "form": "Obsidian"
+  },
+  {
+    "id": "ralnel-agent",
+    "name": "Agent: Kan Kip Rel – Courier Prime",
+    "set": "te",
+    "kind": "agent",
+    "faction": "ralnel",
+    "unlock": "Always Unlocked",
+    "timing": "Action",
+    "effect": "Exhaust this card to draw 2 action cards; give 1 of those cards to another player."
+  },
+  {
+    "id": "ralnel-commander",
+    "name": "Commander: Watchful Ojz – Actuary General",
+    "set": "te",
+    "kind": "commander",
+    "faction": "ralnel",
+    "unlock": "Be the last player to pass during the action phase.",
+    "timing": "When you declare a retreat",
+    "effect": "Immediately retreat up to 2 of your ships from the active system to an adjacent system that does not contain another player's ships. Place a command token from your reinforcements into that system."
+  },
+  {
+    "id": "ralnel-hero",
+    "name": "Hero: Director Nel – Acquisitive Mind",
+    "set": "te",
+    "kind": "hero",
+    "faction": "ralnel",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "After the last player passes",
+    "effect": "You may choose to no longer be passed; if you do, gain 2 command tokens, draw 1 action card, and purge this card."
+  },
+  {
+    "id": "rebellion-agent",
+    "name": "Agent: Ahk Ravin – Forlorn Shadow",
+    "set": "te",
+    "kind": "agent",
+    "faction": "rebellion",
+    "unlock": "Always Unlocked",
+    "timing": "Action",
+    "effect": "Exhaust this card to choose 1 player. That player may swap the position of 2 of their ships in any systems; they may transport units when they swap."
+  },
+  {
+    "id": "rebellion-commander",
+    "name": "Commander: Ahk Siever – Wistful Soul",
+    "set": "te",
+    "kind": "commander",
+    "faction": "rebellion",
+    "unlock": "Place a breach token in a system that contains another player's unit.",
+    "timing": "At the end of a combat between any players",
+    "effect": "Gain 1 commodity or convert 1 of your commodities to a trade good."
+  },
+  {
+    "id": "rebellion-hero",
+    "name": "Hero: Homesick Phantom – Wayward Riftwalker",
+    "set": "te",
+    "kind": "hero",
+    "faction": "rebellion",
+    "unlock": "Have 3 scored objectives.",
+    "timing": "When you produce ships",
+    "effect": "You may place any of those ships onto this card. At the start of a space combat, you may purge this card to place all ships from this card into the active system."
   }
 ]

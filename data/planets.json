@@ -11,6 +11,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "l1z1x",
+    "form": null,
     "tile": "06"
   },
   {
@@ -25,6 +26,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "75"
   },
   {
@@ -39,6 +41,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "38"
   },
   {
@@ -53,6 +56,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "69"
   },
   {
@@ -67,7 +71,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "cabal",
+    "form": null,
     "tile": "54"
+  },
+  {
+    "id": "ahkcreuxx",
+    "name": "Ahk Creuxx",
+    "set": "te",
+    "resources": 4,
+    "influence": 2,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": "rebellion",
+    "form": null,
+    "tile": "118"
   },
   {
     "id": "alioprima",
@@ -81,7 +101,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "71"
+  },
+  {
+    "id": "andeara",
+    "name": "Andeara",
+    "set": "te",
+    "resources": 1,
+    "influence": 1,
+    "trait": "Industrial",
+    "kind": "normal",
+    "techSpecialty": "Propulsion",
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "102"
   },
   {
     "id": "ang",
@@ -95,6 +131,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "61"
   },
   {
@@ -109,6 +146,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "letnev",
+    "form": null,
     "tile": "10"
   },
   {
@@ -123,6 +161,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "xxcha",
+    "form": null,
     "tile": "14"
   },
   {
@@ -136,8 +175,9 @@
     "techSpecialty": null,
     "legendary": false,
     "legendaryName": null,
-    "homeworldOf": "keleresx",
-    "tile": "92new"
+    "homeworldOf": "keleres",
+    "form": null,
+    "tile": "92"
   },
   {
     "id": "archontau",
@@ -151,6 +191,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "xxcha",
+    "form": null,
     "tile": "14"
   },
   {
@@ -164,8 +205,9 @@
     "techSpecialty": null,
     "legendary": false,
     "legendaryName": null,
-    "homeworldOf": "keleresx",
-    "tile": "92new"
+    "homeworldOf": "keleres",
+    "form": null,
+    "tile": "92"
   },
   {
     "id": "archonvail",
@@ -179,6 +221,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "59"
   },
   {
@@ -193,6 +236,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "nomad",
+    "form": null,
     "tile": "53"
   },
   {
@@ -207,6 +251,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "37"
   },
   {
@@ -221,6 +266,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "36"
   },
   {
@@ -235,6 +281,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "hacan",
+    "form": null,
     "tile": "16"
   },
   {
@@ -249,6 +296,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "75"
   },
   {
@@ -263,6 +311,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "64"
   },
   {
@@ -277,6 +326,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "argent",
+    "form": null,
     "tile": "58"
   },
   {
@@ -290,8 +340,24 @@
     "techSpecialty": null,
     "legendary": false,
     "legendaryName": null,
-    "homeworldOf": "keleresa",
-    "tile": "93new"
+    "homeworldOf": "keleres",
+    "form": null,
+    "tile": "93"
+  },
+  {
+    "id": "avernus",
+    "name": "Avernus",
+    "set": "te",
+    "resources": 2,
+    "influence": 0,
+    "trait": "Hazardous",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": true,
+    "legendaryName": "The Nucleus",
+    "homeworldOf": null,
+    "form": null,
+    "tile": null
   },
   {
     "id": "bakal",
@@ -305,7 +371,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "71"
+  },
+  {
+    "id": "bellatrix",
+    "name": "Bellatrix",
+    "set": "te",
+    "resources": 1,
+    "influence": 2,
+    "trait": "Cultural",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "109"
   },
   {
     "id": "bereg",
@@ -319,7 +401,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "35"
+  },
+  {
+    "id": "capha",
+    "name": "Capha",
+    "set": "te",
+    "resources": 3,
+    "influence": 0,
+    "trait": "Hazardous",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "108"
   },
   {
     "id": "cealdri",
@@ -333,6 +431,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "73"
   },
   {
@@ -347,7 +446,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "34"
+  },
+  {
+    "id": "cocytus",
+    "name": "Cocytus",
+    "set": "te",
+    "resources": 3,
+    "influence": 0,
+    "trait": null,
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "fracture1"
   },
   {
     "id": "cormund",
@@ -361,6 +476,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "67"
   },
   {
@@ -375,7 +491,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "33"
+  },
+  {
+    "id": "cresius",
+    "name": "Cresius",
+    "set": "te",
+    "resources": 0,
+    "influence": 1,
+    "trait": "Hazardous",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "106"
   },
   {
     "id": "creuss",
@@ -388,8 +520,39 @@
     "techSpecialty": null,
     "legendary": false,
     "legendaryName": null,
-    "homeworldOf": "ghost",
+    "homeworldOf": "creuss",
+    "form": null,
     "tile": "51"
+  },
+  {
+    "id": "cronos",
+    "name": "Cronos",
+    "set": "te",
+    "resources": 2,
+    "influence": 1,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": "firmament",
+    "form": "Firmament",
+    "tile": "96a"
+  },
+  {
+    "id": "cronoshollow",
+    "name": "Cronos Hollow",
+    "set": "te",
+    "resources": 3,
+    "influence": 0,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": "firmament",
+    "form": "Obsidian",
+    "tile": "96b"
   },
   {
     "id": "custodiavigilia",
@@ -402,7 +565,8 @@
     "techSpecialty": null,
     "legendary": true,
     "legendaryName": "Custodian's Favour",
-    "homeworldOf": null,
+    "homeworldOf": "keleres",
+    "form": null,
     "tile": null
   },
   {
@@ -417,6 +581,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "32"
   },
   {
@@ -431,6 +596,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "yin",
+    "form": null,
     "tile": "03"
   },
   {
@@ -445,7 +611,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "naalu",
+    "form": null,
     "tile": "09"
+  },
+  {
+    "id": "elnath",
+    "name": "El'Nath",
+    "set": "te",
+    "resources": 2,
+    "influence": 0,
+    "trait": "Hazardous",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "110"
   },
   {
     "id": "elysium",
@@ -459,7 +641,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "titans",
+    "form": null,
     "tile": "55"
+  },
+  {
+    "id": "emelpar",
+    "name": "Emelpar",
+    "set": "te",
+    "resources": 0,
+    "influence": 2,
+    "trait": "Cultural",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": true,
+    "legendaryName": "The Acropolis",
+    "homeworldOf": null,
+    "form": null,
+    "tile": "99"
   },
   {
     "id": "everra",
@@ -473,7 +671,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "68"
+  },
+  {
+    "id": "faunus",
+    "name": "Faunus",
+    "set": "te",
+    "resources": 1,
+    "influence": 3,
+    "trait": "Industrial",
+    "kind": "normal",
+    "techSpecialty": "Biotic",
+    "legendary": true,
+    "legendaryName": "Maxis Central Control",
+    "homeworldOf": null,
+    "form": null,
+    "tile": "97"
   },
   {
     "id": "fria",
@@ -487,7 +701,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "38"
+  },
+  {
+    "id": "garbozia",
+    "name": "Garbozia",
+    "set": "te",
+    "resources": 2,
+    "influence": 1,
+    "trait": "Hazardous",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": true,
+    "legendaryName": "Dok 'N Pic's Salvage Yard",
+    "homeworldOf": null,
+    "form": null,
+    "tile": "98"
   },
   {
     "id": "gral",
@@ -501,7 +731,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "34"
+  },
+  {
+    "id": "hercalor",
+    "name": "Hercalor",
+    "set": "te",
+    "resources": 1,
+    "influence": 0,
+    "trait": "Industrial",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "107"
   },
   {
     "id": "hercant",
@@ -515,6 +761,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "hacan",
+    "form": null,
     "tile": "16"
   },
   {
@@ -529,7 +776,53 @@
     "legendary": true,
     "legendaryName": "Imperial Arms Vault",
     "homeworldOf": null,
+    "form": null,
     "tile": "66"
+  },
+  {
+    "id": "horizon",
+    "name": "Horizon",
+    "set": "te",
+    "resources": 1,
+    "influence": 2,
+    "trait": "Cultural",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "110"
+  },
+  {
+    "id": "ikatena",
+    "name": "Ikatena",
+    "set": "te",
+    "resources": 4,
+    "influence": 4,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": "deepwrought",
+    "form": null,
+    "tile": "95"
+  },
+  {
+    "id": "industrex",
+    "name": "Industrex",
+    "set": "te",
+    "resources": 2,
+    "influence": 0,
+    "trait": "Industrial",
+    "kind": "normal",
+    "techSpecialty": "Warfare",
+    "legendary": true,
+    "legendaryName": "Aurex Mechanica",
+    "homeworldOf": null,
+    "form": null,
+    "tile": "115"
   },
   {
     "id": "ixth",
@@ -543,6 +836,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "mahact",
+    "form": null,
     "tile": "52"
   },
   {
@@ -557,6 +851,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "69"
   },
   {
@@ -571,6 +866,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "jolnar",
+    "form": null,
     "tile": "12"
   },
   {
@@ -585,6 +881,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "sol",
+    "form": null,
     "tile": "01"
   },
   {
@@ -599,7 +896,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "hacan",
+    "form": null,
     "tile": "16"
+  },
+  {
+    "id": "kostboth",
+    "name": "Kostboth",
+    "set": "te",
+    "resources": 0,
+    "influence": 1,
+    "trait": "Cultural",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "108"
   },
   {
     "id": "kraag",
@@ -613,6 +926,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "70"
   },
   {
@@ -627,7 +941,68 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "31"
+  },
+  {
+    "id": "lazulrex",
+    "name": "Lazul Rex",
+    "set": "te",
+    "resources": 2,
+    "influence": 2,
+    "trait": "Industrial",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "106"
+  },
+  {
+    "id": "lemox",
+    "name": "Lemox",
+    "set": "te",
+    "resources": 0,
+    "influence": 3,
+    "trait": "Industrial",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "116"
+  },
+  {
+    "id": "lesab",
+    "name": "Lesab",
+    "set": "te",
+    "resources": 2,
+    "influence": 1,
+    "trait": "Industrial",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "104"
+  },
+  {
+    "id": "lethe",
+    "name": "Lethe",
+    "set": "te",
+    "resources": 0,
+    "influence": 2,
+    "trait": null,
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "fracture7"
   },
   {
     "id": "lirtaiv",
@@ -641,6 +1016,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "35"
   },
   {
@@ -655,6 +1031,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "72"
   },
   {
@@ -669,6 +1046,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "saar",
+    "form": null,
     "tile": "11"
   },
   {
@@ -683,6 +1061,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "26"
   },
   {
@@ -697,6 +1076,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "75"
   },
   {
@@ -711,7 +1091,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "36"
+  },
+  {
+    "id": "luthieniv",
+    "name": "Luthien VI",
+    "set": "te",
+    "resources": 3,
+    "influence": 1,
+    "trait": "Hazardous",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "110"
   },
   {
     "id": "maaluuk",
@@ -725,6 +1121,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "naalu",
+    "form": null,
     "tile": "09"
   },
   {
@@ -739,6 +1136,7 @@
     "legendary": true,
     "legendaryName": "Exterrix Headquarters",
     "homeworldOf": null,
+    "form": null,
     "tile": "82b"
   },
   {
@@ -753,7 +1151,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "18"
+  },
+  {
+    "id": "mrte",
+    "name": "Mecatol Rex",
+    "set": "te",
+    "resources": 1,
+    "influence": 6,
+    "trait": null,
+    "kind": "mecatol",
+    "techSpecialty": null,
+    "legendary": true,
+    "legendaryName": "The Galactic Council",
+    "homeworldOf": null,
+    "form": null,
+    "tile": "112"
   },
   {
     "id": "meer",
@@ -767,6 +1181,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "37"
   },
   {
@@ -781,6 +1196,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "24"
   },
   {
@@ -795,7 +1211,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "30"
+  },
+  {
+    "id": "mez",
+    "name": "Mez Lo Orz Fei Zsha",
+    "set": "te",
+    "resources": 2,
+    "influence": 1,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": "ralnel",
+    "form": null,
+    "tile": "93"
   },
   {
     "id": "mirage",
@@ -809,6 +1241,7 @@
     "legendary": true,
     "legendaryName": "Mirage Flight Academy",
     "homeworldOf": null,
+    "form": null,
     "tile": null
   },
   {
@@ -823,6 +1256,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "mentak",
+    "form": null,
     "tile": "02"
   },
   {
@@ -836,8 +1270,9 @@
     "techSpecialty": null,
     "legendary": false,
     "legendaryName": null,
-    "homeworldOf": "keleresm",
-    "tile": "94new"
+    "homeworldOf": "keleres",
+    "form": null,
+    "tile": "94"
   },
   {
     "id": "mordaiii",
@@ -851,6 +1286,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "nekro",
+    "form": null,
     "tile": "08"
   },
   {
@@ -865,6 +1301,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "muaat",
+    "form": null,
     "tile": "04"
   },
   {
@@ -879,6 +1316,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "naaz",
+    "form": null,
     "tile": "57"
   },
   {
@@ -893,6 +1331,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "jolnar",
+    "form": null,
     "tile": "12"
   },
   {
@@ -907,6 +1346,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "arborec",
+    "form": null,
     "tile": "05"
   },
   {
@@ -921,7 +1361,68 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "27"
+  },
+  {
+    "id": "neutera",
+    "name": "New Terra",
+    "set": "te",
+    "resources": 1,
+    "influence": 1,
+    "trait": "Industrial",
+    "kind": "normal",
+    "techSpecialty": "Biotic",
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "105"
+  },
+  {
+    "id": "olergodt",
+    "name": "Olergodt",
+    "set": "te",
+    "resources": 2,
+    "influence": 1,
+    "trait": "Hazardous",
+    "kind": "normal",
+    "techSpecialty": "Warfare",
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "101"
+  },
+  {
+    "id": "oluzstation",
+    "name": "Oluz Station",
+    "set": "te",
+    "resources": 1,
+    "influence": 1,
+    "trait": null,
+    "kind": "other",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "111"
+  },
+  {
+    "id": "ordinian",
+    "name": "Ordinian",
+    "set": "te",
+    "resources": 0,
+    "influence": 0,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": true,
+    "legendaryName": "4X41D \"Hyperion\" V1",
+    "homeworldOf": "bastion",
+    "form": null,
+    "tile": "92"
   },
   {
     "id": "ordinianc4",
@@ -935,6 +1436,7 @@
     "legendary": true,
     "legendaryName": "Barren Husk",
     "homeworldOf": null,
+    "form": null,
     "tile": "c41"
   },
   {
@@ -949,7 +1451,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "60"
+  },
+  {
+    "id": "phlegethon",
+    "name": "Phlegethon",
+    "set": "te",
+    "resources": 1,
+    "influence": 2,
+    "trait": null,
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "fracture7"
   },
   {
     "id": "primor",
@@ -963,6 +1481,7 @@
     "legendary": true,
     "legendaryName": "The Atrament",
     "homeworldOf": null,
+    "form": null,
     "tile": "65"
   },
   {
@@ -977,6 +1496,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "25"
   },
   {
@@ -991,6 +1511,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "29"
   },
   {
@@ -1004,7 +1525,8 @@
     "techSpecialty": null,
     "legendary": false,
     "legendaryName": null,
-    "homeworldOf": "sardakk",
+    "homeworldOf": "norr",
+    "form": null,
     "tile": "13"
   },
   {
@@ -1019,6 +1541,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "saar",
+    "form": null,
     "tile": "11"
   },
   {
@@ -1033,7 +1556,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "29"
+  },
+  {
+    "id": "rep",
+    "name": "Rep Lo Orz Qet",
+    "set": "te",
+    "resources": 1,
+    "influence": 3,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": "ralnel",
+    "form": null,
+    "tile": "93"
   },
   {
     "id": "resculon",
@@ -1047,6 +1586,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "33"
   },
   {
@@ -1061,7 +1601,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "yssaril",
+    "form": null,
     "tile": "15"
+  },
+  {
+    "id": "revelation",
+    "name": "Revelation",
+    "set": "te",
+    "resources": 1,
+    "influence": 2,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": "bastion",
+    "form": null,
+    "tile": "92"
   },
   {
     "id": "rigeli",
@@ -1075,6 +1631,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "76"
   },
   {
@@ -1089,6 +1646,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "76"
   },
   {
@@ -1103,6 +1661,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "76"
   },
   {
@@ -1117,6 +1676,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "naaz",
+    "form": null,
     "tile": "57"
   },
   {
@@ -1131,6 +1691,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "31"
   },
   {
@@ -1145,6 +1706,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "23"
   },
   {
@@ -1159,6 +1721,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "62"
   },
   {
@@ -1173,6 +1736,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "yssaril",
+    "form": null,
     "tile": "15"
   },
   {
@@ -1187,6 +1751,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "70"
   },
   {
@@ -1201,7 +1766,53 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "27"
+  },
+  {
+    "id": "styx",
+    "name": "Styx",
+    "set": "te",
+    "resources": 4,
+    "influence": 0,
+    "trait": null,
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": true,
+    "legendaryName": "A Song Like Marrow",
+    "homeworldOf": null,
+    "form": null,
+    "tile": "fracture4"
+  },
+  {
+    "id": "tallin",
+    "name": "Tallin",
+    "set": "te",
+    "resources": 1,
+    "influence": 2,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": "firmament",
+    "form": "Firmament",
+    "tile": "96a"
+  },
+  {
+    "id": "tallinhollow",
+    "name": "Tallin Hollow",
+    "set": "te",
+    "resources": 3,
+    "influence": 0,
+    "trait": null,
+    "kind": "home",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": "firmament",
+    "form": "Obsidian",
+    "tile": "96b"
   },
   {
     "id": "tarmann",
@@ -1215,7 +1826,38 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "22"
+  },
+  {
+    "id": "tarana",
+    "name": "Tarana",
+    "set": "te",
+    "resources": 1,
+    "influence": 2,
+    "trait": "Cultural",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "111"
+  },
+  {
+    "id": "tempesta",
+    "name": "Tempesta",
+    "set": "te",
+    "resources": 1,
+    "influence": 1,
+    "trait": "Hazardous",
+    "kind": "normal",
+    "techSpecialty": "Propulsion",
+    "legendary": true,
+    "legendaryName": "Ionian Fuel Refinery",
+    "homeworldOf": null,
+    "form": null,
+    "tile": "100"
   },
   {
     "id": "tequran",
@@ -1229,6 +1871,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "28"
   },
   {
@@ -1243,7 +1886,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "empyrean",
+    "form": null,
     "tile": "56"
+  },
+  {
+    "id": "thewatchtower",
+    "name": "The Watchtower",
+    "set": "te",
+    "resources": 1,
+    "influence": 1,
+    "trait": null,
+    "kind": "other",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "117"
   },
   {
     "id": "thibah",
@@ -1257,7 +1916,53 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "21"
+  },
+  {
+    "id": "thundersedge",
+    "name": "Thunder's Edge",
+    "set": "te",
+    "resources": 5,
+    "influence": 1,
+    "trait": null,
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": true,
+    "legendaryName": "Jupiter Brain",
+    "homeworldOf": null,
+    "form": null,
+    "tile": null
+  },
+  {
+    "id": "tiamat",
+    "name": "Tiamat",
+    "set": "te",
+    "resources": 1,
+    "influence": 2,
+    "trait": "Cultural",
+    "kind": "normal",
+    "techSpecialty": "Cybernetic",
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "107"
+  },
+  {
+    "id": "tinnes",
+    "name": "Tinnes",
+    "set": "te",
+    "resources": 2,
+    "influence": 1,
+    "trait": "Industrial",
+    "kind": "normal",
+    "techSpecialty": "Biotic",
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "105"
   },
   {
     "id": "torkan",
@@ -1271,6 +1976,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "28"
   },
   {
@@ -1284,8 +1990,24 @@
     "techSpecialty": null,
     "legendary": false,
     "legendaryName": null,
-    "homeworldOf": "sardakk",
+    "homeworldOf": "norr",
+    "form": null,
     "tile": "13"
+  },
+  {
+    "id": "tsionstation",
+    "name": "Tsion Station",
+    "set": "te",
+    "resources": 1,
+    "influence": 1,
+    "trait": null,
+    "kind": "other",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "109"
   },
   {
     "id": "valk",
@@ -1299,6 +2021,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "argent",
+    "form": null,
     "tile": "58"
   },
   {
@@ -1312,8 +2035,9 @@
     "techSpecialty": null,
     "legendary": false,
     "legendaryName": null,
-    "homeworldOf": "keleresa",
-    "tile": "93new"
+    "homeworldOf": "keleres",
+    "form": null,
+    "tile": "93"
   },
   {
     "id": "vefutii",
@@ -1327,6 +2051,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "20"
   },
   {
@@ -1341,6 +2066,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "74"
   },
   {
@@ -1355,6 +2081,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "74"
   },
   {
@@ -1369,7 +2096,23 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "72"
+  },
+  {
+    "id": "virapicsiii",
+    "name": "Vira Pics III",
+    "set": "te",
+    "resources": 2,
+    "influence": 3,
+    "trait": "Cultural",
+    "kind": "normal",
+    "techSpecialty": null,
+    "legendary": false,
+    "legendaryName": null,
+    "homeworldOf": null,
+    "form": null,
+    "tile": "103"
   },
   {
     "id": "vorhal",
@@ -1383,6 +2126,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "63"
   },
   {
@@ -1397,6 +2141,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "19"
   },
   {
@@ -1411,6 +2156,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "winnu",
+    "form": null,
     "tile": "07"
   },
   {
@@ -1425,6 +2171,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "letnev",
+    "form": null,
     "tile": "10"
   },
   {
@@ -1439,6 +2186,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "73"
   },
   {
@@ -1453,6 +2201,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "32"
   },
   {
@@ -1467,6 +2216,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": "argent",
+    "form": null,
     "tile": "58"
   },
   {
@@ -1480,8 +2230,9 @@
     "techSpecialty": null,
     "legendary": false,
     "legendaryName": null,
-    "homeworldOf": "keleresa",
-    "tile": "93new"
+    "homeworldOf": "keleres",
+    "form": null,
+    "tile": "93"
   },
   {
     "id": "zohbat",
@@ -1495,6 +2246,7 @@
     "legendary": false,
     "legendaryName": null,
     "homeworldOf": null,
+    "form": null,
     "tile": "30"
   }
 ]

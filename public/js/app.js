@@ -2,6 +2,17 @@
 (function () {
   var root = document.querySelector('.brand').getAttribute('href');
 
+  // Keep secondary sticky controls flush beneath the header. Its rendered
+  // height can change with platform safe areas and browser text metrics.
+  var topbar = document.querySelector('.top');
+  function syncStickyHeaderHeight() {
+    document.documentElement.style.setProperty(
+      '--sticky-header-height', topbar.getBoundingClientRect().height + 'px'
+    );
+  }
+  syncStickyHeaderHeight();
+  window.addEventListener('resize', syncStickyHeaderHeight, { passive: true });
+
   // ---- theme: respect the OS until the reader overrides it ----
   var saved = null;
   try { saved = localStorage.getItem('ti4-theme'); } catch (e) {}
@@ -76,6 +87,38 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') { input.value = ''; render(''); input.blur(); }
     if (e.key === '/' && document.activeElement !== input) { e.preventDefault(); input.focus(); }
+  });
+})();
+
+// ---- homepage stats report switcher ----
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('[data-stats-tab]'));
+  if (!tabs.length) return;
+
+  function activate(tab, moveFocus) {
+    tabs.forEach(function (button) {
+      var selected = button === tab;
+      button.setAttribute('aria-selected', selected ? 'true' : 'false');
+      button.tabIndex = selected ? 0 : -1;
+      var panel = document.getElementById('report-' + button.getAttribute('data-stats-tab'));
+      if (panel) panel.hidden = !selected;
+    });
+    if (moveFocus) tab.focus();
+  }
+
+  tabs.forEach(function (tab, index) {
+    tab.addEventListener('click', function () { activate(tab, false); });
+    tab.addEventListener('keydown', function (event) {
+      var next = null;
+      if (event.key === 'ArrowRight') next = tabs[(index + 1) % tabs.length];
+      if (event.key === 'ArrowLeft') next = tabs[(index - 1 + tabs.length) % tabs.length];
+      if (event.key === 'Home') next = tabs[0];
+      if (event.key === 'End') next = tabs[tabs.length - 1];
+      if (next) {
+        event.preventDefault();
+        activate(next, true);
+      }
+    });
   });
 })();
 

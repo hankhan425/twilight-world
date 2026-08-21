@@ -1,0 +1,110 @@
+{
+  "arborec-agent": { "timing": "Component action", "effect": "Exhaust to let any player replace one non-fighter ship with a reinforcement costing up to two resources more." },
+  "arborec-commander": { "unlock": "Have 12 ground forces on planets you control.", "timing": "After another player activates a system containing one of your units with Production", "effect": "You may immediately produce one unit in that system." },
+  "arborec-hero": { "timing": "Component action", "effect": "Produce any number of units across any number of systems containing your ground forces, then purge this leader." },
+
+  "creuss-agent": { "timing": "After a system containing a non-delta wormhole is activated", "effect": "Exhaust to make that system adjacent to every wormhole system for the duration of that tactical action." },
+  "creuss-commander": { "unlock": "Have units in three systems containing alpha or beta wormholes.", "timing": "After your ships move", "effect": "Each capacity ship that moved through a wormhole may gain one fighter from your reinforcements if capacity is available." },
+  "creuss-hero": { "timing": "Component action", "effect": "Swap any two eligible systems containing wormholes or your units, then purge this leader. Creuss and the wormhole nexus cannot be moved." },
+
+  "hacan-agent": { "timing": "During the action phase", "effect": "Exhaust to gain two commodities or replenish another player's commodities." },
+  "hacan-commander": { "unlock": "Have 10 trade goods.", "timing": "When you cast votes", "effect": "Spend any number of trade goods to add two votes per trade good." },
+  "hacan-hero": { "timing": "When one or more of your units use Production", "effect": "Make every unit produced by that use cost zero resources, then purge this leader." },
+
+  "jolnar-agent": { "timing": "When a player spends resources to research", "effect": "Exhaust to let that player remove infantry from the board, reducing the research payment by one resource per infantry." },
+  "jolnar-commander": { "unlock": "Own eight technologies.", "timing": "After you roll for a unit ability", "effect": "You may reroll any number of those dice." },
+  "jolnar-hero": { "timing": "Component action", "effect": "For each non-unit-upgrade technology you own, you may exchange it for another technology of the same color, then purge this leader." },
+
+  "l1z1x-agent": { "timing": "After a player activates a system", "effect": "Exhaust to let that player replace one infantry in the active system with a mech from their reinforcements." },
+  "l1z1x-commander": { "unlock": "Have four dreadnoughts on the board.", "timing": "Passive; available whenever you bombard", "effect": "Planetary Shield no longer prevents your units from using Bombardment." },
+  "l1z1x-hero": { "timing": "Component action", "effect": "Move your flagship and any number of dreadnoughts into one system without enemy ships, carrying units up to capacity, then purge this leader. Transported ground forces cannot land as part of this action." },
+
+  "letnev-agent": { "timing": "At the start of a space-combat round", "effect": "Exhaust to make one ship in the active system roll one additional die for that round." },
+  "letnev-commander": { "unlock": "Have five non-fighter ships in one system.", "timing": "After one of your units uses Sustain Damage", "effect": "Gain one trade good." },
+  "letnev-hero": { "timing": "Component action", "effect": "For this round, laws and fleet supply do not limit your non-fighter ships per system. Purge this leader at round end." },
+
+  "mentak-agent": { "timing": "After Pillage is used against another player", "effect": "Exhaust so both you and that player draw one action card." },
+  "mentak-commander": { "unlock": "Have four cruisers on the board.", "timing": "After you win a space combat", "effect": "Force the defeated opponent to give you one promissory note from their hand." },
+  "mentak-hero": { "timing": "At the start of a space combat you are in", "effect": "Purge this leader; whenever another player's ship is destroyed in that combat, add your own ship of the same type to the system." },
+
+  "muaat-agent": { "timing": "Component action", "effect": "Exhaust and choose a player; they may produce up to two units costing four or less each in a system containing their war sun or flagship." },
+  "muaat-commander": { "unlock": "Produce a war sun.", "timing": "After you spend a strategy-pool token", "effect": "Gain one trade good." },
+  "muaat-hero": { "timing": "After moving a war sun into an eligible non-home, non-Mecatol system", "effect": "Destroy every other player's units there, replace the tile with the Muaat supernova, purge its planet cards, and purge this leader." },
+
+  "naalu-agent": { "timing": "Component action", "effect": "Exhaust and choose a player; they may perform a tactical action in a non-home system without placing a command token there, though the system still counts as activated." },
+  "naalu-commander": { "unlock": "Have ground forces in or adjacent to the Mecatol Rex system.", "timing": "Passive; inspect at any time", "effect": "You may view your neighbors' promissory-note hands and the top and bottom cards of the agenda deck." },
+  "naalu-hero": { "timing": "At the end of the status phase", "effect": "Force every other player to give you one promissory note from hand, then purge this leader." },
+
+  "nekro-agent": { "timing": "During the action phase", "effect": "Exhaust and choose a player; they may discard an action card or spend a command token to gain two trade goods." },
+  "nekro-commander": { "unlock": "Own three technologies; a Valefar Assimilator counts only while its token is assigned.", "timing": "After you gain a technology", "effect": "Draw one action card." },
+  "nekro-hero": { "timing": "Component action", "effect": "Choose a technology-specialty planet in a system containing your units. Destroy enemy units on it, gain trade goods equal to its resource-plus-influence value, copy a technology matching its specialty, then purge this leader." },
+
+  "norr-agent": { "timing": "At the end of a player's tactical action", "effect": "Exhaust to let that player place two infantry on a controlled planet in the active system." },
+  "norr-commander": { "unlock": "Control five planets in non-home systems.", "timing": "During Commit Ground Forces", "effect": "Commit up to one ground force from each planet in the active or adjacent systems, provided those systems do not contain your command tokens." },
+  "norr-hero": { "timing": "After you move ships into the active system", "effect": "Skip directly to committing ground forces. After committing, return all your ships in the active system to reinforcements and purge this leader." },
+
+  "saar-agent": { "timing": "When a player activates a system", "effect": "Exhaust to raise one of that player's ships to the highest move value currently printed on any ship on the board." },
+  "saar-commander": { "unlock": "Have three space docks on the board.", "timing": "When you produce fighters or infantry", "effect": "Place each produced fighter or infantry at any of your un-blockaded space docks instead of only at the producing dock." },
+  "saar-hero": { "timing": "Component action", "effect": "Choose a system adjacent to one of your space docks, destroy all other players' infantry and fighters there, then purge this leader." },
+
+  "sol-agent": { "timing": "At the start of a ground-combat round", "effect": "Exhaust to make one ground force in the active system roll one additional die for that round." },
+  "sol-commander": { "unlock": "Control planets worth at least 12 total resources.", "timing": "At the start of ground combat on a planet you control", "effect": "Place one infantry from your reinforcements on that planet." },
+  "sol-hero": { "timing": "Component action", "effect": "Remove all of your command tokens from the board and return them to your reinforcements, then purge this leader." },
+
+  "winnu-agent": { "timing": "When a player's units use Production", "effect": "Exhaust to reduce that use's combined resource cost by two." },
+  "winnu-commander": { "unlock": "Control Mecatol Rex or enter combat in its system.", "timing": "Passive during combat", "effect": "Add two to your combat rolls in Mecatol Rex, your home system, and systems containing legendary planets." },
+  "winnu-hero": { "timing": "Component action", "effect": "Resolve the primary of any strategy card, then let any chosen players resolve its secondary; purge this leader afterward." },
+
+  "xxcha-agent": { "timing": "Component action", "effect": "Exhaust to ready any planet. If it is adjacent to a planet you control, you may also remove one infantry from it." },
+  "xxcha-commander": { "unlock": "Control planets worth at least 12 total influence.", "timing": "When you vote", "effect": "Each planet exhausted for votes supplies one extra vote, and effects cannot stop you from voting." },
+  "xxcha-hero": { "timing": "Whenever you exhaust planets", "effect": "Add each planet's resource and influence values together and treat the total as both values. This is a persistent effect once the hero is unlocked." },
+
+  "yin-agent": { "timing": "After any player's unit is destroyed", "effect": "Exhaust to let that player place two fighters in the system if a ship was destroyed, or two infantry on the planet if a ground force was destroyed." },
+  "yin-commander": { "unlock": "Use one of your faction abilities.", "timing": "Passive while researching", "effect": "This leader supplies one green prerequisite. When researching another player's technology, you may also return one infantry to ignore every prerequisite." },
+  "yin-hero": { "timing": "Component action", "effect": "Commit up to three infantry from reinforcements to non-home planets and resolve ground combats there without Space Cannon fire, then purge this leader." },
+
+  "yssaril-agent": { "timing": "Passive; use at the copied agent's timing", "effect": "This leader has the text ability of every other player's agent, even while that other agent is exhausted." },
+  "yssaril-commander": { "unlock": "Have seven action cards.", "timing": "After another player activates a system containing your units", "effect": "Inspect that player's action cards, promissory notes, or secret objectives." },
+  "yssaril-hero": { "timing": "Component action", "effect": "Each opponent reveals an action card. For each player, either take the revealed card or make that player discard three random action cards, then purge this leader." },
+
+  "argent-agent": { "timing": "When a player produces ground forces in a system", "effect": "Exhaust to let them distribute those new units among controlled planets in that system and adjacent systems." },
+  "argent-commander": { "unlock": "Have six units with Anti-Fighter Barrage, Space Cannon, or Bombardment.", "timing": "When your units roll for a unit ability", "effect": "Choose one participating unit to roll one additional die." },
+  "argent-hero": { "timing": "Component action", "effect": "Move any number of your ships into systems containing your command tokens and no enemy ships, carrying units up to capacity, then purge this leader. Transported ground forces cannot land during this action." },
+
+  "cabal-agent": { "timing": "After another player replenishes commodities", "effect": "Exhaust to convert those commodities to trade goods and capture one unit from that player's reinforcements costing no more than their commodity value." },
+  "cabal-commander": { "unlock": "Have units in three gravity rifts.", "timing": "When you produce fighters or infantry", "effect": "Up to two of those units do not count against the Production limit." },
+  "cabal-hero": { "timing": "Component action", "effect": "Every opponent rolls for each non-fighter ship in or next to a dimensional tear; results of 1–3 are captured, along with unsupported fighters or ground forces. Then purge this leader." },
+
+  "empyrean-agent": { "timing": "After a player moves ships into a system with no planets", "effect": "Exhaust to give that player one command token." },
+  "empyrean-commander": { "unlock": "Be neighbors with every other player.", "timing": "After another player moves into a system containing one of your command tokens", "effect": "Return that token to your reinforcements." },
+  "empyrean-hero": { "timing": "Component action", "effect": "Seed every eligible empty-space system with a frontier token, then explore each frontier token in systems containing your ships. Purge this leader afterward." },
+
+  "mahact-agent": { "timing": "When you would spend a command token on a strategy card's secondary", "effect": "Exhaust to remove one of the active player's board tokens and spend that token instead." },
+  "mahact-commander": { "unlock": "Have two other factions' command tokens in your fleet pool.", "timing": "During one of your tactical actions", "effect": "You may activate a system already containing your command token; return both tokens involved to reinforcements and end your turn." },
+  "mahact-hero": { "timing": "Component action", "effect": "Move every unit in one system's space area into an adjacent system containing a different player's ships. Those players fight and cannot retreat or move ships away; then purge this leader." },
+
+  "naaz-agent": { "timing": "At the end of a player's turn", "effect": "Exhaust to let that player explore one of their planets." },
+  "naaz-commander": { "unlock": "Have mechs in three systems.", "timing": "After taking a planet from another player", "effect": "Explore that planet." },
+  "naaz-hero": { "timing": "Component action", "effect": "Gain one relic and resolve the secondary of up to two readied or unchosen strategy cards, spending command tokens from reinforcements. Then purge this leader." },
+
+  "nomad-agent-artuno": { "timing": "When you gain trade goods from the supply", "effect": "Exhaust to bank the same number on this leader; collect those banked trade goods when the leader readies." },
+  "nomad-agent-mercer": { "timing": "At the end of a player's turn", "effect": "Exhaust to let that player relocate up to two ground forces from anywhere on the board to controlled planets in the active system." },
+  "nomad-agent-thundarian": { "timing": "After combat dice are rolled", "effect": "Exhaust to cancel hit assignment for both sides and repeat that combat round from the roll-dice step." },
+  "nomad-commander": { "unlock": "Score one secret objective.", "timing": "When you produce", "effect": "You may produce your flagship without paying resources." },
+  "nomad-hero": { "timing": "Component action", "effect": "For the rest of the round, your flagship and the units it carries may move out of systems containing your command tokens. Purge this leader at round end." },
+
+  "titans-agent": { "timing": "Immediately before a hit is assigned", "effect": "Exhaust to cancel that hit." },
+  "titans-commander": { "unlock": "Have five structures on the board.", "timing": "When one or more of your units use Production", "effect": "Gain one trade good." },
+  "titans-hero": { "timing": "Component action", "effect": "Ready Elysium and permanently attach this leader to it. Elysium gains three resources, three influence, and Space Cannon 5 with three dice." },
+
+  "keleres-agent": { "timing": "At any time", "effect": "Exhaust to let any player spend commodities as though they were trade goods." },
+  "keleres-commander": { "unlock": "After playing an action card with a component action, spend one trade good.", "timing": "After you perform a component action", "effect": "Immediately perform one additional action." },
+  "keleres-hero-argent": { "timing": "At the start of a space-combat round in a system containing your planet", "effect": "Place your flagship plus up to two cruisers or destroyers from reinforcements into the active system, then purge this leader." },
+  "keleres-hero-mentak": { "timing": "Component action", "effect": "Reveal the action deck until three component-action cards appear, draw those three, reshuffle the rest, then purge this leader." },
+  "keleres-hero-xxcha": { "timing": "After an agenda is revealed", "effect": "Add up to six votes and predict the result. For each player voting for a different result, gain one trade good and one command token; then purge this leader." },
+
+  "redcreuss-agent": { "unlock": "Always unlocked in the Liberation of Ordinian scenario.", "timing": "Component action", "effect": "Exhaust and choose a player; that player may swap two of their ships anywhere on the board and transport units with them." },
+  "redcreuss-commander": { "unlock": "Resolve a combat with another player.", "timing": "At the end of a combat between any players", "effect": "Gain one commodity or convert one commodity into a trade good." },
+  "redcreuss-hero": { "timing": "When you produce ships; later, at the start of space combat", "effect": "Store any ships you produce on this leader. At the start of a later space combat, purge it to deploy every stored ship into the active system." },
+  "salientsun-hero": { "unlock": "The Nekro Virus has five victory points in Liberation of Ordinian.", "timing": "When one of your units in the Ordinian system is destroyed", "effect": "Purge this leader and use that unit as the catalyst. Roll once for every other player's unit there; destroy each unit whose roll meets the catalyst's combat value." }
+}

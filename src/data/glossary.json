@@ -36,5 +36,25 @@
     { "id": "biotic",     "name": "Biotic",     "colour": "green",  "text": "Ground forces, population, and card economy." },
     { "id": "cybernetic", "name": "Cybernetic", "colour": "yellow", "text": "Economy, production efficiency, and planet output." },
     { "id": "warfare",    "name": "Warfare",    "colour": "red",    "text": "Combat strength, bombardment, and space cannon." }
+  ],
+  "thundersEdge": [
+    { "id": "expedition", "name": "Thunder's Edge expedition", "tag": "end of turn",
+      "text": "At the end of a turn, a player may pay the cost of one unclaimed expedition slice and mark it with a control token. Their first claimed slice unlocks their faction's breakthrough. When all six slices are claimed, Thunder's Edge flips to its planet side and the final contributor places it in an eligible system; the player with the most claimed slices takes control and places that many infantry there." },
+    { "id": "breakthrough", "name": "Breakthrough and synergy", "tag": "faction component",
+      "text": "A breakthrough gives its faction a powerful ability and links two technology colors. For research requirements and technology-related objectives, a technology or specialty of either linked color may count as the other color, but a single component cannot count as both at once." },
+    { "id": "fracture", "name": "The Fracture and ingress", "tag": "special area",
+      "text": "Whenever a breakthrough is gained and The Fracture is not already in play, that player rolls a die; a 1 or 10 brings it into play. Fracture systems are separate from the main galaxy and connect through ingress and egress tokens rather than ordinary tile borders." },
+    { "id": "neutral-units", "name": "Neutral units", "tag": "non-player forces",
+      "text": "Gray neutral units always fight a player sharing their space area. They use available unit abilities automatically, assign hits in the order defined by the expansion rules, and count as another player's units for effects even though there is no neutral player." },
+    { "id": "coexist", "name": "Coexist", "tag": "ground forces",
+      "text": "Coexisting ground forces belonging to different players can remain on the same planet without beginning combat. The player whose units began coexisting does not take control, their structures are blockaded, and they count as controlling that planet only while checking objective requirements." },
+    { "id": "galvanize", "name": "Galvanized units", "tag": "unit modifier",
+      "text": "A galvanized unit has a galvanize token beneath it and rolls one additional die whenever it makes a combat roll or resolves a unit ability roll." },
+    { "id": "galactic-events", "name": "Galactic events", "tag": "optional setup",
+      "text": "A group may choose or randomly draw a galactic event during setup. Its rules modify the game for every player, and its complexity rating indicates how much the event changes normal play." },
+    { "id": "twilights-fall", "name": "Twilight's Fall", "tag": "alternate mode",
+      "text": "This separate mode included with Thunder's Edge replaces normal factions with eight Mahact Kings. Players draft combinations of ability, unit-upgrade, and genome cards to build custom factions, and the mode uses its own strategy cards and components; its pieces are kept out of the site's standard-game faction and unit lists." },
+    { "id": "entropic-scar", "name": "Entropic scar", "tag": "anomaly",
+      "text": "Inside an entropic scar, printed unit abilities such as Sustain Damage, Production, Space Cannon, Bombardment, and Anti-Fighter Barrage cannot be used by or against units. At the start of the status phase, a player with ships there may spend a strategy token to gain one of their faction technologies." }
   ]
 }
