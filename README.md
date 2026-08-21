@@ -35,73 +35,7 @@ npm run build
 `.github/workflows/update-stats.yml` downloads a fresh export on the first day of each
 month, rebuilds and validates the site, and commits `data/stats.json` when it changes.
 
-## What this contains
-
-- **Game data is factual and complete.** Costs, combat values, dice counts, move,
-  capacity, tech colours and prerequisites, home-system resource/influence values,
-  starting units, faction rosters. Facts like these aren't copyrightable, and they're
-  the part that actually benefits from being structured and sortable.
-- **Guide prose is written for this site.** The glossary in `src/data/glossary.json`
-  explains mechanics in its own words. `src/data/faction-guides.json` and
-  `src/data/leader-guides.json` add original plain-language strategy, ability,
-  promissory-note, and leader explanations.
-- **Reference entries explain themselves.** Technology effects, objective conditions,
-  agenda outcomes, action-card effects, exploration results, relic effects, and
-  promissory-note effects are extracted alongside their structured metadata and shown
-  in accessible hover/focus explanations. Flavour text and card artwork are omitted.
-
-For exact card wording, use the official Living Rules Reference. This project is
-unofficial and not affiliated with or endorsed by Fantasy Flight Games.
-
-## How it works
-
-| Step | Script | Output |
-|---|---|---|
-| Fetch | `scripts/fetch-source.mjs` | `.cache/` — build input, never published, gitignored |
-| Extract | `scripts/extract.mjs` | `data/*.json` — structured reference data |
-| Build | `scripts/build.mjs` | `dist/` — static site |
-
-Two upstream sources are used for the factual layer:
-
-- [scottmk/ti4-reference](https://github.com/scottmk/ti4-reference) (CC-BY-4.0) —
-  factions, units, technologies, leaders, and the faction/unit SVG symbols used by
-  the generated pages.
-- [AsyncTI4/TI4_map_generator_bot](https://github.com/AsyncTI4/TI4_map_generator_bot) —
-  objectives, agendas, action cards, exploration, relics, promissory notes, planets,
-  systems, breakthroughs, and galactic events.
-  Sparse-checked out to the JSON data directories only.
-
-Fan expansions (Discordant Stars, Absol's Mod, Milty Mod, and the rest) and the
-alternate Twilight's Fall mode are filtered out by `source` — the standard-game data
-set contains the base game, Prophecy of Kings, Codices I–IV, and Thunder's Edge.
-
-### Card decks
-
-For the reference card groups, `scripts/extract-cards.mjs` keeps point values, phases,
-deck copy counts, elect targets, planet traits, synergy colors, complexity, and the rules
-text needed to explain each entry.
-It also derives broad browsing categories from the rules text; those categories are
-the site's own taxonomy. Flavour text is not stored.
-
-### Planets and systems
-
-Planet and system data is almost entirely factual already — resource and influence
-values, traits, tech specialties, wormholes, anomalies, tile numbers — so it needs
-little processing. `scripts/extract-map.mjs` drops flavour text and keeps the legendary
-ability *name* only as a label.
-
-The upstream app calls the Codex Keleres tiles `92new`, `93new`, and `94new` to
-avoid internal collisions with expansion data. The extractor removes that implementation
-suffix and publishes their printed tile numbers: 92, 93, and 94.
-
-One trap worth recording: **a planet having no tile does not mean it isn't real.**
-Mirage is placed by a frontier exploration card and Custodia Vigilia sits on top of
-Mecatol Rex, so both are genuine planets with `tileId: null`. Filtering on "has a tile"
-would silently delete them. The bot-internal entries are excluded by an explicit list
-instead — `Illusion` and `Phantasm` are stat-identical clones of Mirage used for variant
-setups, `Lost Station` is a space station, and `Locked Mallice` is Mallice face-down.
-
-### Parsing notes
+## Parsing notes
 
 The source stat markup has two traps, both handled in `normStats()`:
 
