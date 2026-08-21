@@ -520,8 +520,7 @@ function pageHome() {
   const body = `<section class="stats-hero">
     <p class="eyebrow">AsyncTI4 community data</p>
     <h1>Faction win rates</h1>
-    <p class="lede">A current look at standard six-player, 10-point games—split by ruleset
-      so Thunder's Edge does not blur the Prophecy of Kings metagame.</p>
+    <p class="lede">A current look at six-player, 10-point games. Data are from online/async play only; in-person games may have a significantly different meta.</p>
     <div class="report-tabs" role="tablist" aria-label="Choose a ruleset">
       <button id="tab-te" type="button" role="tab" aria-selected="true"
         aria-controls="report-te" data-stats-tab="te">
