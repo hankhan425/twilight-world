@@ -71,6 +71,30 @@
   });
 })();
 
+// ---- strategy cards: compare the original faces with Thunder's Edge updates ----
+(function () {
+  var buttons = [].slice.call(document.querySelectorAll('[data-strategy-version]'));
+  if (!buttons.length) return;
+
+  function activate(version) {
+    buttons.forEach(function (button) {
+      button.setAttribute(
+        'aria-pressed',
+        button.getAttribute('data-strategy-version') === version ? 'true' : 'false'
+      );
+    });
+    document.querySelectorAll('[data-strategy-copy]').forEach(function (copy) {
+      copy.hidden = copy.getAttribute('data-strategy-copy') !== version;
+    });
+  }
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      activate(button.getAttribute('data-strategy-version'));
+    });
+  });
+})();
+
 // ---- category filters: hide non-matching rows in the sections below ----
 (function () {
   var bars = document.querySelectorAll('.filters');

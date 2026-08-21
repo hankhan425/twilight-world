@@ -107,7 +107,7 @@ function write(path, html) {
 function layout({ title, depth = 0, body, active = '' }) {
   const r = depth ? '../'.repeat(depth) : './';
   const navItems = [
-    ['', 'Home'], ['factions/', 'Factions'], ['units/', 'Units'],
+    ['', 'Stats'], ['factions/', 'Factions'], ['units/', 'Units'],
     ['techs/', 'Tech'], ['leaders/', 'Leaders'],
     ['promissory/', 'Promissory'], ['cards/', 'Cards'], ['explore/', 'Explore'],
     ['objectives/', 'Objectives'], ['agendas/', 'Agendas'],
@@ -162,6 +162,20 @@ function layout({ title, depth = 0, body, active = '' }) {
 
 const chip = (t, cls = '') => `<span class="chip ${cls}">${esc(t)}</span>`;
 const setChip = s => chip(SET_LABEL[s] || s, `set-${s}`);
+const OMEGA_HELP = {
+  'Ω': 'Omega (Ω) marks the first officially revised version of a previously released component. Use this revised text when this version is included.',
+  'ΩΩ': 'Double Omega (ΩΩ) marks a later revision that supersedes both the original component and its earlier Ω version.',
+};
+let omegaTipSequence = 0;
+function omegaMarker(symbol) {
+  const tipId = `omega-tip-${++omegaTipSequence}`;
+  const help = OMEGA_HELP[symbol];
+  return `<span class="omega-mark" tabindex="0" aria-describedby="${tipId}">${symbol}<span class="omega-tooltip" id="${tipId}" role="tooltip">${esc(help)}</span></span>`;
+}
+function omegaName(name) {
+  return String(name ?? '').split(/(ΩΩ|Ω)/g)
+    .map(part => OMEGA_HELP[part] ? omegaMarker(part) : esc(part)).join('');
+}
 
 // ------------------------------------------------------------------ units
 const statCell = st => st == null ? '<td class="num muted">—</td>'
@@ -176,7 +190,7 @@ function unitRow(u, showFaction, showType) {
     u.form ? chip(`${u.form} form`, 'unit-form') : '',
   ].filter(Boolean).join('');
   return `<tr>
-    <th scope="row"><span class="unit-name">${unitIcon(u)}<span><span class="unit-title">${esc(u.name)}${u.isUpgrade ? ' (Upgrade)' : ''}${unitExpansionMark(u)}</span>${tags ? `<span class="unit-tags">${tags}</span>` : ''}</span></span></th>
+    <th scope="row"><span class="unit-name">${unitIcon(u)}<span><span class="unit-title">${omegaName(u.name)}${u.isUpgrade ? ' (Upgrade)' : ''}${unitExpansionMark(u)}</span>${tags ? `<span class="unit-tags">${tags}</span>` : ''}</span></span></th>
     ${showFaction ? `<td class="fac">${u.faction ? esc(factionById[u.faction]?.name || titleCase(u.faction)) : '<span class="muted">—</span>'}</td>` : ''}
     ${statCell(u.cost)}${statCell(u.combat)}${statCell(u.move)}${statCell(u.capacity)}
     <td class="abil">${ab || '<span class="muted">—</span>'}</td>
@@ -230,7 +244,7 @@ function techDescription(t) {
 function entryWithTooltip(entry, description, prefix, className = '') {
   const tipId = `${prefix}-tip-${entry.id}`;
   return `<span class="entry-with-tip ${className}" tabindex="0" aria-describedby="${tipId}">
-    <b>${esc(entry.name)}</b><span class="tip-icon" aria-hidden="true">?</span>
+    <b>${omegaName(entry.name)}</b><span class="tip-icon" aria-hidden="true">?</span>
     <span class="entry-tooltip" id="${tipId}" role="tooltip">${esc(description)}</span>
   </span>`;
 }
@@ -239,7 +253,7 @@ function techWithTooltip(t) {
   const tipId = `tech-tip-${t.id}`;
   const description = techDescription(t);
   return `<span class="entry-with-tip tech-with-tip" tabindex="0" aria-describedby="${tipId}">
-    <b>${esc(t.name)}</b><span class="tip-icon" aria-hidden="true">?</span>
+    <b>${omegaName(t.name)}</b><span class="tip-icon" aria-hidden="true">?</span>
     <span class="entry-tooltip tech-tooltip" id="${tipId}" role="tooltip">${esc(description)}</span>
   </span>`;
 }
@@ -310,15 +324,15 @@ function pageFaction(f) {
     </dl>`;
 
   const abilities = guide.abilities.length
-    ? `<ul class="explained-list">${guide.abilities.map(a => `<li><div class="leader-heading"><b>${esc(a.name)}</b>${a.form ? chip(`${a.form} form`) : ''}</div><p>${esc(a.text)}</p></li>`).join('')}</ul>`
+    ? `<ul class="explained-list">${guide.abilities.map(a => `<li><div class="leader-heading"><b>${omegaName(a.name)}</b>${a.form ? chip(`${a.form} form`) : ''}</div><p>${esc(a.text)}</p></li>`).join('')}</ul>`
     : '<p class="muted">This scenario faction has no separate faction abilities.</p>';
 
   const specialComponents = guide.specialComponents?.length
-    ? `<ul class="explained-list">${guide.specialComponents.map(c => `<li><b>${esc(c.name)}</b><p>${esc(c.text)}</p></li>`).join('')}</ul>`
+    ? `<ul class="explained-list">${guide.specialComponents.map(c => `<li><b>${omegaName(c.name)}</b><p>${esc(c.text)}</p></li>`).join('')}</ul>`
     : '';
 
   const promissoryNotes = guide.promissoryNotes.length
-    ? `<ul class="explained-list">${guide.promissoryNotes.map(n => `<li><div class="leader-heading"><b>${esc(n.name)}</b>${n.form ? chip(`${n.form} form`) : ''}</div>
+    ? `<ul class="explained-list">${guide.promissoryNotes.map(n => `<li><div class="leader-heading"><b>${omegaName(n.name)}</b>${n.form ? chip(`${n.form} form`) : ''}</div>
         <dl class="effect"><dt>When</dt><dd>${esc(n.timing)}</dd><dt>Effect</dt><dd>${esc(n.effect)}</dd></dl>
       </li>`).join('')}</ul>`
     : '<p class="muted">This scenario faction has no faction-specific promissory note.</p>';
@@ -328,7 +342,7 @@ function pageFaction(f) {
     const info = leaderGuides[l.id] || {};
     const unlock = info.unlock || l.unlock || (kind === 'agent' ? 'Always unlocked.'
       : kind === 'hero' ? 'Have 3 scored objectives.' : 'See the leader component.');
-    return `<li><div class="leader-heading"><b>${esc(cleanLeaderName(l.name))}</b>${chip(titleCase(kind))}${l.form ? chip(`${l.form} form`) : ''}</div>
+    return `<li><div class="leader-heading"><b>${omegaName(cleanLeaderName(l.name))}</b>${chip(titleCase(kind))}${l.form ? chip(`${l.form} form`) : ''}</div>
       <dl class="effect"><dt>Unlock</dt><dd>${esc(unlock)}</dd>
         <dt>When</dt><dd>${esc(info.timing || l.timing || 'See the leader component.')}</dd>
         <dt>Effect</dt><dd>${esc(info.effect || l.effect || 'See the leader component for this scenario-specific effect.')}</dd>
@@ -350,7 +364,7 @@ function pageFaction(f) {
   ${collapsiblePanel('Starting position', `<table class="kv"><tbody>
       <tr><th scope="row">Space</th><td>${esc(unitLine(f.startingUnits.space))}</td></tr>
       <tr><th scope="row">Ground</th><td>${esc(unitLine(f.startingUnits.ground))}</td></tr>
-      <tr><th scope="row">Technology</th><td>${startTech.map(t => esc(t)).join(', ') || esc(f.startingTechText) || '—'}</td></tr>
+      <tr><th scope="row">Technology</th><td>${startTech.map(omegaName).join(', ') || omegaName(f.startingTechText) || '—'}</td></tr>
     </tbody></table>`)}
 
   ${collapsiblePanel('Faction abilities', abilities)}
@@ -358,7 +372,7 @@ function pageFaction(f) {
   ${specialComponents ? collapsiblePanel('Special components', specialComponents) : ''}
 
   ${bList.length ? collapsiblePanel('Breakthrough', `<ul class="explained-list">${bList.map(b => `<li>
-      <div class="leader-heading"><b>${esc(b.name)}</b>${b.form ? chip(`${b.form} form`) : ''}
+      <div class="leader-heading"><b>${omegaName(b.name)}</b>${b.form ? chip(`${b.form} form`) : ''}
         ${setChip(b.set)}</div><p>${esc(b.description)}</p>
       ${b.synergy.length ? `<p class="synergy"><b>Synergy:</b> ${b.synergy.map(c => chip(titleCase(c), `c-${c}`)).join('')} <span class="muted">Either color may count as the other for technology requirements and technology objectives.</span></p>` : ''}
     </li>`).join('')}</ul>`) : ''}
@@ -368,7 +382,7 @@ function pageFaction(f) {
   ${uniqueUnits.length ? collapsiblePanel('Unique units', unitsTable(uniqueUnits, false)) : ''}
 
   ${tList.length ? collapsiblePanel('Faction technology', `<ul class="explained-list faction-tech-list">${tList.map(t => `<li>
-      <div class="tech-heading"><b>${esc(t.name)}</b>
+      <div class="tech-heading"><b>${omegaName(t.name)}</b>
         ${t.colour ? chip(titleCase(t.colour), `c-${t.colour}`) : chip('Unit upgrade', 'c-unit')}
         ${t.form ? chip(`${t.form} form`) : ''}
         ${t.prereqs.length ? `<span class="meta prereq tech-requirements"><span>requires</span>${t.prereqs.map((p, i) => `${i ? '<span class="requirement-plus" aria-hidden="true">+</span>' : ''}${chip(titleCase(p), `c-${p}`)}`).join('')}</span>` : ''}
@@ -441,7 +455,7 @@ function pageLeaders() {
       const factionName = factionById[leaderFactionId(l)]?.name || titleCase(leaderFactionId(l));
       const unlock = info.unlock || l.unlock
         || (k === 'agent' ? 'Always unlocked.' : 'Have 3 scored objectives.');
-      return `<li><div class="leader-heading"><b>${esc(cleanLeaderName(l.name))}</b>
+      return `<li><div class="leader-heading"><b>${omegaName(cleanLeaderName(l.name))}</b>
         ${l.form ? chip(`${l.form} form`) : ''}<span class="meta">${esc(factionName)}</span>${setChip(l.set)}</div>
         <dl class="effect"><dt>Unlock</dt><dd>${esc(unlock)}</dd>
           <dt>When</dt><dd>${esc(info.timing || l.timing || 'See the leader component.')}</dd>
@@ -453,19 +467,58 @@ function pageLeaders() {
 }
 
 function pageGlossary() {
+  const misunderstoodRules = glossary.misunderstoodRules || [];
+  const ruleGroups = new Map();
+  misunderstoodRules.forEach(rule => {
+    if (!ruleGroups.has(rule.category)) ruleGroups.set(rule.category, []);
+    ruleGroups.get(rule.category).push(rule);
+  });
+  const misunderstoodSection = `<section class="panel rules-faq" id="commonly-misunderstood">
+    <p class="eyebrow">Table FAQ</p>
+    <h2>Commonly misunderstood rules <span class="count">${misunderstoodRules.length}</span></h2>
+    <p class="lede">Short rulings for questions that regularly interrupt a game. Open a question for the answer and its rules-reference pointer.</p>
+    <p class="note">Seeded from this <a href="https://www.reddit.com/r/twilightimperium/comments/rfd3se/can_we_compile_a_megathread_of_the_most/">community megathread and its comments</a>, then reconciled with the <a href="https://www.fantasyflightgames.com/en/products/twilight-imperium-fourth-edition/">official Living Rules Reference and Thunder's Edge rules</a>. Component text and the event in play always take precedence.</p>
+    <div class="rule-groups">${[...ruleGroups].map(([category, rules]) => `<section class="rule-group">
+      <h3>${esc(category)} <span class="count">${rules.length}</span></h3>
+      <div class="rule-questions">${rules.map(rule => `<details class="rule-answer" id="${esc(rule.id)}">
+        <summary>${esc(rule.question)}</summary>
+        <div class="rule-answer-body"><p>${esc(rule.answer)}</p>
+          <p class="rule-reference">Reference: ${esc(rule.reference)}</p></div>
+      </details>`).join('')}</div>
+    </section>`).join('')}</div>
+  </section>`;
+  const strategyFace = (card, version) => card.versions?.[version] || card;
+  const strategyCopy = (card, version, field) => {
+    const face = strategyFace(card, version);
+    const hidden = version === 'original' ? ' hidden' : '';
+    let value = '';
+    if (field === 'name') {
+      value = `${omegaName(card.name)}${face.marker ? ` ${omegaMarker(face.marker)}` : ''}${face.set ? ` ${setChip(face.set)}` : ''}`;
+    } else value = esc(face[field]);
+    return `<span class="strategy-version-copy" data-strategy-copy="${version}"${hidden}>${value}</span>`;
+  };
+  const strategyCell = (card, field) => card.versions
+    ? `${strategyCopy(card, 'original', field)}${strategyCopy(card, 'updated', field)}`
+    : field === 'name' ? omegaName(card.name) : esc(card[field]);
   const body = `<h1>Rules reference</h1>
   <p class="lede">The mechanics that come up most, explained plainly.</p>
+  ${misunderstoodSection}
   <section class="panel"><h2>Unit abilities &amp; stats</h2>
     <dl>${glossary.keywords.map(k => `<dt>${esc(k.name)} <span class="chip">${esc(k.tag)}</span></dt>
       <dd>${esc(k.text)}</dd>`).join('')}</dl>
   </section>
-  <section class="panel"><h2>Strategy cards</h2>
+  <section class="panel strategy-card-section"><h2>Strategy cards</h2>
+    <div class="strategy-version-toggle" role="group" aria-label="Strategy card version">
+      <button type="button" data-strategy-version="original" aria-pressed="false">Original</button>
+      <button type="button" data-strategy-version="updated" aria-pressed="true">Thunder's Edge update</button>
+    </div>
+    <p class="note">The toggle switches Construction and Warfare. The other six strategy cards are unchanged.</p>
     <div class="tablewrap"><table class="units"><thead><tr>
       <th scope="col" class="num">#</th><th scope="col">Card</th>
       <th scope="col">Primary</th><th scope="col">Secondary</th>
     </tr></thead><tbody>${glossary.strategyCards.map(s => `<tr>
-      <td class="num">${s.initiative}</td><th scope="row">${esc(s.name)}</th>
-      <td>${esc(s.primary)}</td><td>${esc(s.secondary)}</td></tr>`).join('')}
+      <td class="num">${s.initiative}</td><th scope="row">${strategyCell(s, 'name')}</th>
+      <td>${strategyCell(s, 'primary')}</td><td>${strategyCell(s, 'secondary')}</td></tr>`).join('')}
     </tbody></table></div>
   </section>
   <section class="panel"><h2>Thunder's Edge mechanics</h2>
@@ -475,7 +528,7 @@ function pageGlossary() {
   write('glossary/index.html', layout({ title: 'Rules reference', depth: 1, body, active: 'Rules' }));
 }
 
-function pageHome() {
+function pageStats() {
   const pct = value => `${(value * 100).toFixed(1)}%`;
   const signedPct = value => `${value >= 0 ? '+' : ''}${(value * 100).toFixed(1)} pp`;
   const displayDate = value => new Date(`${value}T00:00:00Z`).toLocaleDateString('en-US', {
@@ -556,7 +609,7 @@ function pageHome() {
         influence faction performance.</p>
     </article>
   </section>`;
-  write('index.html', layout({ title: 'Faction win rates', depth: 0, body, active: 'Home' }));
+  write('index.html', layout({ title: 'Faction statistics', depth: 0, body, active: 'Stats' }));
 }
 
 // ------------------------------------------------------- objectives / cards
@@ -747,7 +800,7 @@ function copyIcons() {
 
 // ------------------------------------------------------------------ run
 if (existsSync('dist')) rmSync('dist', { recursive: true });
-pageHome(); pageFactions(); factions.forEach(pageFaction);
+pageStats(); pageFactions(); factions.forEach(pageFaction);
 pageUnits(); pageTechs(); pageLeaders(); pageGlossary();
 pageObjectives(); pageAgendas(); pageActionCards(); pagePromissoryNotes(); pageExplore();
 pagePlanets(); pageSystems();
