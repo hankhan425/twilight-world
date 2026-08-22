@@ -143,6 +143,26 @@ function layout({ title, depth = 0, body, active = '' }) {
     <summary>Menu <span class="menu-count">${navItems.length}</span></summary>
     <nav class="mobile-links" aria-label="Primary navigation">${nav}</nav>
   </details>
+  <div class="search-shell">
+    <button id="search-toggle" class="header-icon-button" type="button"
+      aria-label="Open search" aria-expanded="false" aria-controls="site-search">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path>
+      </svg>
+    </button>
+    <div id="site-search" class="search-popover" role="dialog" aria-label="Search Twilight World" hidden>
+      <form class="search-form" role="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path>
+        </svg>
+        <label class="sr-only" for="q">Search Twilight World</label>
+        <input id="q" type="search" placeholder="Search factions, units, tech, rules…"
+          autocomplete="off" spellcheck="false">
+        <button id="search-close" type="button" aria-label="Close search">×</button>
+      </form>
+      <div id="results" class="search-results" aria-live="polite" hidden></div>
+    </div>
+  </div>
   <button id="theme" type="button" aria-label="Toggle theme">◐</button>
 </header>
 <main id="main">${body}</main>
@@ -612,6 +632,44 @@ function pageStats() {
   write('index.html', layout({ title: 'Faction statistics', depth: 0, body, active: 'Stats' }));
 }
 
+// ------------------------------------------------------------------ search
+function searchIndex() {
+  const docs = [
+    ...factions.map(f => ({ t: f.name, u: `factions/${f.id}.html`, k: 'Faction' })),
+    ...units.map(u => ({ t: u.name, u: 'units/',
+      k: u.faction ? `${factionById[u.faction]?.name || titleCase(u.faction)} unit` : 'Unit' })),
+    ...techs.map(t => ({ t: t.name, u: 'techs/',
+      k: t.faction ? `${factionById[t.faction]?.name || titleCase(t.faction)} technology`
+        : (t.colour ? `${titleCase(t.colour)} technology` : 'Unit upgrade') })),
+    ...leaders.filter(isDisplayedLeader).map(l => ({ t: cleanLeaderName(l.name), u: 'leaders/',
+      k: `${factionById[leaderFactionId(l)]?.name || titleCase(leaderFactionId(l))} ${leaderKind(l)}` })),
+    ...objectives.map(o => ({ t: o.name, u: 'objectives/',
+      k: o.kind === 'secret' ? 'Secret objective' : `Stage ${o.stage} objective` })),
+    ...agendas.map(a => ({ t: a.name, u: 'agendas/', k: a.type || 'Agenda' })),
+    ...actionCards.map(c => ({ t: c.name, u: 'cards/', k: 'Action card' })),
+    ...galacticEvents.map(e => ({ t: e.name, u: 'cards/', k: 'Galactic event' })),
+    ...breakthroughs.map(b => ({ t: b.name, u: `factions/${b.faction}.html`,
+      k: `${factionById[b.faction]?.name || titleCase(b.faction)} breakthrough` })),
+    ...promissoryNotes.map(n => ({ t: n.name, u: 'promissory/',
+      k: n.faction ? `${factionById[n.faction]?.name || titleCase(n.faction)} promissory note`
+        : 'Common promissory note' })),
+    ...explores.map(e => ({ t: e.name, u: 'explore/', k: `${e.trait} explore card` })),
+    ...relics.map(r => ({ t: r.name, u: 'explore/', k: 'Relic' })),
+    ...planets.map(p => ({ t: p.name, u: 'planets/',
+      k: p.legendary ? 'Legendary planet' : (p.trait ? `${p.trait} planet` : 'Planet') })),
+    ...systems.map(s => ({ t: s.name || s.planetNames.join(' / ') || `System ${s.id}`,
+      u: 'systems/', k: `System ${s.id}` })),
+    ...glossary.keywords.map(g => ({ t: g.name, u: 'glossary/', k: 'Rule' })),
+    ...glossary.strategyCards.map(s => ({ t: s.name, u: 'glossary/', k: 'Strategy card' })),
+    ...(glossary.thundersEdge || []).map(g => ({ t: g.name, u: 'glossary/',
+      k: `Thunder's Edge rule` })),
+    ...(glossary.misunderstoodRules || []).map(g => ({ t: g.question,
+      u: `glossary/#${g.id}`, k: 'Commonly misunderstood rule' })),
+  ];
+  write('js/search-index.json', JSON.stringify(docs));
+  return docs.length;
+}
+
 // ------------------------------------------------------- objectives / cards
 /** filter bar: pure CSS via :has() + a tiny data attribute on each row */
 function filterBar(name, values) {
@@ -804,6 +862,7 @@ pageStats(); pageFactions(); factions.forEach(pageFaction);
 pageUnits(); pageTechs(); pageLeaders(); pageGlossary();
 pageObjectives(); pageAgendas(); pageActionCards(); pagePromissoryNotes(); pageExplore();
 pagePlanets(); pageSystems();
+const searchEntryCount = searchIndex();
 cpSync('public', 'dist', { recursive: true });
 copyIcons();
 write('server/index.js', `export default {
@@ -811,7 +870,7 @@ write('server/index.js', `export default {
     return env.ASSETS.fetch(request);
   },
 };\n`);
-console.log(`built ${factions.length + 13} pages`);
+console.log(`built ${factions.length + 13} pages, ${searchEntryCount} search entries`);
 
 // ------------------------------------------------------------- planets/map
 function pagePlanets() {
