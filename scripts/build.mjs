@@ -489,7 +489,7 @@ function pageLeaders() {
       const unlock = info.unlock || l.unlock
         || (k === 'agent' ? 'Always unlocked.' : 'Have 3 scored objectives.');
       return `<li><div class="leader-heading"><b>${omegaName(cleanLeaderName(l.name))}</b>
-        ${l.form ? chip(`${l.form} form`) : ''}<span class="meta">${esc(factionName)}</span>${setChip(l.set)}</div>
+        ${l.form ? chip(`${l.form} form`) : ''}<span class="meta">${esc(factionName)}</span></div>
         <dl class="effect"><dt>Unlock</dt><dd>${esc(unlock)}</dd>
           <dt>When</dt><dd>${esc(info.timing || l.timing || 'See the leader component.')}</dd>
           <dt>Effect</dt><dd>${esc(info.effect || l.effect || 'See the leader component.')}</dd></dl></li>`;
