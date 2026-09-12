@@ -64,6 +64,43 @@ function keywords(body) {
   return out;
 }
 
+/**
+ * Card ability prose for a unit or unit-upgrade card: the paragraphs printed
+ * above the stat table, minus the keyword bullet list (already in `abilities`)
+ * and the heading/requirements/include boilerplate. Blank lines separate
+ * paragraphs; consecutive lines are one paragraph, as the card prints them.
+ */
+function abilityText(body) {
+  const paragraphs = [];
+  let current = [];
+  const flush = () => {
+    if (!current.length) return;
+    const text = current.join(' ');
+    paragraphs.push(/[.!?]$/.test(text) ? text : `${text}.`);
+    current = [];
+  };
+  // Everything below the stat row is upgrade prerequisites and breakthrough
+  // synergy icons, never card text.
+  for (const line of normStats(body).split(/^__\|__/m)[0].split('\n')) {
+    const t = line.trim();
+    if (!t || t === '---' || /^(?:###|\*\s|\{ \.|--8<--)/.test(t)
+        || /^(?:Requirements?|Unit Type):/i.test(t)
+        || /Upgrade<\/span>\s*:/.test(t)) { flush(); continue; }
+    const text = cleanRulesText(t);
+    if (/[a-z]/i.test(text)) current.push(text);
+  }
+  flush();
+  return paragraphs;
+}
+
+// The upstream PDS II snippet prints only its keyword abilities and drops the
+// adjacency rule from the card. Every other official unit extracts complete text,
+// checked against the AsyncTI4 unit records.
+const ABILITY_TEXT_FIX = {
+  'pds-ii': ["You may use this unit's Space Cannon against ships that are in adjacent systems."],
+};
+const unitAbilityText = (id, body) => ABILITY_TEXT_FIX[id] ?? abilityText(body);
+
 const firstHeading = body => {
   const m = body.match(/^###\s+(.*)$/m);
   return m ? m[1] : '';
@@ -79,8 +116,9 @@ function units() {
     if (!name) return;
     const typeM = body.match(/Unit Type:\s*([^:\n]+)/i);
     const upM = body.match(/Upgrade<\/span>:(.*)$/m);
+    const unitId = (faction ? faction + '-' : '') + slug(basename(file, '.md'));
     const rec = {
-      id: (faction ? faction + '-' : '') + slug(basename(file, '.md')),
+      id: unitId,
       name, set, faction: faction || null,
       type: typeM ? slug(typeM[1])
                   : slug(basename(file, '.md')).replace(/-i+$/, ''),
@@ -89,6 +127,7 @@ function units() {
       move: stat(body, 'Move'),
       capacity: stat(body, 'Capacity'),
       abilities: keywords(body),
+      abilityText: unitAbilityText(unitId, body),
     };
     if (upM) rec.upgradePrereqs = icons(upM[1]);
     if (set !== 'te' && /:ti4-pok:/.test(head)) rec.set = 'pok';
@@ -167,6 +206,7 @@ function techs() {
             cost: stat(body, 'Cost'), combat: stat(body, 'Combat'),
             move: stat(body, 'Move'), capacity: stat(body, 'Capacity'),
             abilities: keywords(body),
+            abilityText: unitAbilityText(rec.id, body),
           };
         }
         out.push(rec);

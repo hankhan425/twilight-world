@@ -201,6 +201,16 @@ function omegaName(name) {
 const statCell = st => st == null ? '<td class="num muted">—</td>'
   : `<td class="num">${st.value}${st.dice ? `<sub>×${st.dice}</sub>` : ''}</td>`;
 
+// Card text such as a flagship's unique rule or a mech's Deploy ability. It gets
+// its own full-width row under the stat line: prose wrapped into the narrow
+// abilities column would be unreadable, and the stat grid stays scannable.
+const abilityProse = u => (u.abilityText || []).map(p => {
+  const label = p.match(/^([A-Z][a-z]+):\s+(.*)$/);
+  return label
+    ? `<p><b class="ability-label">${esc(label[1])}</b>: ${esc(label[2])}</p>`
+    : `<p>${esc(p)}</p>`;
+}).join('');
+
 function unitRow(u, showFaction, showType) {
   const ab = u.abilities.map(a =>
     chip(a.value != null ? `${a.name} ${a.value}${a.dice ? `×${a.dice}` : ''}` : a.name)
@@ -209,12 +219,15 @@ function unitRow(u, showFaction, showType) {
     showType ? unitTypeChip(u) : '',
     u.form ? chip(`${u.form} form`, 'unit-form') : '',
   ].filter(Boolean).join('');
-  return `<tr>
-    <th scope="row"><span class="unit-name">${unitIcon(u)}<span><span class="unit-title">${omegaName(u.name)}${u.isUpgrade ? ' (Upgrade)' : ''}${unitExpansionMark(u)}</span>${tags ? `<span class="unit-tags">${tags}</span>` : ''}</span></span></th>
+  const prose = abilityProse(u);
+  return `<tr${prose ? ' class="unit-row-with-text"' : ''}>
+    <th scope="row" id="unit-${esc(u.id)}"><span class="unit-name">${unitIcon(u)}<span><span class="unit-title">${omegaName(u.name)}${u.isUpgrade ? ' (Upgrade)' : ''}${unitExpansionMark(u)}</span>${tags ? `<span class="unit-tags">${tags}</span>` : ''}</span></span></th>
     ${showFaction ? `<td class="fac">${u.faction ? esc(factionById[u.faction]?.name || titleCase(u.faction)) : '<span class="muted">—</span>'}</td>` : ''}
     ${statCell(u.cost)}${statCell(u.combat)}${statCell(u.move)}${statCell(u.capacity)}
-    <td class="abil">${ab || '<span class="muted">—</span>'}</td>
-  </tr>`;
+    <td class="abil">${ab || (prose ? '' : '<span class="muted">—</span>')}</td>
+  </tr>${prose ? `<tr class="unit-text-row">
+    <td colspan="${showFaction ? 7 : 6}" headers="unit-${esc(u.id)}"><div class="unit-text">${prose}</div></td>
+  </tr>` : ''}`;
 }
 
 function unitsTable(list, showFaction = true, showType = true) {

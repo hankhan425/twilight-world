@@ -18,6 +18,7 @@
       "value": 4
     },
     "abilities": [],
+    "abilityText": [],
     "upgradePrereqs": [
       "propulsion",
       "propulsion"
@@ -40,6 +41,7 @@
     },
     "capacity": null,
     "abilities": [],
+    "abilityText": [],
     "upgradePrereqs": [
       "biotic",
       "cybernetic",
@@ -69,6 +71,7 @@
         "dice": 2
       }
     ],
+    "abilityText": [],
     "upgradePrereqs": [
       "warfare",
       "warfare"
@@ -101,6 +104,7 @@
         "value": 5
       }
     ],
+    "abilityText": [],
     "upgradePrereqs": [
       "propulsion",
       "propulsion",
@@ -122,6 +126,7 @@
     "move": null,
     "capacity": null,
     "abilities": [],
+    "abilityText": [],
     "upgradePrereqs": [
       "biotic",
       "propulsion"
@@ -142,6 +147,7 @@
     "move": null,
     "capacity": null,
     "abilities": [],
+    "abilityText": [],
     "upgradePrereqs": [
       "biotic",
       "biotic"
@@ -158,6 +164,9 @@
     "move": null,
     "capacity": null,
     "abilities": [],
+    "abilityText": [
+      "You cannot produce this unit unless you own its unit upgrade technology."
+    ],
     "upgradePrereqs": [
       "cybernetic",
       "warfare",
@@ -184,6 +193,7 @@
         "value": 6
       }
     ],
+    "abilityText": [],
     "upgradePrereqs": [
       "cybernetic",
       "warfare"
@@ -203,6 +213,10 @@
       {
         "name": "Production X+2"
       }
+    ],
+    "abilityText": [
+      "This unit's Production value is equal to 2 more than the resource value of this planet.",
+      "Up to 3 fighters in this system do not count against your ships' capacity."
     ],
     "upgradePrereqs": [
       "cybernetic",
@@ -232,6 +246,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "After you activate this system, you may produce up to 5 units in this system."
     ]
   },
   {
@@ -253,7 +270,8 @@
         "name": "Production",
         "value": 1
       }
-    ]
+    ],
+    "abilityText": []
   },
   {
     "id": "arborec-arborec-mech",
@@ -280,6 +298,9 @@
         "name": "Production",
         "value": 2
       }
+    ],
+    "abilityText": [
+      "Deploy: When you would use your Mitosis faction ability you may replace 1 of your infantry with 1 mech from your reinforcements instead."
     ]
   },
   {
@@ -304,6 +325,10 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "This ship's system contains a delta wormhole.",
+      "During movement, this ship may move before or after your other ships."
     ]
   },
   {
@@ -324,6 +349,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "After any player activates a system, you may remove this unit from the game board to place or move a Creuss wormhole token into this system."
     ]
   },
   {
@@ -349,6 +377,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "After you roll a die during a space combat in this system, you may spend 1 trade good to apply +1 to the result."
     ]
   },
   {
@@ -369,6 +400,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "This planet's card may be traded as part of a transaction; if you do, move all of your units from this planet to another planet you control."
     ]
   },
   {
@@ -394,6 +428,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "When making a combat roll for this ship, each result of 9 or 10, before applying modifiers, produces 2 additional hits."
     ]
   },
   {
@@ -414,6 +451,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Your infantry on this planet are not affected by your Fragile faction ability."
     ]
   },
   {
@@ -442,7 +482,8 @@
         "name": "Bombardment",
         "value": 5
       }
-    ]
+    ],
+    "abilityText": []
   },
   {
     "id": "l1z1x-l1z1x-flagship",
@@ -467,6 +508,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "During a space combat, hits produced by this ship and by your dreadnaughts in this system must be assigned to non-fighter ships if able."
     ]
   },
   {
@@ -491,6 +535,9 @@
         "name": "Bombardment",
         "value": 8
       }
+    ],
+    "abilityText": [
+      "While not participating in ground combat, this unit can use its Bombardment ability on planets in its system as if it were a ship."
     ]
   },
   {
@@ -521,6 +568,9 @@
         "value": 5,
         "dice": 3
       }
+    ],
+    "abilityText": [
+      "Other player's units in this system lose Planetary Shield. At the start of each space combat round, repair this ship."
     ]
   },
   {
@@ -541,6 +591,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Deploy: At the start of a round of ground combat, you may spend 2 resources to replace 1 of your infantry in that combat with 1 mech."
     ]
   },
   {
@@ -561,7 +614,10 @@
     "capacity": {
       "value": 2
     },
-    "abilities": []
+    "abilities": [],
+    "abilityText": [
+      "If the active system contains another player's non-fighter ships, this unit can move through systems that contain other player's ships."
+    ]
   },
   {
     "id": "mentak-mentak-flagship",
@@ -586,6 +642,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Other player's ships in this system cannot use Sustain Damage."
     ]
   },
   {
@@ -606,6 +665,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Other player's ground forces on this planet cannot use Sustain Damage."
     ]
   },
   {
@@ -631,6 +693,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Action: Spend 1 token from your strategy pool to place 1 cruiser in this system."
     ]
   },
   {
@@ -651,6 +716,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "When you use your Star Forge faction ability in this system or an adjacent system, you may place 1 infantry from your reinforcements with this unit."
     ]
   },
   {
@@ -681,6 +749,9 @@
         "value": 3,
         "dice": 3
       }
+    ],
+    "abilityText": [
+      "Other players' units in this system lose the Planetary Shield ability."
     ]
   },
   {
@@ -697,7 +768,8 @@
     },
     "move": null,
     "capacity": null,
-    "abilities": []
+    "abilities": [],
+    "abilityText": []
   },
   {
     "id": "naalu-naalu-flagship",
@@ -722,6 +794,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "During an invasion in this system, you may commit fighters to planets as if they were ground forces. After combat, return those units to the space area."
     ]
   },
   {
@@ -742,6 +817,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Deploy: When another player gains a relic, place 1 mech on any planet you control."
     ]
   },
   {
@@ -762,6 +840,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Other players cannot use Anti-Fighter Barrage against your units in this system."
     ]
   },
   {
@@ -787,6 +868,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "At the start of a space combat, choose any number of your ground forces in this system to participate in that combat as if they were ships."
     ]
   },
   {
@@ -807,6 +891,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "During combat against an opponent who has an X or Y token on 1 or more of their technologies, apply +2 to the result of each of this unit's combat rolls."
     ]
   },
   {
@@ -836,7 +923,8 @@
         "value": 4,
         "dice": 2
       }
-    ]
+    ],
+    "abilityText": []
   },
   {
     "id": "norr-norr-flagship",
@@ -861,6 +949,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Apply +1 to the result of each of your other ship's combat rolls in this system."
     ]
   },
   {
@@ -881,6 +972,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "After this unit uses it's Sustain Damage ability during ground combat, it produces 1 hit against your opponent's ground forces on this planet."
     ]
   },
   {
@@ -911,7 +1005,8 @@
         "value": 6,
         "dice": 4
       }
-    ]
+    ],
+    "abilityText": []
   },
   {
     "id": "saar-saar-mech",
@@ -931,6 +1026,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Deploy: After you gain control of a planet, you may spend 1 trade good to place 1 mech on that planet."
     ]
   },
   {
@@ -952,6 +1050,11 @@
         "name": "Production",
         "value": 5
       }
+    ],
+    "abilityText": [
+      "This unit is placed in the space area instead of on a planet.",
+      "This unit can move and retreat as if it were a ship.",
+      "If this unit is blockaded, it is destroyed."
     ]
   },
   {
@@ -972,7 +1075,8 @@
     "capacity": {
       "value": 6
     },
-    "abilities": []
+    "abilities": [],
+    "abilityText": []
   },
   {
     "id": "sol-sol-flagship",
@@ -997,6 +1101,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "At the end of the status phase, place 1 infantry from your reinforcements in this system's space area."
     ]
   },
   {
@@ -1013,7 +1120,8 @@
     },
     "move": null,
     "capacity": null,
-    "abilities": []
+    "abilities": [],
+    "abilityText": []
   },
   {
     "id": "sol-sol-mech",
@@ -1033,6 +1141,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Deploy: After you use your Orbital Drop faction ability, you may spend 3 resources to place 1 mech on that planet."
     ]
   },
   {
@@ -1057,6 +1168,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "When this unit makes a combat roll, it rolls a number of dice equal to the number of your opponent's non-fighter ships in this system."
     ]
   },
   {
@@ -1077,6 +1191,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "After you resolve a tactical action where you gained control of this planet, you may place 1 PDS or 1 Space Dock from your reinforcements on this planet."
     ]
   },
   {
@@ -1107,6 +1224,9 @@
         "value": 5,
         "dice": 3
       }
+    ],
+    "abilityText": [
+      "You may use this unit's Space Cannon against ships that are in adjacent systems."
     ]
   },
   {
@@ -1131,6 +1251,9 @@
         "name": "Space Cannon",
         "value": 8
       }
+    ],
+    "abilityText": [
+      "You may use this unit's Space Cannon against ships that are in adjacent systems."
     ]
   },
   {
@@ -1156,6 +1279,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "When this ship is destroyed, destroy all ships in this system."
     ]
   },
   {
@@ -1176,6 +1302,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Deploy: When you use your Indoctrination faction ability, you may spend 1 additional influence to replace your opponent's unit with 1 mech instead of 1 infantry."
     ]
   },
   {
@@ -1201,6 +1330,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "This ship can move through systems that contain other player's ships."
     ]
   },
   {
@@ -1221,6 +1353,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Deploy: After you use your Stall Tactics faction ability, you may place 1 mech on a planet you control."
     ]
   },
   {
@@ -1247,7 +1382,8 @@
         "value": 9,
         "dice": 2
       }
-    ]
+    ],
+    "abilityText": []
   },
   {
     "id": "argent-argent-flagship",
@@ -1272,6 +1408,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Other players cannot use Space Cannon against your ships in this system."
     ]
   },
   {
@@ -1292,6 +1431,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "This unit does not count against capacity if it is being transported or if it is in a space area with 1 or more of your ships that have capacity values."
     ]
   },
   {
@@ -1321,6 +1463,9 @@
         "name": "Bombardment",
         "value": 5
       }
+    ],
+    "abilityText": [
+      "Capture all other non-structure units that are destroyed in this system, including your own."
     ]
   },
   {
@@ -1341,6 +1486,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "When your infantry on this planet are destroyed, place them on your faction sheet; those units are captured."
     ]
   },
   {
@@ -1358,6 +1506,10 @@
         "name": "Production",
         "value": 5
       }
+    ],
+    "abilityText": [
+      "This system is a gravity rift; your ships do not roll for this gravity rift. Place a dimensional tear token beneath this unit as a reminder.",
+      "Up to 6 fighters in this system do not count against your ships' capacity."
     ]
   },
   {
@@ -1383,6 +1535,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "After any player's unit in this system or an adjacent system uses Sustain Damage, you may spend 2 influence to repair that unit."
     ]
   },
   {
@@ -1403,6 +1558,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "You may remove this unit from a system that contains or is adjacent to another player's units to cancel an action card played by that player."
     ]
   },
   {
@@ -1428,6 +1586,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "During combat against an opponent whose command token is not in your fleet pool, apply +2 to the results of this unit's combat rolls."
     ]
   },
   {
@@ -1444,7 +1605,10 @@
     },
     "move": null,
     "capacity": null,
-    "abilities": []
+    "abilities": [],
+    "abilityText": [
+      "After this unit is destroyed, gain 1 commodity or convert 1 of your commodities to a trade good."
+    ]
   },
   {
     "id": "mahact-mahact-mech",
@@ -1464,6 +1628,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "After a player whose command token is in your fleet pool activates this system, you may spend their token from your fleet pool to end their turn; they gain that token."
     ]
   },
   {
@@ -1489,6 +1656,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Your mechs in this system roll 1 additional die during combat."
     ]
   },
   {
@@ -1506,7 +1676,11 @@
     },
     "move": null,
     "capacity": null,
-    "abilities": []
+    "abilities": [],
+    "abilityText": [
+      "If this unit is in the space area of the active system, it is also a ship.",
+      "At the end of a space battle in the active system, flip this card."
+    ]
   },
   {
     "id": "naaz-naaz-mech-super",
@@ -1527,6 +1701,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "This unit is both a ship and ground force. It cannot be assigned hits from unit abilities. Repair it at the start of every combat round. Game effects cannot place or produce your mechs. When this unit is destroyed or removed, flip this card and return it to your play area."
     ]
   },
   {
@@ -1548,6 +1725,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "If this unit is in the space area of the active system at the start of a space combat, flip this card."
     ]
   },
   {
@@ -1578,6 +1758,9 @@
         "value": 8,
         "dice": 3
       }
+    ],
+    "abilityText": [
+      "You may treat this unit as if it were adjacent to systems that contain 1 or more of your mechs."
     ]
   },
   {
@@ -1598,6 +1781,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "While this unit is in a space area during combat, you may use it's Sustain Damage ability to cancel a hit that is produced against your ships in this system."
     ]
   },
   {
@@ -1618,7 +1804,8 @@
     "capacity": {
       "value": 1
     },
-    "abilities": []
+    "abilities": [],
+    "abilityText": []
   },
   {
     "id": "titans-titans-flagship",
@@ -1643,6 +1830,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Deploy: After you activate a system that contains 1 or more of your PDS, you may replace 1 of those PDS with this unit."
     ]
   },
   {
@@ -1663,6 +1853,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Deploy: When you would place a PDS on a planet, you may place 1 mech and 1 infantry on that planet instead."
     ]
   },
   {
@@ -1692,6 +1885,9 @@
         "name": "Production",
         "value": 1
       }
+    ],
+    "abilityText": [
+      "This unit is treated as both a structure and a ground force. It cannot be transported."
     ]
   },
   {
@@ -1717,6 +1913,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Other players must spend 2 influence to activate the system that contains this ship."
     ]
   },
   {
@@ -1737,6 +1936,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Other players must spend 1 influence to commit ground forces to the planet that contains this unit."
     ]
   },
   {
@@ -1765,6 +1967,9 @@
         "name": "Production",
         "value": 1
       }
+    ],
+    "abilityText": [
+      "Apply +1 to the result of each of this unit's combat rolls for each non-home system that contains a planet you control."
     ]
   },
   {
@@ -1785,6 +1990,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "When this unit is destroyed, if it was galvanized, galvanize up to 3 of your infantry in its system."
     ]
   },
   {
@@ -1801,6 +2009,11 @@
       {
         "name": "Production X+2"
       }
+    ],
+    "abilityText": [
+      "This unit's Production value is equal to 2 more than the resource value of this planet.",
+      "The resource value of this planet is increased by 1.",
+      "Up to 3 fighters in this system do not count against your ships' capacity."
     ],
     "upgradePrereqs": [
       "cybernetic",
@@ -1830,6 +2043,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "This ship can move through systems that contain your units, even if other players' units are present; if it would, apply +1 to its move value for each of those systems."
     ]
   },
   {
@@ -1854,6 +2070,9 @@
         "name": "Production",
         "value": 1
       }
+    ],
+    "abilityText": [
+      "When another player activates this system, if this unit is coexisting, you may move it and any of your infantry on its planet to a planet you control in your home system."
     ]
   },
   {
@@ -1880,6 +2099,9 @@
         "name": "Sustain Damage"
       }
     ],
+    "abilityText": [
+      "If the active system contains units that belong to a player who has a control token on 1 of your plots, apply +1 to this ship's move value and repair it at the end of every combat round."
+    ],
     "form": "Firmament"
   },
   {
@@ -1900,6 +2122,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "When ground forces are committed to this planet, you may choose for your units to coexist, if they were not already. Flip this card if your faction becomes the Obsidian."
     ],
     "form": "Firmament"
   },
@@ -1927,6 +2152,7 @@
         "name": "Sustain Damage"
       }
     ],
+    "abilityText": [],
     "form": "Obsidian"
   },
   {
@@ -1947,6 +2173,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "If this unit was coexisting when this card flipped to this side, gain control of its planet; the other player's units are now coexisting."
     ],
     "form": "Obsidian"
   },
@@ -1972,6 +2201,9 @@
         "value": 9,
         "dice": 2
       }
+    ],
+    "abilityText": [
+      "This unit can use the Space Cannon ability of one of your structures in its space area; each structure can only be triggered once."
     ]
   },
   {
@@ -1997,6 +2229,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "When this unit retreats, you may destroy 1 ship in the active system that does not have Sustain Damage."
     ]
   },
   {
@@ -2017,6 +2252,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "At the end of a round of combat on this planet, you may move up to 2 of your ground forces to this planet from planets in adjacent systems."
     ]
   },
   {
@@ -2041,6 +2279,9 @@
         "value": 9,
         "dice": 2
       }
+    ],
+    "abilityText": [
+      "At the end of any player's combat in this unit's system or an adjacent system, you may place 1 inactive breach in that system."
     ]
   },
   {
@@ -2066,6 +2307,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "While this unit is in a system that contains an active breach, other players' units in systems with active breaches lose all of their unit abilities."
     ]
   },
   {
@@ -2086,6 +2330,9 @@
       {
         "name": "Sustain Damage"
       }
+    ],
+    "abilityText": [
+      "Deploy: During the \"Commit Ground Forces\" step of your tactical action in a system that contains an active breach, you may commit 1 mech, even if you have no units in the system."
     ]
   }
 ]

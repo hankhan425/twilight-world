@@ -386,6 +386,10 @@
           "name": "Production",
           "value": 2
         }
+      ],
+      "abilityText": [
+        "After this unit is destroyed, roll 1 die. If the result is 6 or greater, place the unit on this card.",
+        "At the start of your next turn, place each unit that is on this card on a planet you control in your home."
       ]
     }
   },
@@ -415,7 +419,8 @@
       "capacity": {
         "value": 6
       },
-      "abilities": []
+      "abilities": [],
+      "abilityText": []
     }
   },
   {
@@ -445,7 +450,8 @@
       "capacity": {
         "value": 1
       },
-      "abilities": []
+      "abilities": [],
+      "abilityText": []
     }
   },
   {
@@ -478,7 +484,8 @@
           "value": 6,
           "dice": 3
         }
-      ]
+      ],
+      "abilityText": []
     }
   },
   {
@@ -516,6 +523,9 @@
           "name": "Bombardment",
           "value": 5
         }
+      ],
+      "abilityText": [
+        "\"Direct Hit\" cards are no longer effective against this type of ship."
       ]
     }
   },
@@ -543,7 +553,11 @@
         "value": 2
       },
       "capacity": null,
-      "abilities": []
+      "abilities": [],
+      "abilityText": [
+        "This unit may move without being transported.",
+        "Fighters in excess of your ships' capacity count against your fleet pool."
+      ]
     }
   },
   {
@@ -568,7 +582,11 @@
       },
       "move": null,
       "capacity": null,
-      "abilities": []
+      "abilities": [],
+      "abilityText": [
+        "After this unit is destroyed, roll 1 die. If the result is 6 or greater, place the unit on this card.",
+        "At the start of your next turn, place each unit that is on this card on a planet you control in your home."
+      ]
     }
   },
   {
@@ -606,6 +624,9 @@
           "name": "Bombardment",
           "value": 4
         }
+      ],
+      "abilityText": [
+        "\"Direct Hit\" cards are no longer effective against this type of ship."
       ]
     }
   },
@@ -647,6 +668,9 @@
           "value": 3,
           "dice": 3
         }
+      ],
+      "abilityText": [
+        "Other players' units in this system lose their Planetary Shield Ability."
       ]
     }
   },
@@ -674,7 +698,11 @@
         "value": 2
       },
       "capacity": null,
-      "abilities": []
+      "abilities": [],
+      "abilityText": [
+        "This unit may move without being transported.",
+        "Fighters in excess of your ships' capacity count as ½ of a ship against your fleet pool."
+      ]
     }
   },
   {
@@ -713,6 +741,10 @@
           "value": 4,
           "dice": 2
         }
+      ],
+      "abilityText": [
+        "After a round of space combat, you may destroy this unit to destroy up to 2 ships in this system.",
+        "\"Direct Hit\" cards are no longer effective against this type of ship."
       ]
     }
   },
@@ -742,6 +774,9 @@
           "name": "Space Cannon",
           "value": 5
         }
+      ],
+      "abilityText": [
+        "You may use this unit's Space Cannon against ships that are in adjacent systems."
       ]
     }
   },
@@ -772,6 +807,11 @@
           "name": "Production",
           "value": 7
         }
+      ],
+      "abilityText": [
+        "This unit is placed in the space area instead of on a planet.",
+        "This unit can move and retreat as if it were a ship.",
+        "If this unit is blockaded, it is destroyed."
       ]
     }
   },
@@ -805,7 +845,8 @@
         {
           "name": "Sustain Damage"
         }
-      ]
+      ],
+      "abilityText": []
     }
   },
   {
@@ -830,7 +871,11 @@
       },
       "move": null,
       "capacity": null,
-      "abilities": []
+      "abilities": [],
+      "abilityText": [
+        "After this unit is destroyed, roll 1 die. If the result is 5 or greater, place the unit on this card.",
+        "At the start of your next turn, place each unit that is on this card on a planet you control in your home."
+      ]
     }
   },
   {
@@ -855,6 +900,10 @@
         {
           "name": "Production X+4"
         }
+      ],
+      "abilityText": [
+        "This unit's Production value is equal to 4 more than the resource value of this planet.",
+        "Up to 3 fighters in this system do not count against your ships' capacity."
       ]
     }
   },
@@ -896,6 +945,9 @@
           "value": 3,
           "dice": 3
         }
+      ],
+      "abilityText": [
+        "Other players' units in this system lose their Planetary Shield Ability."
       ]
     }
   },
@@ -1239,6 +1291,9 @@
           "value": 6,
           "dice": 3
         }
+      ],
+      "abilityText": [
+        "When this unit uses Anti-Fighter Barrage, each result of 9 or 10 also destroys 1 of your opponents infantry in the space area of the active system."
       ]
     }
   },
@@ -1265,6 +1320,10 @@
           "name": "Production",
           "value": 7
         }
+      ],
+      "abilityText": [
+        "This system is a gravity rift; your ships do not roll for this gravity rift. Place a dimensional tear token beneath this unit as a reminder.",
+        "Up to 12 fighters in this system do not count against your ships' capacity."
       ]
     }
   },
@@ -1290,7 +1349,11 @@
       },
       "move": null,
       "capacity": null,
-      "abilities": []
+      "abilities": [],
+      "abilityText": [
+        "After this unit is destroyed, gain 1 commodity or convert 1 of your commodities to a trade good. Then, place the unit on this card.",
+        "At the start of your next turn, place each unit that is on this card on a planet you control in your home system."
+      ]
     }
   },
   {
@@ -1330,6 +1393,9 @@
           "value": 5,
           "dice": 3
         }
+      ],
+      "abilityText": [
+        "You may treat this unit as if it were adjacent to systems that contain one or more of your mechs."
       ]
     }
   },
@@ -1368,6 +1434,10 @@
           "name": "Production",
           "value": 1
         }
+      ],
+      "abilityText": [
+        "This unit is treated as both a structure and a ground force. It cannot be transported.",
+        "You may use this unit's Space Cannon against ships that are adjacent to this unit's systems."
       ]
     }
   },
@@ -1402,7 +1472,8 @@
         {
           "name": "Sustain Damage"
         }
-      ]
+      ],
+      "abilityText": []
     }
   },
   {
@@ -1595,6 +1666,11 @@
         {
           "name": "Production X+4"
         }
+      ],
+      "abilityText": [
+        "This unit's Production value is equal to 4 more than the resource value of this planet.",
+        "The resource value of this planet is increased by 2.",
+        "Up to 3 fighters in this system do not count against your ships' capacity."
       ]
     }
   },
@@ -1628,6 +1704,9 @@
           "value": 6,
           "dice": 3
         }
+      ],
+      "abilityText": [
+        "This unit can use the Space Cannon ability of one of your structures in its space area; each linkship can trigger the same structure."
       ]
     }
   },
@@ -1661,6 +1740,9 @@
           "value": 6,
           "dice": 3
         }
+      ],
+      "abilityText": [
+        "At the end of any player's combat in this unit's system or up to 2 systems away, you may place 1 active or inactive breach in that system."
       ]
     }
   },

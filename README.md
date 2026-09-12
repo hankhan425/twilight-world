@@ -4,7 +4,7 @@ A fast, ad-free, mobile-first reference for **Twilight Imperium: Fourth Edition*
 base game, Prophecy of Kings, Thunder's Edge, and the Codices.
 
 Static HTML. No frameworks, no trackers, no external requests, no ads.
-The generated Units page is about 83 KiB uncompressed.
+The generated Units page is about 115 KiB uncompressed.
 
 ```bash
 npm run all      # fetch source, extract facts, build to dist/
@@ -42,6 +42,11 @@ The source stat markup has two traps, both handled in `normStats()`:
 - Numbers can straddle bold markers — `**Capacity 1**2` means **12**, not 1.
 - Extra combat dice are an icon (`:ti4-unit-dice-x2:`), not `(x2)`. This affects
   27 units, including every flagship that rolls two dice.
+
+A third trap lives in `abilityText()`, which lifts the printed card text for units and
+unit upgrades. Card text is only ever above the stat row; the lines below it are upgrade
+prerequisites and breakthrough synergy icons, and a unit with no stat row at all (PDS,
+space docks) puts its prerequisites right where the prose would otherwise end.
 
 ## Coverage
 
