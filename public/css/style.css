@@ -494,12 +494,18 @@ table { border-collapse: collapse; width: 100%; font-size: 14px; }
 .abil .chip { margin: 0 3px 3px 0; display: inline-block; }
 
 /* Card text sits in its own row beneath the stat line. The inner block is
-   pinned to the left edge so it stays readable while the stats scroll. */
+   pinned to the left edge so it stays readable while the stats scroll, and it
+   wraps to the scroll area's visible width rather than the viewport's: inside a
+   faction page panel the table is narrower than the screen. Sticky insets start
+   inside the wrapper's padding, so the pinned block takes 100cqw less its left
+   inset and a matching 10px on the right. */
 .units tr.unit-row-with-text > th, .units tr.unit-row-with-text > td { border-bottom: 0; }
 .units .unit-text-row > td { padding: 0 10px 10px; }
+.tablewrap:has(.unit-text) { container-type: inline-size; }
 .unit-text {
   position: sticky; left: calc(var(--pad) + 10px);
   max-width: min(68ch, calc(100vw - 2 * var(--pad) - 20px));
+  max-width: min(68ch, calc(100cqw - var(--pad) - 20px));
   border-left: 2px solid color-mix(in srgb, var(--accent) 45%, var(--line));
   padding: 2px 0 2px 10px; color: var(--muted); font-size: 13.5px; line-height: 1.5;
 }
