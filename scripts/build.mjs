@@ -320,6 +320,18 @@ function technologyGroups(list, options = {}) {
  * factions actually present on the page, so no option can filter to nothing.
  * Rows with no faction of their own filter out whenever any faction is chosen.
  */
+/**
+ * "Nekro Virus (Liberation of Ordinian)" is far too long for an option grid, so
+ * the scenario qualifier rides along as a small tag. It cannot just be dropped:
+ * it is the only thing separating those entries from the regular faction.
+ */
+function factionOptionLabel(name) {
+  const scenario = name.match(/^(.+?)\s*\((?:Liberation of )?(.+)\)$/);
+  return scenario
+    ? `${esc(scenario[1])} <small>${esc(scenario[2])}</small>`
+    : esc(name);
+}
+
 function factionFilter(ids) {
   const options = [...new Set(ids)].filter(Boolean)
     .map(id => factionById[id]).filter(Boolean)
@@ -334,11 +346,14 @@ function factionFilter(ids) {
       <span class="faction-filter-count" data-faction-count hidden></span>
     </summary>
     <div class="faction-filter-body">
-      <ul class="faction-options">${options.map(f => `<li><label>
+      <ul class="faction-options">${options.map(f => {
+        const label = factionOptionLabel(f.name);
+        return `<li><label${label === esc(f.name) ? '' : ` title="${esc(f.name)}"`}>
         <input type="checkbox" value="${esc(f.id)}">
-        <img src="../icons/factions/${f.id}.svg" alt="" width="22" height="22" loading="lazy">
-        <span>${esc(f.name)}</span>
-      </label></li>`).join('')}</ul>
+        <img src="../icons/factions/${f.id}.svg" alt="" width="20" height="20" loading="lazy">
+        <span>${label}</span>
+      </label></li>`;
+      }).join('')}</ul>
       <div class="faction-filter-foot">
         <p data-faction-status role="status">Showing every faction.</p>
         <button type="button" data-faction-clear hidden>Clear</button>
