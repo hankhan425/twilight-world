@@ -220,12 +220,13 @@ function unitRow(u, showFaction, showType) {
     u.form ? chip(`${u.form} form`, 'unit-form') : '',
   ].filter(Boolean).join('');
   const prose = abilityProse(u);
-  return `<tr${prose ? ' class="unit-row-with-text"' : ''}>
+  const fac = ` data-faction="${esc(u.faction || '')}"`;
+  return `<tr${prose ? ' class="unit-row-with-text"' : ''}${fac}>
     <th scope="row" id="unit-${esc(u.id)}"><span class="unit-name">${unitIcon(u)}<span><span class="unit-title">${omegaName(u.name)}${u.isUpgrade ? ' (Upgrade)' : ''}${unitExpansionMark(u)}</span>${tags ? `<span class="unit-tags">${tags}</span>` : ''}</span></span></th>
     ${showFaction ? `<td class="fac">${u.faction ? esc(factionById[u.faction]?.name || titleCase(u.faction)) : '<span class="muted">—</span>'}</td>` : ''}
     ${statCell(u.cost)}${statCell(u.combat)}${statCell(u.move)}${statCell(u.capacity)}
     <td class="abil">${ab || (prose ? '' : '<span class="muted">—</span>')}</td>
-  </tr>${prose ? `<tr class="unit-text-row">
+  </tr>${prose ? `<tr class="unit-text-row"${fac} data-faction-pair>
     <td colspan="${showFaction ? 7 : 6}" headers="unit-${esc(u.id)}"><div class="unit-text">${prose}</div></td>
   </tr>` : ''}`;
 }
@@ -292,7 +293,7 @@ function techWithTooltip(t) {
 }
 
 function technologyList(list, { showUnitIcons = false } = {}) {
-  return `<ul class="techlist">${list.map(t => `<li>
+  return `<ul class="techlist">${list.map(t => `<li data-faction="${esc(t.faction || '')}">
     ${showUnitIcons && t.unit ? unitIcon(t.unit) : ''}
     ${techWithTooltip(t)}
     ${t.faction ? chip(factionById[t.faction]?.name || titleCase(t.faction), 'fac') : ''}
@@ -310,8 +311,40 @@ function technologyGroups(list, options = {}) {
     ['Faction-specific technologies', list.filter(t => t.faction)],
   ];
   return groups.filter(([, entries]) => entries.length).map(([title, entries]) =>
-    `<div class="tech-group" role="group" aria-label="${title}">${technologyList(entries, options)}</div>`
+    `<div class="tech-group" data-filter-group role="group" aria-label="${title}">${technologyList(entries, options)}</div>`
   ).join('');
+}
+
+/**
+ * Multi-select faction filter. Rows carry `data-faction`; the bar lists only the
+ * factions actually present on the page, so no option can filter to nothing.
+ * Rows with no faction of their own filter out whenever any faction is chosen.
+ */
+function factionFilter(ids) {
+  const options = [...new Set(ids)].filter(Boolean)
+    .map(id => factionById[id]).filter(Boolean)
+    .sort((a, b) => a.name.localeCompare(b.name));
+  if (options.length < 2) return '';
+  return `<details class="faction-filter" data-faction-filter>
+    <summary>
+      <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <path d="M2.5 4.5h15M5 10h10M8 15.5h4"/>
+      </svg>
+      <span>Filter by faction</span>
+      <span class="faction-filter-count" data-faction-count hidden></span>
+    </summary>
+    <div class="faction-filter-body">
+      <ul class="faction-options">${options.map(f => `<li><label>
+        <input type="checkbox" value="${esc(f.id)}">
+        <img src="../icons/factions/${f.id}.svg" alt="" width="22" height="22" loading="lazy">
+        <span>${esc(f.name)}</span>
+      </label></li>`).join('')}</ul>
+      <div class="faction-filter-foot">
+        <p data-faction-status role="status">Showing every faction.</p>
+        <button type="button" data-faction-clear hidden>Clear</button>
+      </div>
+    </div>
+  </details>`;
 }
 
 function pageFactions() {
@@ -436,8 +469,9 @@ function pageUnits() {
   const body = `<h1>Units</h1>
   <p class="lede">Every base and upgraded unit side by side. <b>Combat</b> is the value a
   die must meet or beat, so lower is better; <sub>×n</sub> marks extra dice.</p>
-  <h2>Standard units</h2>${unitsTable(generic, false, false)}
-  <h2>Faction units</h2>${unitsTable(faction, true)}`;
+  ${factionFilter(faction.map(u => u.faction))}
+  <section data-filter-section><h2>Standard units</h2>${unitsTable(generic, false, false)}</section>
+  <section data-filter-section><h2>Faction units</h2>${unitsTable(faction, true)}</section>`;
   write('units/index.html', layout({ title: 'Units', depth: 1, body, active: 'Units' }));
 }
 
@@ -449,6 +483,7 @@ function pageTechs() {
   const body = `<h1>Technology</h1>
   <p class="lede">Research costs nothing but prerequisites: to take a technology you must
   already own the technologies shown as its requirements.</p>
+  ${factionFilter(techs.map(t => t.faction))}
   ${glossary.techColours.map(c => {
     const list = techs.filter(t => t.colour === c.id)
       .sort((a, b) => a.prereqs.length - b.prereqs.length || a.name.localeCompare(b.name));
@@ -477,6 +512,7 @@ function pageLeaders() {
   <p class="lede">Prophecy of Kings gives every faction an agent, a commander, and a hero.
   Agents begin available and ready each round, commanders unlock on a condition, and
   heroes usually unlock after three scored objectives and are used once per game.</p>
+  ${factionFilter(leaders.filter(isDisplayedLeader).map(leaderFactionId))}
   ${kinds.map(k => {
     const list = leaders.filter(l => isDisplayedLeader(l) && leaderKind(l) === k)
       .sort((a, b) => cleanLeaderName(a.name).localeCompare(cleanLeaderName(b.name)));
@@ -488,7 +524,7 @@ function pageLeaders() {
       const factionName = factionById[leaderFactionId(l)]?.name || titleCase(leaderFactionId(l));
       const unlock = info.unlock || l.unlock
         || (k === 'agent' ? 'Always unlocked.' : 'Have 3 scored objectives.');
-      return `<li><div class="leader-heading"><b>${omegaName(cleanLeaderName(l.name))}</b>
+      return `<li data-faction="${esc(leaderFactionId(l))}"><div class="leader-heading"><b>${omegaName(cleanLeaderName(l.name))}</b>
         ${l.form ? chip(`${l.form} form`) : ''}<span class="meta">${esc(factionName)}</span></div>
         <dl class="effect"><dt>Unlock</dt><dd>${esc(unlock)}</dd>
           <dt>When</dt><dd>${esc(info.timing || l.timing || 'See the leader component.')}</dd>
@@ -761,7 +797,7 @@ function pagePromissoryNotes() {
     (factionById[a.faction]?.name || a.faction).localeCompare(
       factionById[b.faction]?.name || b.faction
     ) || a.name.localeCompare(b.name));
-  const list = rows => `<ul class="techlist">${rows.map(n => `<li>
+  const list = rows => `<ul class="techlist">${rows.map(n => `<li data-faction="${esc(n.faction || '')}">
     ${entryWithTooltip(n, n.description, 'promissory')}
     ${n.faction
       ? chip(factionById[n.faction]?.name || titleCase(n.faction), 'fac')
@@ -780,6 +816,7 @@ function pagePromissoryNotes() {
   belong to the faction shown. A
   <b>Play area</b> note can remain faceup while its effect applies, and
   <b>Immediate</b> notes are placed there as soon as they are received.</p>
+  ${factionFilter(faction.map(n => n.faction))}
   <section class="panel"><h2>Common notes <span class="count">${common.length}</span></h2>
     ${list(common)}</section>
   <section class="panel"><h2>Faction notes <span class="count">${faction.length}</span></h2>

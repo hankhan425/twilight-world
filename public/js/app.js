@@ -301,6 +301,71 @@
   });
 })();
 
+// ---- faction filter: multi-select, hides everything outside the chosen factions ----
+(function () {
+  var bar = document.querySelector('[data-faction-filter]');
+  if (!bar) return;
+  var boxes = [].slice.call(bar.querySelectorAll('input[type=checkbox]'));
+  var rows = [].slice.call(document.querySelectorAll('[data-faction]'));
+  if (!boxes.length || !rows.length) return;
+
+  // A unit's card text lives in a second row that must follow its unit, so it
+  // filters along but never counts as a result of its own.
+  var counted = rows.filter(function (r) { return !r.hasAttribute('data-faction-pair'); });
+  var badge = bar.querySelector('[data-faction-count]');
+  var status = bar.querySelector('[data-faction-status]');
+  var clear = bar.querySelector('[data-faction-clear]');
+
+  function containers(selector) {
+    var found = [];
+    rows.forEach(function (row) {
+      var box = row.closest(selector);
+      if (box && found.indexOf(box) < 0) found.push(box);
+    });
+    return found;
+  }
+  var groups = containers('[data-filter-group]');
+  var sections = containers('.panel, [data-filter-section]');
+
+  function prune(box) {
+    var own = [].slice.call(box.querySelectorAll('[data-faction]'));
+    var visible = own.filter(function (r) { return !r.hidden; });
+    box.hidden = !visible.length;
+    var count = box.querySelector('h2 > .count');
+    if (count) {
+      count.textContent = String(visible.filter(function (r) {
+        return !r.hasAttribute('data-faction-pair');
+      }).length);
+    }
+  }
+
+  function apply() {
+    var want = boxes.filter(function (b) { return b.checked; })
+      .map(function (b) { return b.value; });
+    rows.forEach(function (row) {
+      row.hidden = want.length > 0 && want.indexOf(row.getAttribute('data-faction')) < 0;
+    });
+    groups.forEach(prune);
+    sections.forEach(prune);
+
+    var shown = counted.filter(function (r) { return !r.hidden; }).length;
+    badge.textContent = String(want.length);
+    badge.hidden = !want.length;
+    clear.hidden = !want.length;
+    status.textContent = want.length
+      ? shown + ' of ' + counted.length + ' shown'
+      : 'Showing every faction.';
+  }
+
+  bar.addEventListener('change', function (e) {
+    if (e.target.type === 'checkbox') apply();
+  });
+  clear.addEventListener('click', function () {
+    boxes.forEach(function (b) { b.checked = false; });
+    apply();
+  });
+})();
+
 // ---- category filters: hide non-matching rows in the sections below ----
 (function () {
   var bars = document.querySelectorAll('.filters');
