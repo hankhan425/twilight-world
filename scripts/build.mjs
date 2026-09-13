@@ -392,7 +392,7 @@ function pageFaction(f) {
   const lList = leadersForFaction(f.id);
   const bList = breakthroughs.filter(b => b.faction === f.id);
   const guide = factionGuide(f);
-  const startTech = f.startingTechs.map(id => techById[id]?.name || titleCase(id));
+  const startTech = f.startingTechs.map(id => techById[id] ? techWithTooltip(techById[id]) : esc(titleCase(id)));
   const unitLine = o => Object.entries(o)
     .map(([k, v]) => `${v}× ${titleCase(k === 'spacedock' ? 'space dock' : k)}`).join(', ') || '—';
 
@@ -442,10 +442,10 @@ function pageFaction(f) {
       <tr><th scope="row">Commodities</th><td><b>${f.commodities ?? '—'}</b></td></tr>
     </tbody></table>`)}
 
-  ${collapsiblePanel('Starting position', `<table class="kv"><tbody>
+  ${collapsiblePanel('Starting position', `<table class="kv starting-position"><tbody>
       <tr><th scope="row">Space</th><td>${esc(unitLine(f.startingUnits.space))}</td></tr>
       <tr><th scope="row">Ground</th><td>${esc(unitLine(f.startingUnits.ground))}</td></tr>
-      <tr><th scope="row">Technology</th><td>${startTech.map(omegaName).join(', ') || omegaName(f.startingTechText) || '—'}</td></tr>
+      <tr><th scope="row">Technology</th><td>${startTech.length ? `<span class="starting-techs">${startTech.join('')}</span>` : omegaName(f.startingTechText) || '—'}</td></tr>
     </tbody></table>`)}
 
   ${collapsiblePanel('Faction abilities', abilities)}

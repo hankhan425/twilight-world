@@ -519,6 +519,14 @@ table { border-collapse: collapse; width: 100%; font-size: 14px; }
 .kv td { padding: 7px 0; }
 .kv tr + tr th, .kv tr + tr td { border-top: 1px solid var(--line); }
 
+/* Starting technologies explain themselves like other reference entries. Their
+   tooltips hang from the whole table rather than the name: the names sit partway
+   along the row, so a tooltip anchored there would run off a phone screen. */
+.starting-position { position: relative; }
+.starting-techs { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.starting-techs .entry-with-tip { position: static; }
+.starting-techs .entry-tooltip { width: min(380px, 100%); }
+
 /* Reference entries explain themselves on pointer hover and keyboard focus. */
 .entry-with-tip {
   position: relative; display: inline-flex; align-items: center; gap: 5px;
