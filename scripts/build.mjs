@@ -284,11 +284,11 @@ function entryWithTooltip(entry, description, prefix, className = '') {
   </span>`;
 }
 
-function techWithTooltip(t) {
+function techWithTooltip(t, { showColour = false } = {}) {
   const tipId = `tech-tip-${t.id}`;
   const description = techDescription(t);
   return `<span class="entry-with-tip tech-with-tip" tabindex="0" aria-describedby="${tipId}">
-    <b>${omegaName(t.name)}</b><span class="tip-icon" aria-hidden="true">?</span>
+    ${showColour && t.colour ? `<i class="dot c-${t.colour}" title="${titleCase(t.colour)}"></i>` : ''}<b>${omegaName(t.name)}</b><span class="tip-icon" aria-hidden="true">?</span>
     <span class="entry-tooltip tech-tooltip" id="${tipId}" role="tooltip">${esc(description)}</span>
   </span>`;
 }
@@ -393,7 +393,7 @@ function pageFaction(f) {
   const lList = leadersForFaction(f.id);
   const bList = breakthroughs.filter(b => b.faction === f.id);
   const guide = factionGuide(f);
-  const startTech = f.startingTechs.map(id => techById[id] ? techWithTooltip(techById[id]) : esc(titleCase(id)));
+  const startTech = f.startingTechs.map(id => techById[id] ? techWithTooltip(techById[id], { showColour: true }) : esc(titleCase(id)));
   const unitLine = o => Object.entries(o)
     .map(([k, v]) => `${v}× ${titleCase(k === 'spacedock' ? 'space dock' : k)}`).join(', ') || '—';
 
