@@ -488,6 +488,7 @@ table { border-collapse: collapse; width: 100%; font-size: 14px; }
   display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 2px;
 }
 .unit-tags .chip { margin: 0; }
+.unit-prereqs { display: inline-flex; gap: 3px; align-items: center; }
 .unit-name .unit-type, .unit-name .unit-form { display: inline-flex; font-weight: 600; }
 .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .units .abil { min-width: 190px; }

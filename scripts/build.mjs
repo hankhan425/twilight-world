@@ -218,6 +218,7 @@ function unitRow(u, showFaction, showType) {
   const tags = [
     showType ? unitTypeChip(u) : '',
     u.form ? chip(`${u.form} form`, 'unit-form') : '',
+    u.prereqs?.length ? `<span class="unit-prereqs" title="Requires ${u.prereqs.map(titleCase).join(' + ')}">${u.prereqs.map(p => `<i class="dot c-${p}"></i>`).join('')}</span>` : '',
   ].filter(Boolean).join('');
   const prose = abilityProse(u);
   const fac = ` data-faction="${esc(u.faction || '')}"`;
@@ -247,7 +248,7 @@ function unitsTable(list, showFaction = true, showType = true) {
 
 const unitUpgradeProfile = (t, faction = t.faction) => ({
   id: `${t.id}-profile`, name: t.name, set: t.set, faction, form: t.form || null,
-  ...t.unit, isUpgrade: true,
+  ...t.unit, isUpgrade: true, prereqs: t.prereqs,
 });
 
 const sortUnitProfiles = (a, b) =>
